@@ -1,0 +1,6 @@
+{
+  "name": "Fiestas Culturales de la Provincia de Buenos Aires",
+  "description": "Guía visual e interactiva de celebraciones populares, gastronómicas, tradicionales y culturales de los municipios bonaerenses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
