@@ -23,6 +23,17 @@ export const HeroSection: React.FC = () => {
       <div className="absolute inset-0 opacity-[0.025] bg-[radial-gradient(#78716c_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">
+        {/* Brand Logo Emblem */}
+        <div className="flex justify-center mb-4 sm:mb-5">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white p-1 shadow-md border-2 border-amber-300/80 hover:scale-105 transition-transform duration-300 cursor-default">
+            <img
+              src="/images/logo.png"
+              alt="Fiestas Culturales de la Provincia de Buenos Aires"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+        </div>
+
         {/* Eyebrow badge */}
         <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-[11px] sm:text-xs font-semibold uppercase tracking-wider mb-3 sm:mb-5 shadow-2xs">
           <Sparkles className="w-3.5 h-3.5 text-sky-600 shrink-0" />

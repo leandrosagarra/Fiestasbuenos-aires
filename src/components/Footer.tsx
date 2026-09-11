@@ -23,8 +23,12 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Identity */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-500 to-amber-400 p-0.5 flex items-center justify-center text-white font-bold shadow-xs">
-                <Sun className="w-6 h-6 text-white" />
+              <div className="w-11 h-11 rounded-full overflow-hidden border-2 border-amber-400/80 shadow-xs bg-white shrink-0">
+                <img
+                  src="/images/logo.png"
+                  alt="Logo Fiestas Culturales Bonaerenses"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               <div>
                 <span className="text-[11px] font-bold uppercase tracking-wider text-sky-800 block">

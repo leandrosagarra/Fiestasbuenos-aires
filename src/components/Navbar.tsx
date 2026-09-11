@@ -48,8 +48,12 @@ export const Navbar: React.FC = () => {
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group select-none min-w-0"
           >
-            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-500 to-amber-400 p-0.5 shadow-2xs group-hover:scale-105 transition-transform flex items-center justify-center text-white font-bold shrink-0">
-              <Sun className="w-5 h-5 sm:w-6 sm:h-6 text-white stroke-[2.2]" />
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border-2 border-amber-400/80 shadow-2xs group-hover:scale-105 transition-transform flex items-center justify-center bg-white shrink-0">
+              <img
+                src="/images/logo.png"
+                alt="Logo Fiestas Culturales"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
