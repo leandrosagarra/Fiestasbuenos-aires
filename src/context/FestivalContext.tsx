@@ -24,7 +24,7 @@ interface FestivalContextType {
   setActiveView: (view: 'home' | 'calendar' | 'map' | 'admin') => void;
 }
 
-const STORAGE_KEY = 'fiestas_buenos_aires_v1';
+const STORAGE_KEY = 'fiestas_buenos_aires_v2';
 
 const defaultFilters: FestivalFilterState = {
   searchQuery: '',

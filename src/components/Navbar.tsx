@@ -40,20 +40,20 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 bg-[#faf7f2]/95 backdrop-blur-md text-stone-800 border-b border-[#e2dacb] shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Logo / Site Title */}
           <div 
             id="site-logo-button"
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-3 cursor-pointer group select-none"
+            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group select-none min-w-0"
           >
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-500 to-amber-400 p-0.5 shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center text-white font-bold">
-              <Sun className="w-6 h-6 text-white stroke-[2.2]" />
+            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-500 to-amber-400 p-0.5 shadow-2xs group-hover:scale-105 transition-transform flex items-center justify-center text-white font-bold shrink-0">
+              <Sun className="w-5 h-5 sm:w-6 sm:h-6 text-white stroke-[2.2]" />
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-sky-800">
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-sky-800 truncate">
                   Provincia de Buenos Aires
                 </span>
                 <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-sky-400" />
@@ -61,7 +61,7 @@ export const Navbar: React.FC = () => {
                   Guía Cultural & Turismo
                 </span>
               </div>
-              <h1 className="text-lg sm:text-xl font-bold font-serif tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors">
+              <h1 className="text-base sm:text-xl font-bold font-serif tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight truncate">
                 Fiestas Culturales
               </h1>
             </div>
@@ -80,19 +80,6 @@ export const Navbar: React.FC = () => {
             >
               <Compass className="w-4 h-4 text-sky-600" />
               <span>Explorar</span>
-            </button>
-
-            <button
-              id="nav-link-mustsee"
-              onClick={() => {
-                setActiveView('home');
-                const el = document.getElementById('seccion-imperdibles');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="px-3.5 py-2 rounded-xl text-stone-600 hover:text-stone-900 hover:bg-stone-200/50 transition-all flex items-center gap-1.5"
-            >
-              <Flame className="w-4 h-4 text-amber-600" />
-              <span>Imperdibles</span>
             </button>
 
             <button
@@ -170,21 +157,6 @@ export const Navbar: React.FC = () => {
           >
             <Compass className="w-4 h-4 text-sky-600" />
             <span>Explorar Fiestas</span>
-          </button>
-
-          <button
-            onClick={() => {
-              setActiveView('home');
-              setMobileMenuOpen(false);
-              setTimeout(() => {
-                const el = document.getElementById('seccion-imperdibles');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }, 100);
-            }}
-            className="w-full text-left px-3 py-2.5 rounded-xl flex items-center gap-2 text-sm font-medium text-stone-700 hover:bg-stone-200/50"
-          >
-            <Flame className="w-4 h-4 text-amber-600" />
-            <span>Fiestas Imperdibles</span>
           </button>
 
           <button
