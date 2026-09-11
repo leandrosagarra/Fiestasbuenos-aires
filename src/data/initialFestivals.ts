@@ -21,12 +21,10 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Gastronomía',
     isFree: false,
     ticketInfo: 'Entrada general accesible. Organiza la Municipalidad de Mercedes.',
-    mainImage: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/salame-2.png',
     gallery: [
-      'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop'
+      '/images/salame-2.png',
+      '/images/salame-1.jpg'
     ],
     summary: 'Desde las 10:00, en el Parque Municipal Independencia. Carpa de productores de salame en donde se podrá degustar el salame premiado, picadas criollas y quesos artesanales, patio gastronómico, paseo de artesanos y espectáculos en vivo a puro folclore y otros géneros musicales.',
     highlightParagraph: 'Carpa de productores de salame en donde se podrá degustar el salame premiado, picadas criollas y quesos artesanales, patio gastronómico, paseo de artesanos y espectáculos en vivo a puro folclore y otros géneros musicales.',
@@ -68,11 +66,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Gastronomía',
     isFree: true,
     ticketInfo: 'Entrada libre y gratuita al predio. Organiza el Club Social y Deportivo, el Club Renovación, y la Municipalidad de Chivilcoy.',
-    mainImage: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/asado.png',
     gallery: [
-      'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1200&auto=format&fit=crop'
+      '/images/asado.png'
     ],
     summary: 'Sábado 12, a las 18:00; domingo 13, desde las 8:00, en el predio de la ex estación de trenes. Concurso de asadores, desfile criollo con la tradicional pasada de paisanos, exhibición de autos y motos clásicos, espectáculos en vivo y folclore. Paseo de compras con feria de artesanos, emprendedores y puestos de comida.',
     highlightParagraph: 'Concurso de asadores, desfile criollo con la tradicional pasada de paisanos, exhibición de autos y motos clásicos, espectáculos en vivo y folclore. Paseo de compras con feria de artesanos, emprendedores y puestos de comida.',
@@ -114,10 +110,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Tradición',
     isFree: true,
     ticketInfo: 'Entrada libre al parque. Reservas para almuerzo en Estancia La Alameda al (2241) 508536. Organizan la Asociación del Caballo y el Carruaje con el acompañamiento de la Municipalidad de Chascomús.',
-    mainImage: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/carruaje.png',
     gallery: [
-      'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop'
+      '/images/carruaje.png'
     ],
     summary: 'Desde las 11:00, en el Parque de los Libres del Sur. Sábado, patio de comidas típicas de Escuelas Rurales, folklore, Banda Militar Ituzaingó, presentación de carruajes antiguos, jura Hackney con jurado internacional, muestra en Museo Pampeano y peña. Domingo, paseo por circunvalación y almuerzo en Estancia La Alameda.',
     highlightParagraph: 'Presentación de carruajes antiguos, locución a cargo de Carlos Daniel Lineas y Luis María Loza. Jura de ejemplares Hackney a cargo del jurado internacional Don Jorge Gutierrez Pubil (Chile). Exposición del pintor costumbrista Francisco Madero Marenco, en el Museo Pampeano.',
@@ -160,10 +155,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Gastronomía',
     isFree: true,
     ticketInfo: 'Entrada libre y gratuita. Organiza la Municipalidad de Navarro.',
-    mainImage: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/bunuelos.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop'
+      '/images/bunuelos.jpg'
     ],
     summary: 'Desde las 10:00, en el Predio del Fortín. Durante los dos días habrá un sector buñuelero para comprar y degustar de los buñuelos elaborados artesanalmente, food trucks, feria de emprendedores locales, espectáculos musicales y el Gran Premio 2026 al mejor buñuelo de la fiesta.',
     highlightParagraph: 'Durante los dos días habrá un sector buñuelero para comprar y degustar de los buñuelos elaborados artesanalmente, food trucks, feria de emprendedores locales, espectáculos musicales y el Gran Premio 2026 al mejor buñuelo de la fiesta.',
@@ -205,10 +199,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Gastronomía',
     isFree: false,
     ticketInfo: 'Servicio de cantina y tarjeta. Organiza el Club Social y Deportivo Garré.',
-    mainImage: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/salame-1.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop'
+      '/images/salame-1.jpg'
     ],
     summary: 'A las 21:00, en el Club Social y Deportivo Garré. Espectáculos en vivo con Los Campedrinos, el taller municipal Entre Amigos y Danzas, Desiguales y Manu García Pereira. Competencia de chorizo blanco y colorado, con jurados experimentados. Servicio de cantina durante toda la Fiesta.',
     highlightParagraph: 'Espectáculos en vivo con Los Campedrinos, el taller municipal Entre Amigos y Danzas, Desiguales y Manu García Pereira. Competencia de chorizo blanco y colorado, con jurados experimentados. Servicio de cantina durante toda la Fiesta.',
@@ -250,10 +243,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Tradición',
     isFree: true,
     ticketInfo: 'Entrada gratuita. Organizan la Asociación de Entidades Extranjeras y la Municipalidad de Berisso.',
-    mainImage: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/inmigrante.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop'
+      '/images/inmigrante.jpg'
     ],
     summary: 'A las 12:00, en av. Montevideo y Nueva York. Apertura del Patio Gastronómico sobre av. Montevideo. Recreación histórica del Desembarco de los Inmigrantes, a las 15:00, en la Explanada del Puerto La Plata. Entrada gratuita.',
     highlightParagraph: 'Apertura del Patio Gastronómico sobre av. Montevideo y la conmovedora recreación histórica del Desembarco de los Inmigrantes, a las 15:00, en la Explanada del Puerto La Plata.',
@@ -339,10 +331,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Tradición',
     isFree: true,
     ticketInfo: 'Entrada libre y gratuita. Organiza la Municipalidad de General Paz.',
-    mainImage: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/ombu.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1200&auto=format&fit=crop'
+      '/images/ombu.jpg'
     ],
     summary: 'A las 11:00, en el Polideportivo Villanueva. Jornada de música, danza, tradición y cultura en la que se realizan actividades como la presentación de artistas locales, baile popular y folclore. Organiza la Municipalidad de General Paz.',
     highlightParagraph: 'Jornada de música, danza, tradición y cultura en la que se realizan actividades como la presentación de artistas locales, baile popular y folclore.',
