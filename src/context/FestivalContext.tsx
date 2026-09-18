@@ -24,7 +24,7 @@ interface FestivalContextType {
   setActiveView: (view: 'home' | 'calendar' | 'map' | 'admin') => void;
 }
 
-const STORAGE_KEY = 'fiestas_buenos_aires_v3';
+const STORAGE_KEY = 'fiestas_buenos_aires_v5';
 
 const defaultFilters: FestivalFilterState = {
   searchQuery: '',
@@ -102,6 +102,11 @@ export const FestivalProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   // Filtered logic
   const filteredFestivals = festivals.filter((f) => {
+    // In Home view, only featured festivals are displayed
+    if (activeView === 'home' && !f.isFeatured) {
+      return false;
+    }
+
     // Search query matches name, municipality, locality, category, summary
     if (filters.searchQuery.trim()) {
       const q = filters.searchQuery.toLowerCase().trim();

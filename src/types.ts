@@ -60,6 +60,7 @@ export interface Festival {
   contact: FestivalContact;
   isMustSee: boolean;
   isUpcoming: boolean;
+  isFeatured?: boolean;
 }
 
 export interface FestivalFilterState {

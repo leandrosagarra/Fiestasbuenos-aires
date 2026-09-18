@@ -8,10 +8,10 @@ import { MonthlyCalendar } from './components/MonthlyCalendar';
 import { InteractiveMap } from './components/InteractiveMap';
 import { AdminPanel } from './components/AdminPanel';
 import { Footer } from './components/Footer';
-import { Compass, Sparkles, Frown, RotateCcw } from 'lucide-react';
+import { Compass, Sparkles, Frown, RotateCcw, Calendar, ArrowRight } from 'lucide-react';
 
 const MainContent: React.FC = () => {
-  const { activeView, filteredFestivals, resetFilters, festivals } = useFestivals();
+  const { activeView, filteredFestivals, resetFilters, festivals, setActiveView } = useFestivals();
 
   return (
     <div className="min-h-screen flex flex-col bg-[#faf8f5] font-sans text-stone-900">
@@ -39,8 +39,27 @@ const MainContent: React.FC = () => {
                   </p>
                 </div>
                 <div className="self-start sm:self-auto text-xs font-semibold text-stone-700 bg-white border border-[#ded5c5] px-3.5 py-1.5 rounded-xl shadow-2xs">
-                  {filteredFestivals.length} {filteredFestivals.length === 1 ? 'fiesta disponible' : 'fiestas disponibles'}
+                  {filteredFestivals.length} {filteredFestivals.length === 1 ? 'fiesta destacada' : 'fiestas destacadas'}
                 </div>
+              </div>
+
+              {/* Banner informativo de fiestas anteriores en el calendario */}
+              <div className="mb-8 p-4 rounded-2xl bg-amber-50/90 border border-amber-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-stone-800 shadow-2xs">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-amber-100 text-amber-800 shrink-0">
+                    <Calendar className="w-5 h-5" />
+                  </div>
+                  <p className="text-xs sm:text-sm text-stone-700">
+                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Salame Quintero, Asado Criollo, Buñuelo Navarrense, etc.) siguen disponibles en el calendario.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setActiveView('calendar')}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold shrink-0 transition-colors cursor-pointer"
+                >
+                  <span>Ver en Calendario</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
               </div>
 
               {/* Cards Grid */}
