@@ -64,9 +64,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Tradición',
     isFree: true,
     ticketInfo: 'Entrada libre y gratuita. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
-    mainImage: '/images/mate-reposera.jpg',
+    mainImage: '/images/fiesta del mate.jpg',
     gallery: [
-      '/images/mate-reposera.jpg'
+      '/images/fiesta del mate.jpg'
     ],
     summary: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
     highlightParagraph: 'Desde el mediodía en Plaza Mitre: Ballet Municipal, grupo de danzas Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica, artesanos y comidas típicas.',
@@ -107,9 +107,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Gastronomía',
     isFree: true,
     ticketInfo: 'Entrada libre y gratuita. Organizan la Comisión Fiesta del Sabor Alemán, la Delegación Municipal de Arboledas, y la Municipalidad de Daireaux.',
-    mainImage: '/images/sabor-aleman.jpg',
+    mainImage: '/images/sabor aleman.jpg',
     gallery: [
-      '/images/sabor-aleman.jpg'
+      '/images/sabor aleman.jpg'
     ],
     summary: 'Desde las 10:00, en Arboledas. Show del Espiche, Ballet “De la Dulce Vida”, música con Juancy Giménez (ex Malagata), espectáculo de humor con Carlos Gómez. Conducción de Carlos Polak . 4° Concurso de Cocina: Strudel – Achtzig schlag (torta de 80 golpes) con importantes premios. Cerveza artesanal, comidas alemanas y paseo emprendedor.',
     highlightParagraph: 'Show del Espiche, Ballet “De la Dulce Vida”, música con Juancy Giménez, espectáculo de humor con Carlos Gómez, 4° Concurso de Cocina (Strudel y Torta de 80 golpes), cerveza artesanal y paseo emprendedor.',
@@ -151,9 +151,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Música',
     isFree: true,
     ticketInfo: 'Entrada libre y gratuita. Programación sujeta a cambios y cancelaciones, no posterga por lluvias. Organiza Country2.com, e Independencia Fútbol Club con el auspicio de la Municipalidad de San Pedro.',
-    mainImage: '/images/country-san-pedro.jpg',
+    mainImage: '/images/country.jpg',
     gallery: [
-      '/images/country-san-pedro.jpg'
+      '/images/country.jpg'
     ],
     summary: 'Viernes 25, a las 12:00; sábado 26, a las 11:00; domingo 27, a las 10:30, en el Paseo Municipal. Espectáculos con artistas nacionales y extranjeros del género Country. 6º All Together (Encuentro Nacional de Line Dance). Programación sujeta a cambios y cancelaciones, no posterga por lluvias (se ajusta a posibilidades o se cancela). Organiza Country2.com, e Independencia Fútbol Club con el auspicio de la Municipalidad de San Pedro.',
     highlightParagraph: 'El mayor festival de música Country de Sudamérica en la costa del Paraná: artistas nacionales e internacionales y el 6º All Together Encuentro Nacional de Line Dance.',
@@ -237,9 +237,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Tradición',
     isFree: false,
     ticketInfo: 'Inscripciones a las actividades: cabalgata serrana, $25.000; caminata guiada, $10.000. Consultas e inscripciones al (291) 4235009. 7° Concurso de Asadores: asadores de la región competirán demostrando su destreza y técnica criolla. Servicio de cantina. Organiza la Escuela de Educación Secundaria Agraria N° 1 Tornquist Gato y Mancha.',
-    mainImage: '/images/asadores-villa-ventana.jpg',
+    mainImage: '/images/concurso de asadores.jpg',
     gallery: [
-      '/images/asadores-villa-ventana.jpg'
+      '/images/concurso de asadores.jpg'
     ],
     summary: 'En el Campo de Prácticas de Villa Ventana. Una de las citas camperas y tradicionales más esperadas de la Comarca Serrana se llevará a cabo el domingo 27 de septiembre de 2026 en el entorno boscoso y natural de Villa Ventana. Inscripciones a las actividades: cabalgata serrana, $25.000; caminata guiada, $10.000. Consultas e inscripciones al (291) 4235009. 7° Concurso de Asadores: asadores de la región competirán demostrando su destreza y técnica criolla. Servicio de cantina. Organiza la Escuela de Educación Secundaria Agraria N° 1 Tornquist Gato y Mancha.',
     highlightParagraph: 'Cita campera y tradicional en el entorno boscoso y natural de Villa Ventana: cabalgata serrana, caminata guiada, 7° Concurso de Asadores de la región y servicio de cantina.',
