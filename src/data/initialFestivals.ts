@@ -2,6 +2,267 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'inmigrante-berisso-colectividades',
+    name: '49º Fiesta Provincial del Inmigrante',
+    municipality: 'Berisso',
+    locality: 'Berisso',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Parque Cívico, Av. Montevideo y calle 11, Berisso, Buenos Aires',
+    coordinates: {
+      lat: -34.8719,
+      lng: -57.8828
+    },
+    datesText: '26 y 27 de septiembre',
+    startDate: '2026-09-26',
+    endDate: '2026-09-27',
+    schedule: 'A las 12:00, en el Parque Cívico, av. Montevideo y calle 11',
+    duration: '2 jornadas (Sábado 26 y Domingo 27 de septiembre)',
+    month: 9,
+    category: 'Cultura Popular',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organizan la Asociación de Entidades Extranjeras y la Municipalidad de Berisso.',
+    mainImage: '/images/inmigrante.jpg',
+    gallery: [
+      '/images/inmigrante.jpg'
+    ],
+    summary: 'A las 12:00, en el Parque Cívico, av. Montevideo y calle 11. Ambos días, Festival de Colectividades, patio gastronómico y paseo de artesanos. Sábado, a las 18:00, presentación de Representantes Culturales. Organizan la Asociación de Entidades Extranjeras y la Municipalidad de Berisso.',
+    highlightParagraph: 'Ambos días, Festival de Colectividades, patio gastronómico y paseo de artesanos. Sábado, a las 18:00, presentación de Representantes Culturales.',
+    fullDescription: 'A las 12:00, en el Parque Cívico, av. Montevideo y calle 11. Ambos días, Festival de Colectividades, patio gastronómico y paseo de artesanos. Sábado, a las 18:00, presentación de Representantes Culturales. Organizan la Asociación de Entidades Extranjeras y la Municipalidad de Berisso.',
+    activities: [
+      { time: '12:00 hs', title: 'Apertura del Festival de Colectividades', description: 'Patio gastronómico internacional con platos típicos y paseo de artesanos en el Parque Cívico.' },
+      { time: 'Sábado 18:00 hs', title: 'Presentación de Representantes Culturales', description: 'Gala con trajes tradicionales de las colectividades inmigrantes.' },
+      { time: 'Domingo 14:00 hs', title: 'Danzas y espectáculos folclóricos del mundo', description: 'Shows continuos de ballets de colectividades extranjeras sobre el escenario mayor.' }
+    ],
+    contact: {
+      phone: '+54 221 4645000',
+      email: 'cultura@berisso.gob.ar',
+      website: 'https://berisso.gob.ar',
+      instagram: '@fiestadelinmigranteberisso',
+      facebook: 'FiestaProvincialDelInmigrante'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'mate-reposera-arrecifes',
+    name: '1º Festival del Mate y la Reposera',
+    municipality: 'Arrecifes',
+    locality: 'Arrecifes',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Plaza Mitre, Arrecifes, Buenos Aires',
+    coordinates: {
+      lat: -34.0667,
+      lng: -60.1000
+    },
+    datesText: '27 de septiembre',
+    startDate: '2026-09-27',
+    endDate: '2026-09-27',
+    schedule: 'Desde el mediodía, en la plaza Mitre',
+    duration: '1 jornada completa (Domingo 27 de septiembre)',
+    month: 9,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
+    mainImage: '/images/mate-reposera.jpg',
+    gallery: [
+      '/images/mate-reposera.jpg'
+    ],
+    summary: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
+    highlightParagraph: 'Desde el mediodía en Plaza Mitre: Ballet Municipal, grupo de danzas Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica, artesanos y comidas típicas.',
+    fullDescription: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
+    activities: [
+      { time: '12:00 hs', title: 'Apertura de la Plaza Mitre y Mateada Popular', description: 'Recepción con reposeras, puestos de comidas típicas, artesanos y manualistas.' },
+      { time: '14:00 hs', title: 'Ballet Municipal y grupos de danza', description: 'Presentaciones del Ballet Municipal de Arrecifes y grupo de danzas de Lucas Valenzuela.' },
+      { time: '16:00 hs', title: 'Gran Festival Folclórico y Sorteos', description: 'Actuación de Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman y La Clave Folclórica.' }
+    ],
+    contact: {
+      phone: '+54 2478 452200',
+      email: 'cultura@arrecifes.gob.ar',
+      website: 'https://arrecifes.gob.ar',
+      instagram: '@municipalidaddearrecifes',
+      facebook: 'MunicipalidadDeArrecifes'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'sabor-aleman-daireaux-arboledas',
+    name: '9º Fiesta del Sabor Alemán',
+    municipality: 'Daireaux',
+    locality: 'Arboledas (Daireaux)',
+    region: 'Oeste y Producción',
+    address: 'Arboledas, Daireaux, Buenos Aires',
+    coordinates: {
+      lat: -36.7842,
+      lng: -61.6425
+    },
+    datesText: '27 de septiembre',
+    startDate: '2026-09-27',
+    endDate: '2026-09-27',
+    schedule: 'Desde las 10:00, en Arboledas',
+    duration: '1 jornada completa (Domingo 27 de septiembre)',
+    month: 9,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organizan la Comisión Fiesta del Sabor Alemán, la Delegación Municipal de Arboledas, y la Municipalidad de Daireaux.',
+    mainImage: '/images/sabor-aleman.jpg',
+    gallery: [
+      '/images/sabor-aleman.jpg'
+    ],
+    summary: 'Desde las 10:00, en Arboledas. Show del Espiche, Ballet “De la Dulce Vida”, música con Juancy Giménez (ex Malagata), espectáculo de humor con Carlos Gómez. Conducción de Carlos Polak . 4° Concurso de Cocina: Strudel – Achtzig schlag (torta de 80 golpes) con importantes premios. Cerveza artesanal, comidas alemanas y paseo emprendedor.',
+    highlightParagraph: 'Show del Espiche, Ballet “De la Dulce Vida”, música con Juancy Giménez, espectáculo de humor con Carlos Gómez, 4° Concurso de Cocina (Strudel y Torta de 80 golpes), cerveza artesanal y paseo emprendedor.',
+    fullDescription: 'Desde las 10:00, en Arboledas. Show del Espiche, Ballet “De la Dulce Vida”, música con Juancy Giménez (ex Malagata), espectáculo de humor con Carlos Gómez. Conducción de Carlos Polak . 4° Concurso de Cocina: Strudel – Achtzig schlag (torta de 80 golpes) con importantes premios. Cerveza artesanal, comidas alemanas y paseo emprendedor. Organizan la Comisión Fiesta del Sabor Alemán, la Delegación Municipal de Arboledas, y la Municipalidad de Daireaux.',
+    activities: [
+      { time: '10:00 hs', title: 'Apertura de la Fiesta y Paseo Emprendedor', description: 'Puestos de comidas alemanas tradicionales y feria de artesanos y productores.' },
+      { time: '12:30 hs', title: 'Tradicional Show del Espiche y Cerveza Artesanal', description: 'Ceremonia del espiche del barril cervecero y brindis comunitario.' },
+      { time: '14:30 hs', title: '4° Concurso de Cocina: Strudel y Achtzig Schlag', description: 'Certamen culinario de repostería alemana (torta de 80 golpes) con jurado y premios.' },
+      { time: '16:30 hs', title: 'Ballet “De la Dulce Vida”, Humor y Gran Baile', description: 'Danzas típicas alemanas, humor de Carlos Gómez y recital bailable de Juancy Giménez (ex Malagata).' }
+    ],
+    contact: {
+      phone: '+54 2316 452147',
+      email: 'cultura@daireaux.gob.ar',
+      website: 'https://daireaux.gob.ar',
+      instagram: '@daireauxmunicipio',
+      facebook: 'MunicipalidadDeDaireaux'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'san-pedro-country-festival',
+    name: '21º San Pedro Country Festival',
+    municipality: 'San Pedro',
+    locality: 'San Pedro',
+    region: 'Delta y Ríos',
+    address: 'Paseo Municipal, San Pedro, Buenos Aires',
+    coordinates: {
+      lat: -33.6792,
+      lng: -59.6672
+    },
+    datesText: '25, 26 y 27 de septiembre',
+    startDate: '2026-09-25',
+    endDate: '2026-09-27',
+    schedule: 'Viernes 25, a las 12:00; sábado 26, a las 11:00; domingo 27, a las 10:30, en el Paseo Municipal',
+    duration: '3 jornadas inolvidables (25, 26 y 27 de septiembre)',
+    month: 9,
+    category: 'Música',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Programación sujeta a cambios y cancelaciones, no posterga por lluvias. Organiza Country2.com, e Independencia Fútbol Club con el auspicio de la Municipalidad de San Pedro.',
+    mainImage: '/images/country-san-pedro.jpg',
+    gallery: [
+      '/images/country-san-pedro.jpg'
+    ],
+    summary: 'Viernes 25, a las 12:00; sábado 26, a las 11:00; domingo 27, a las 10:30, en el Paseo Municipal. Espectáculos con artistas nacionales y extranjeros del género Country. 6º All Together (Encuentro Nacional de Line Dance). Programación sujeta a cambios y cancelaciones, no posterga por lluvias (se ajusta a posibilidades o se cancela). Organiza Country2.com, e Independencia Fútbol Club con el auspicio de la Municipalidad de San Pedro.',
+    highlightParagraph: 'El mayor festival de música Country de Sudamérica en la costa del Paraná: artistas nacionales e internacionales y el 6º All Together Encuentro Nacional de Line Dance.',
+    fullDescription: 'Viernes 25, a las 12:00; sábado 26, a las 11:00; domingo 27, a las 10:30, en el Paseo Municipal. Espectáculos con artistas nacionales y extranjeros del género Country. 6º All Together (Encuentro Nacional de Line Dance). Programación sujeta a cambios y cancelaciones, no posterga por lluvias (se ajusta a posibilidades o se cancela). Organiza Country2.com, e Independencia Fútbol Club con el auspicio de la Municipalidad de San Pedro.',
+    activities: [
+      { time: 'Viernes 12:00 hs', title: 'Apertura del San Pedro Country Festival', description: 'Primeras bandas country en vivo sobre el escenario del Paseo Municipal.' },
+      { time: 'Sábado 11:00 hs', title: 'Jornada Country y 6º All Together de Line Dance', description: 'Encuentro multitudinario de baile country line dance con participantes de todo el país.' },
+      { time: 'Domingo 10:30 hs', title: 'Gran Cierre con artistas nacionales e internacionales', description: 'Maratón musical de bluegrass, country rock y honky tonk frente al río Paraná.' }
+    ],
+    contact: {
+      phone: '+54 3329 428483',
+      email: 'turismo@sanpedro.gob.ar',
+      website: 'https://country2.com',
+      instagram: '@sanpedrocountryfestival',
+      facebook: 'SanPedroCountryMusicFestival'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'cine-rural-ayacucho',
+    name: '8º Festival Nacional de Cine Rural',
+    municipality: 'Ayacucho',
+    locality: 'Ayacucho',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Casa de la Cultura y Salón Libertador, Ayacucho, Buenos Aires',
+    coordinates: {
+      lat: -37.1517,
+      lng: -58.4897
+    },
+    datesText: '26 y 27 de septiembre',
+    startDate: '2026-09-26',
+    endDate: '2026-09-27',
+    schedule: 'En distintos horarios en la Casa de la Cultura y el Salón Libertador',
+    duration: '2 jornadas (Sábado 26 y Domingo 27 de septiembre)',
+    month: 9,
+    category: 'Cultura Popular',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza la Municipalidad de Ayacucho, y Escuela Municipal de Enseñanza Artística e Idiomas.',
+    mainImage: '/images/cine-rural.jpg',
+    gallery: [
+      '/images/cine-rural.jpg'
+    ],
+    summary: 'En distintos horarios en la Casa de la Cultura y el Salón Libertador. Filmes nacionales e internacionales de ficción y no ficción sobre lo rural. El jurado de la Competencia Oficial Nacional elegirá Mejor Cortometraje y Mejor Dirección, y el de la Competencia Oficial Local seleccionará Mejor Cortometraje, Mejor Dirección, Mejor Actuación, Mejor Guión, Mejor Producción, Mejor Fotografía y Mejor Banda Sonora. Organiza la Municipalidad de Ayacucho, y Escuela Municipal de Enseñanza Artística e Idiomas.',
+    highlightParagraph: 'Filmes nacionales e internacionales de ficción y no ficción sobre lo rural. Competencia Oficial Nacional y Local con premiación a las mejores obras audiovisuales.',
+    fullDescription: 'En distintos horarios en la Casa de la Cultura y el Salón Libertador. Filmes nacionales e internacionales de ficción y no ficción sobre lo rural. El jurado de la Competencia Oficial Nacional elegirá Mejor Cortometraje y Mejor Dirección, y el de la Competencia Oficial Local seleccionará Mejor Cortometraje, Mejor Dirección, Mejor Actuación, Mejor Guión, Mejor Producción, Mejor Fotografía y Mejor Banda Sonora. Organiza la Municipalidad de Ayacucho, y Escuela Municipal de Enseñanza Artística e Idiomas.',
+    activities: [
+      { time: '14:00 hs', title: 'Proyecciones de la Competencia Oficial Local', description: 'Cortometrajes producidos en la región con temática rural y costumbres camperas.' },
+      { time: '17:30 hs', title: 'Selección Oficial Nacional e Internacional', description: 'Cine de ficción y documentales sobre identidades rurales del país y del mundo.' },
+      { time: '20:30 hs (Domingo)', title: 'Gala de Premiación y Cierre en el Salón Libertador', description: 'Entrega de galardones a Mejor Cortometraje, Dirección, Actuación, Guión, Fotografía y Banda Sonora.' }
+    ],
+    contact: {
+      phone: '+54 2296 454449',
+      email: 'cultura@ayacucho.gob.ar',
+      website: 'https://ayacucho.gob.ar',
+      instagram: '@ayacuchocultura',
+      facebook: 'CulturaAyacucho'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'asadores-cabalgata-villa-ventana-tornquist',
+    name: '10º Cabalgata 7º Concurso de Asadores y 4º Caminata en Villa Ventana',
+    municipality: 'Tornquist',
+    locality: 'Villa Ventana (Tornquist)',
+    region: 'Sierras y Lagunas',
+    address: 'Campo de Prácticas de Villa Ventana, Tornquist, Buenos Aires',
+    coordinates: {
+      lat: -38.0833,
+      lng: -61.9167
+    },
+    datesText: '27 de septiembre',
+    startDate: '2026-09-27',
+    endDate: '2026-09-27',
+    schedule: 'En el Campo de Prácticas de Villa Ventana',
+    duration: '1 jornada serrana y criolla (Domingo 27 de septiembre)',
+    month: 9,
+    category: 'Tradición',
+    isFree: false,
+    ticketInfo: 'Inscripciones a las actividades: cabalgata serrana, $25.000; caminata guiada, $10.000. Consultas e inscripciones al (291) 4235009. 7° Concurso de Asadores: asadores de la región competirán demostrando su destreza y técnica criolla. Servicio de cantina. Organiza la Escuela de Educación Secundaria Agraria N° 1 Tornquist Gato y Mancha.',
+    mainImage: '/images/asadores-villa-ventana.jpg',
+    gallery: [
+      '/images/asadores-villa-ventana.jpg'
+    ],
+    summary: 'En el Campo de Prácticas de Villa Ventana. Una de las citas camperas y tradicionales más esperadas de la Comarca Serrana se llevará a cabo el domingo 27 de septiembre de 2026 en el entorno boscoso y natural de Villa Ventana. Inscripciones a las actividades: cabalgata serrana, $25.000; caminata guiada, $10.000. Consultas e inscripciones al (291) 4235009. 7° Concurso de Asadores: asadores de la región competirán demostrando su destreza y técnica criolla. Servicio de cantina. Organiza la Escuela de Educación Secundaria Agraria N° 1 Tornquist Gato y Mancha.',
+    highlightParagraph: 'Cita campera y tradicional en el entorno boscoso y natural de Villa Ventana: cabalgata serrana, caminata guiada, 7° Concurso de Asadores de la región y servicio de cantina.',
+    fullDescription: 'En el Campo de Prácticas de Villa Ventana. Una de las citas camperas y tradicionales más esperadas de la Comarca Serrana se llevará a cabo el domingo 27 de septiembre de 2026 en el entorno boscoso y natural de Villa Ventana. Inscripciones a las actividades: cabalgata serrana, $25.000; caminata guiada, $10.000. Consultas e inscripciones al (291) 4235009. 7° Concurso de Asadores: asadores de la región competirán demostrando su destreza y técnica criolla. Servicio de cantina. Organiza la Escuela de Educación Secundaria Agraria N° 1 Tornquist Gato y Mancha.',
+    activities: [
+      { time: '09:00 hs', title: 'Partida de la 10º Cabalgata Serrana y 4º Caminata Guiada', description: 'Recorrido por senderos boscosos y las sierras de Villa Ventana (Inscripciones previas).' },
+      { time: '11:30 hs', title: 'Inicio del 7º Concurso de Asadores Criollos', description: 'Asadores de la región demuestran su destreza y técnicas camperas de asado a la cruz y leña.' },
+      { time: '13:00 hs', title: 'Apertura de la Cantina Criolla y Almuerzo', description: 'Venta de porciones de asado, empanadas y delicias camperas de la E.E.S.A. N° 1.' },
+      { time: '15:30 hs', title: 'Premiación de los Mejores Asadores', description: 'Jura, evaluación de puntos de cocción y entrega de premios oficiales.' }
+    ],
+    contact: {
+      phone: '+54 291 4235009',
+      email: 'turismo@tornquist.gob.ar',
+      website: 'https://tornquist.gob.ar',
+      instagram: '@tornquistmunicipio',
+      facebook: 'TurismoTornquist',
+      whatsapp: '+5492914235009'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'pastafrola-la-luisa',
     name: '11º Fiesta Provincial de la Pastafrola',
     municipality: 'Capitán Sarmiento',
@@ -40,9 +301,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@turismocapitansarmiento',
       facebook: 'TurismoCapitanSarmiento'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'galleta-campo-oliden-brandsen',
@@ -83,9 +344,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@turismobrandsen',
       facebook: 'MunicipalidadDeBrandsen'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'expo-rodante-bolivar-urdampilleta',
@@ -126,9 +387,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@turismobolivar',
       facebook: 'TurismoBolivar'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'plantin-floral-moreno',
@@ -170,9 +431,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@morenoprimero',
       facebook: 'MunicipalidadDeMoreno'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'retro-picnic-navarro',
@@ -213,9 +474,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@navarroturismo',
       facebook: 'TurismoNavarro'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'homenaje-al-caballo-vedia-alem',
@@ -258,9 +519,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@municipioleandroalem',
       facebook: 'MunicipalidadDeLeandroNAlem'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'salame-quintero-mercedes',
@@ -490,8 +751,8 @@ export const INITIAL_FESTIVALS: Festival[] = [
     isFeatured: false
   },
   {
-    id: 'inmigrante-berisso',
-    name: '49º Fiesta Provincial del Inmigrante',
+    id: 'inmigrante-desembarco-berisso',
+    name: '49º Fiesta Provincial del Inmigrante - Desembarco',
     municipality: 'Berisso',
     locality: 'Berisso',
     region: 'Delta y Ríos',

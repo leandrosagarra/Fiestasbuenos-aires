@@ -50,7 +50,7 @@ const MainContent: React.FC = () => {
                     <Calendar className="w-5 h-5" />
                   </div>
                   <p className="text-xs sm:text-sm text-stone-700">
-                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Salame Quintero, Asado Criollo, Buñuelo Navarrense, etc.) siguen disponibles en el calendario.
+                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Pastafrola, Galleta de Campo, Plantín Floral, Expo Rodante, Retro Picnic, Caballo, Salame Quintero, etc.) siguen disponibles en el calendario interactivo.
                   </p>
                 </div>
                 <button
