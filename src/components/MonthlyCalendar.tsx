@@ -6,8 +6,8 @@ import { Festival } from '../types';
 
 export const MonthlyCalendar: React.FC = () => {
   const { festivals, setSelectedFestival } = useFestivals();
-  // Default to September (Month 9) or current active month
-  const [selectedMonth, setSelectedMonth] = useState<number>(9);
+  // Default to October (Month 10)
+  const [selectedMonth, setSelectedMonth] = useState<number>(10);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
 
   // Filter festivals for this month
@@ -69,6 +69,9 @@ export const MonthlyCalendar: React.FC = () => {
     ? (festivalsByDay[selectedDay] || [])
     : monthFestivals;
 
+  const sepCount = festivals.filter((f) => f.month === 9).length;
+  const octCount = festivals.filter((f) => f.month === 10).length;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       
@@ -83,38 +86,64 @@ export const MonthlyCalendar: React.FC = () => {
             Calendario Mensual de Fiestas
           </h2>
           <p className="text-sm text-stone-600 mt-1 max-w-xl">
-            Explorá las celebraciones por fecha. Hacé clic en cualquier día marcado para filtrar las fiestas programadas.
+            Explorá las celebraciones por fecha. Hacé clic en cualquier día marcado o cambiá entre meses para ver todas las fiestas programadas y anteriores.
           </p>
         </div>
 
-        {/* Month Selector Controls */}
-        <div className="flex items-center gap-3 bg-white p-1.5 rounded-2xl border border-[#ded5c5] shadow-xs self-start md:self-auto">
-          <button
-            id="cal-prev-month"
-            onClick={handlePrevMonth}
-            className="p-2 rounded-xl text-stone-600 hover:text-sky-900 hover:bg-sky-50 transition-colors"
-            title="Mes anterior"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-
-          <div className="px-4 py-1 text-center min-w-[140px]">
-            <span className="text-base font-serif font-bold text-stone-900 block">
-              {MONTH_NAMES[selectedMonth - 1]}
-            </span>
-            <span className="text-[11px] font-semibold text-sky-800">
-              {monthFestivals.length} {monthFestivals.length === 1 ? 'fiesta' : 'fiestas'} en el mes
-            </span>
+        <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+          {/* Quick buttons for active months */}
+          <div className="flex items-center gap-1.5 bg-stone-100 p-1.5 rounded-2xl border border-[#ded5c5]">
+            <button
+              onClick={() => { setSelectedMonth(9); setSelectedDay(null); }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer ${
+                selectedMonth === 9
+                  ? 'bg-sky-700 text-white shadow-2xs'
+                  : 'text-stone-700 hover:bg-white'
+              }`}
+            >
+              Septiembre ({sepCount})
+            </button>
+            <button
+              onClick={() => { setSelectedMonth(10); setSelectedDay(null); }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer ${
+                selectedMonth === 10
+                  ? 'bg-sky-700 text-white shadow-2xs'
+                  : 'text-stone-700 hover:bg-white'
+              }`}
+            >
+              Octubre ({octCount})
+            </button>
           </div>
 
-          <button
-            id="cal-next-month"
-            onClick={handleNextMonth}
-            className="p-2 rounded-xl text-stone-600 hover:text-sky-900 hover:bg-sky-50 transition-colors"
-            title="Mes siguiente"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
+          {/* Month Selector Controls */}
+          <div className="flex items-center gap-3 bg-white p-1.5 rounded-2xl border border-[#ded5c5] shadow-xs">
+            <button
+              id="cal-prev-month"
+              onClick={handlePrevMonth}
+              className="p-2 rounded-xl text-stone-600 hover:text-sky-900 hover:bg-sky-50 transition-colors"
+              title="Mes anterior"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            <div className="px-4 py-1 text-center min-w-[140px]">
+              <span className="text-base font-serif font-bold text-stone-900 block">
+                {MONTH_NAMES[selectedMonth - 1]}
+              </span>
+              <span className="text-[11px] font-semibold text-sky-800">
+                {monthFestivals.length} {monthFestivals.length === 1 ? 'fiesta' : 'fiestas'} en el mes
+              </span>
+            </div>
+
+            <button
+              id="cal-next-month"
+              onClick={handleNextMonth}
+              className="p-2 rounded-xl text-stone-600 hover:text-sky-900 hover:bg-sky-50 transition-colors"
+              title="Mes siguiente"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
         </div>
       </div>
 

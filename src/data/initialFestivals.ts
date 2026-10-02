@@ -2,6 +2,265 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'fiesta-nacional-de-la-flor-escobar',
+    name: '63º Fiesta Nacional de la Flor',
+    municipality: 'Escobar',
+    locality: 'Belén de Escobar',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Predio Ciudad Floral, Mateo Gelves 1051, Belén de Escobar, Buenos Aires',
+    coordinates: {
+      lat: -34.3467,
+      lng: -58.7919
+    },
+    datesText: '3 al 12 de octubre',
+    startDate: '2026-10-03',
+    endDate: '2026-10-12',
+    schedule: 'Sábado 3 al lunes 12, de 9:00 a 19:00; en el predio Ciudad Floral, Mateo Gelves 1051. Sábados y domingos se extenderá hasta las 20 horas.',
+    duration: '10 jornadas (Sábado 3 al Lunes 12 de octubre)',
+    month: 10,
+    category: 'Producción Local',
+    isFree: false,
+    ticketInfo: 'Entrada arancelada. Mayores de 10 años, $15.000; jubilados $12.000; residentes del Partido, $12.000; ingreso gratuito para jubilados residentes de Escobar y personas con discapacidad (con CUD); y menores de 10 años gratis. Organizan la Asociación Civil Fiesta Nacional de la Flor y la Municipalidad de Escobar.',
+    mainImage: '/images/flor.jpg',
+    gallery: [
+      '/images/flor.jpg'
+    ],
+    summary: 'Sábado 3 al lunes 12, de 9:00 a 19:00; en el predio Ciudad Floral, Mateo Gelves 1051. Sábados y domingos hasta las 20 horas. Exposiciones de la producción florihorticultura local, espectáculos musicales y actividades culturales. Sábado 10, a las 19:00, desfile de carrozas. Domingo 11, a las 16:00, elección de Embajadores. La flor representante de la 63° edición es la Alstroemeria.',
+    highlightParagraph: 'Exposiciones de florihorticultura local, desfile de carrozas, elección de Embajadores y shows culturales. La flor insignia de esta 63° edición es la Alstroemeria.',
+    fullDescription: 'Sábado 3 al lunes 12, de 9:00 a 19:00; en el predio Ciudad Floral, Mateo Gelves 1051. Sábados y domingos se extenderá hasta las 20 horas. Exposiciones de la producción florihorticultura local, espectáculos musicales y actividades culturales. Sábado 10, a las 19:00, desfile de carrozas. Domingo 11, a las 16:00, elección de Embajadores de la Fiesta. Este año la flor que representará a la 63° edición de la Fiesta es la Alstroemeria que simboliza la amistad, la lealtad, el afecto y el apoyo mutuo. Entrada arancelada. Mayores de 10 años, $15.000; jubilados $12.000; residentes del Partido, $12.000; ingreso gratuito para jubilados residentes de Escobar y personas con discapacidad (con CUD); y menores de 10 años gratis. Organizan la Asociación Civil Fiesta Nacional de la Flor y la Municipalidad de Escobar.',
+    activities: [
+      { time: '09:00 a 19:00 hs', title: 'Apertura del Predio Ciudad Floral', description: 'Pabellones de florihorticultura, viveros, paisajismo y paseo gastronómico (sábados y domingos hasta las 20:00 hs).' },
+      { time: 'Sábado 10 - 19:00 hs', title: 'Tradicional Desfile de Carrozas Florales', description: 'Recorrido de carrozas ornamentadas con flores naturales por Belén de Escobar.' },
+      { time: 'Domingo 11 - 16:00 hs', title: 'Elección de Embajadores de la Fiesta', description: 'Ceremonia oficial y premiación en homenaje a la flor insignia Alstroemeria.' }
+    ],
+    contact: {
+      phone: '+54 348 4420596',
+      email: 'info@fiestadelaflor.org.ar',
+      website: 'https://escobar.gob.ar',
+      instagram: '@fiestadelaflor',
+      facebook: 'FiestaNacionalDeLaFlor'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-nacional-cosechero-morse-junin',
+    name: '29º Fiesta Nacional del Cosechero',
+    municipality: 'Junín',
+    locality: 'Morse (Junín)',
+    region: 'Oeste y Producción',
+    address: 'Diferentes espacios físicos de Morse, Junín, Buenos Aires',
+    coordinates: {
+      lat: -34.7647,
+      lng: -60.8489
+    },
+    datesText: '2 al 4 de octubre',
+    startDate: '2026-10-02',
+    endDate: '2026-10-04',
+    schedule: 'Viernes 2, a las 18:00; sábado 3, desde las 8:30; y domingo 4, a partir de las 10:30, en diferentes espacios físicos de Morse',
+    duration: '3 jornadas (Viernes 2 al Domingo 4 de octubre)',
+    month: 10,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Actividades diurnas y peñas con entrada gratuita. Velada de gala del sábado 21:30 y fogón de cierre del domingo 21:00 con entradas anticipadas. Organizan Asociación Civil Morse a Toda Máquina, Delegación de Morse y Municipalidad de Junín.',
+    mainImage: '/images/cosechero.jpg',
+    gallery: [
+      '/images/cosechero.jpg'
+    ],
+    summary: 'Viernes 2, a las 18:00; sábado 3, desde las 8:30; y domingo 4, a partir de las 10:30, en Morse. Encendido de fogones, prueba de riendas, exposición, agrupaciones de baile, desfile de instituciones y maquinarias, y espectáculos con Los Gauchos de Hoy, Los Bagualeros, El Chacarero Cantor, Toto Hidalgo, Suena Mi Cumbia y más.',
+    highlightParagraph: 'Homenaje al trabajo rural en Morse con desfile de maquinarias, prueba de riendas, fogones, peña oficial y grandes shows folclóricos y bailables.',
+    fullDescription: 'Viernes 2, a las 18:00; sábado 3, desde las 8:30; y domingo 4, a partir de las 10:30, en diferentes espacios físicos de Morse. Viernes, encendido de fogones y brindis. Espectáculos con Los Gauchos de Hoy, Los Bagualeros y Pablo Vertullo. Entrada gratuita. Sábado, prueba de riendas; apertura oficial de la exposición; encuentro de agrupaciones de baile regionales; números musicales con Karen Carena, Walter Vallejo y los changos santiagueños, y El Chacarero Cantor; y Peña oficial. Entrada gratuita. A las 21:30, velada de gala y elección de la Representante Cultural con la presentación de Toto Hidalgo y Jordana Battaglia; entradas anticipadas. Domingo, Exposición de autos, motos y otras atracciones; espectáculos con La Otra Junta; Encuentro regional de agrupaciones de danzas; desfile de instituciones y maquinarias; shows musical con Vicente Mora y Media Naranja. A las 21:00, fogón de cierre y la presentación de Camperito y Reservado, Los Gurises y Suena Mi Cumbia. Entrada anticipada. Organizan la Asociación Civil Morse a Toda Máquina, la Delegación Municipal de Morse con el auspicio de la Municipalidad de Junín.',
+    activities: [
+      { time: 'Viernes 18:00 hs', title: 'Encendido de Fogones, Brindis y Apertura', description: 'Espectáculos con Los Gauchos de Hoy, Los Bagualeros y Pablo Vertullo (Entrada gratuita).' },
+      { time: 'Sábado 08:30 hs', title: 'Prueba de Riendas, Exposición y Peña Oficial', description: 'Encuentro de danzas y shows de Karen Carena, Walter Vallejo y El Chacarero Cantor.' },
+      { time: 'Sábado 21:30 hs', title: 'Velada de Gala y Elección de Representante Cultural', description: 'Presentación estelar de Toto Hidalgo y Jordana Battaglia (Entradas anticipadas).' },
+      { time: 'Domingo 10:30 hs', title: 'Desfile de Instituciones y Maquinarias Agrícolas', description: 'Exposición de autos y motos, La Otra Junta, Vicente Mora y Media Naranja.' },
+      { time: 'Domingo 21:00 hs', title: 'Fogón de Cierre y Baile Popular', description: 'Shows de Camperito y Reservado, Los Gurises y Suena Mi Cumbia.' }
+    ],
+    contact: {
+      phone: '+54 236 4407900',
+      email: 'turismo@junin.gob.ar',
+      website: 'https://junin.gob.ar',
+      instagram: '@fiestanacionaldelcosechero',
+      facebook: 'FiestaNacionalDelCosecheroMorse'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'festival-cerveceros-mercedinos',
+    name: '8º Festival de Cerveceros Mercedinos',
+    municipality: 'Mercedes',
+    locality: 'Mercedes',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Parque Municipal Independencia, Mercedes, Buenos Aires',
+    coordinates: {
+      lat: -34.6548,
+      lng: -59.4312
+    },
+    datesText: '3 y 4 de octubre',
+    startDate: '2026-10-03',
+    endDate: '2026-10-04',
+    schedule: 'Sábado 3, desde las 17:00; y domingo 4, a partir de las 12:00, en el Parque Municipal Independencia',
+    duration: '2 jornadas (Sábado 3 y Domingo 4 de octubre)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Organizado por los Cerveceros Mercedinos con el acompañamiento de la Municipalidad de Mercedes.',
+    mainImage: '/images/cerveza.jpg',
+    gallery: [
+      '/images/cerveza.jpg'
+    ],
+    summary: 'Sábado 3, desde las 17:00; y domingo 4, a partir de las 12:00, en el Parque Municipal Independencia. Música en vivo, DJs, espectáculos musicales con Grupo Play y Amar Azul; y el domingo, shows con artistas locales y banda tributo a Los Redonditos de Ricota. Juegos, cerveza artesanal de productores locales, gastronomía y food truck.',
+    highlightParagraph: 'Cerveza artesanal de productores locales, patio de food trucks, DJs y recitales en vivo con Grupo Play, Amar Azul y tributo a Los Redonditos de Ricota.',
+    fullDescription: 'Sábado 3, desde las 17:00; y domingo 4, a partir de las 12:00, en el Parque Municipal Independencia. Música en vivo, DJs, espectáculos musicales con la presentación de Grupo Play y Amar Azul; y el domingo, shows con artistas locales y banda tributo a Los Redonditos de Ricota. Juegos, cerveza artesanal de productores locales, gastronomía y food truck. Organizado por los Cerveceros Mercedinos con el acompañamiento de la Municipalidad de Mercedes.',
+    activities: [
+      { time: 'Sábado 17:00 hs', title: 'Apertura del Patio Cervecero y Food Trucks', description: 'Degustación de cervezas artesanales mercedinas, DJs en vivo y sector de juegos.' },
+      { time: 'Sábado 21:00 hs', title: 'Shows de Grupo Play y Amar Azul', description: 'Gran fiesta musical al aire libre en el Parque Municipal Independencia.' },
+      { time: 'Domingo 12:00 hs', title: 'Jornada Familiar, Bandas Locales y Tributo Ricotero', description: 'Almuerzo en el parque, artistas locales y cierre con banda tributo a Los Redonditos de Ricota.' }
+    ],
+    contact: {
+      phone: '+54 2324 430355',
+      email: 'turismo@mercedes.gob.ar',
+      website: 'https://nw.mercedes.gob.ar/turismo',
+      instagram: '@turismomercedesoficial',
+      facebook: 'TurismoMercedesBA'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'festival-musica-italiana-la-plata',
+    name: '9º Festival della Musica Italiana Di La Plata',
+    municipality: 'La Plata',
+    locality: 'La Plata',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Teatro Metro, calle 4 entre 51 y 53, La Plata, Buenos Aires',
+    coordinates: {
+      lat: -34.9165,
+      lng: -57.9462
+    },
+    datesText: '3 de octubre',
+    startDate: '2026-10-03',
+    endDate: '2026-10-03',
+    schedule: 'A las 21:00, en el Teatro Metro (calle 4 entre 51 y 53)',
+    duration: '1 velada de gala (Sábado 3 de octubre)',
+    month: 10,
+    category: 'Música',
+    isFree: false,
+    ticketInfo: 'Función en el Teatro Metro (calle 4 entre 51 y 53). Organiza la Agencia de Coordinación Territorial Italia Argentina (ACTIA) con el acompañamiento del Municipio de La Plata.',
+    mainImage: '/images/italia.jpg',
+    gallery: [
+      '/images/italia.jpg'
+    ],
+    summary: 'A las 21:00, en el Teatro Metro (calle 4 entre 51 y 53). Evento emblemático con el objetivo de fomentar el intercambio cultural y fortalecer los lazos entre Italia y Argentina dentro del marco del Corredor Productivo Turístico Cultural Italia Argentina. Organiza ACTIA con el acompañamiento del Municipio de La Plata.',
+    highlightParagraph: 'Gala lírica y melódica en el Teatro Metro para fomentar el intercambio cultural y fortalecer los lazos históricos entre Italia y Argentina.',
+    fullDescription: 'A las 21:00, en el Teatro Metro (calle 4 entre 51 y 53). Evento emblemático con el objetivo de fomentar el intercambio cultural y fortalecer los lazos entre Italia y Argentina dentro del marco del Corredor Productivo Turístico Cultural Italia Argentina. Organiza la Agencia de Coordinación Territorial Italia Argentina (ACTIA) con el acompañamiento del Municipio de La Plata.',
+    activities: [
+      { time: '21:00 hs', title: 'Apertura de Gala en el Teatro Metro', description: 'Recepción oficial en el marco del Corredor Productivo Turístico Cultural Italia Argentina.' },
+      { time: '21:30 hs', title: 'Concierto del 9º Festival della Musica Italiana', description: 'Interpretaciones sinfónicas y vocales de grandes clásicos y repertorio contemporáneo italiano.' }
+    ],
+    contact: {
+      phone: '+54 221 4295300',
+      email: 'cultura@laplata.gob.ar',
+      website: 'https://festivaldellamusicaitaliana.com',
+      instagram: '@festivalmusicaitaliana',
+      facebook: 'FestivalDellaMusicaItalianaLaPlata'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'expotan-tandil-54',
+    name: '54º ExpoTan',
+    municipality: 'Tandil',
+    locality: 'Tandil',
+    region: 'Sierras y Lagunas',
+    address: 'Sociedad Rural de Tandil, Tandil, Buenos Aires',
+    coordinates: {
+      lat: -37.3117,
+      lng: -59.1567
+    },
+    datesText: '2 al 4 de octubre',
+    startDate: '2026-10-02',
+    endDate: '2026-10-04',
+    schedule: 'En distintos horarios en la Sociedad Rural de Tandil. Apertura viernes a las 13:00',
+    duration: '3 jornadas (Viernes 2 al Domingo 4 de octubre)',
+    month: 10,
+    category: 'Producción Local',
+    isFree: true,
+    ticketInfo: 'Organiza la Sociedad Rural de Tandil con el acompañamiento de la Municipalidad de Tandil y prestadores privados.',
+    mainImage: '/images/pan.jpg',
+    gallery: [
+      '/images/pan.jpg'
+    ],
+    summary: 'Del 2 al 4 de octubre, en distintos horarios en la Sociedad Rural de Tandil. Capacitaciones y charlas sobre ganadería, lechería, ovinos, agricultura, tecnología y maquinarias. Apertura viernes a las 13:00. También habrá emprendedores, stands gastronómicos y shows musicales.',
+    highlightParagraph: 'Encuentro agroindustrial, comercial y gastronómico en la Sociedad Rural de Tandil con charlas técnicas, maquinarias, emprendedores y música en vivo.',
+    fullDescription: 'Del 2 al 4 de octubre, en distintos horarios en la Sociedad Rural de Tandil. Capacitaciones y charlas sobre ganadería, lechería, ovinos, agricultura, tecnología y maquinarias. Apertura viernes a las 13:00. También habrá emprendedores, stands gastronómicos y shows musicales. Organiza la Sociedad Rural de Tandil con el acompañamiento de la Municipalidad de Tandil y prestadores privados.',
+    activities: [
+      { time: 'Viernes 13:00 hs', title: 'Apertura Oficial de la 54º ExpoTan', description: 'Inauguración del predio ferial en la Sociedad Rural de Tandil.' },
+      { time: 'Sábado y Domingo', title: 'Ciclo de Capacitaciones y Charlas Agropecuarias', description: 'Jornadas técnicas sobre ganadería, lechería, ovinos, agricultura, tecnología y maquinarias.' },
+      { time: 'Tarde / Noche', title: 'Paseo de Emprendedores, Gastronomía y Shows Musicales', description: 'Stands regionales, degustaciones gastronómicas y espectáculos artísticos en vivo.' }
+    ],
+    contact: {
+      phone: '+54 249 4422274',
+      email: 'info@expotan.com.ar',
+      website: 'https://expotan.com.ar',
+      instagram: '@expotanoficial',
+      facebook: 'ExpoTanTandil'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-nacional-brotola-villa-gesell',
+    name: '27º Fiesta Nacional de la Brótola',
+    municipality: 'Villa Gesell',
+    locality: 'Villa Gesell',
+    region: 'Costa Atlántica',
+    address: 'Costa geselina desde el Paseo 105 hasta el 127 y del Paseo 130 al 140, Villa Gesell, Buenos Aires',
+    coordinates: {
+      lat: -37.2639,
+      lng: -56.9731
+    },
+    datesText: '4 de octubre',
+    startDate: '2026-10-04',
+    endDate: '2026-10-04',
+    schedule: 'De 10:00 a 14:00, desde el Paseo 105 hasta la 127',
+    duration: '1 jornada de pesca deportiva (Domingo 4 de octubre)',
+    month: 10,
+    category: 'Deporte',
+    isFree: false,
+    ticketInfo: 'Habrá 25 millones de pesos al ganador y más de 55 millones de pesos en premios. Consultas e inscripciones por WhatsApp al (2255) 629258. Organiza el Club de Pesca, Caza y Náutica con el acompañamiento de la Municipalidad de Villa Gesell.',
+    mainImage: '/images/brotola.jfif',
+    gallery: [
+      '/images/brotola.jfif'
+    ],
+    summary: 'De 10:00 a 14:00, desde el Paseo 105 hasta la 127. El concurso a la brótola de mayor peso será en la costa geselina desde el Paseo 105 hasta la 127 (sin modalidad péndulo) y desde el Paseo 130 hasta la 140 (zona permitida con péndulo). Habrá 25 millones de pesos al ganador y más de 55 millones de pesos en premios.',
+    highlightParagraph: 'Gran torneo de pesca costera en Villa Gesell en busca de la brótola de mayor peso, con más de 55 millones de pesos en premios y 25 millones al primer puesto.',
+    fullDescription: 'De 10:00 a 14:00, desde el Paseo 105 hasta la 127. El concurso a la brótola de mayor peso será en la costa geselina desde el Paseo 105 hasta la 127, zona no permitida para el lanzamiento modalidad péndulo, y desde el Paseo 130 hasta la 140, zona permitida de lanzamiento con péndulo. Habrá 25 millones de pesos al ganador y más de 55 millones de pesos en premios. Organiza el Club de Pesca, Caza y Náutica con el acompañamiento de la Municipalidad de Villa Gesell. Whatsapp (2255) 629258.',
+    activities: [
+      { time: '10:00 hs', title: 'Inicio del Concurso de Pesca a la Brótola de Mayor Peso', description: 'Cancha de pesca en Paseo 105 a 127 (lanzamiento convencional) y Paseo 130 a 140 (lanzamiento péndulo).' },
+      { time: '14:00 hs', title: 'Finalización del Torneo, Fiscalización y Premiación', description: 'Pesaje oficial y entrega de más de $55 millones en premios ($25 millones al ganador).' }
+    ],
+    contact: {
+      phone: '+54 2255 629258',
+      email: 'turismo@gesell.gob.ar',
+      website: 'https://gesell.tur.ar',
+      instagram: '@clubdepescavillagesell',
+      facebook: 'ClubDePescaVillaGesell',
+      whatsapp: '+5492255629258'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'inmigrante-berisso-colectividades',
     name: '49º Fiesta Provincial del Inmigrante',
     municipality: 'Berisso',
@@ -40,9 +299,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@fiestadelinmigranteberisso',
       facebook: 'FiestaProvincialDelInmigrante'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'mate-reposera-arrecifes',
@@ -83,9 +342,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@municipalidaddearrecifes',
       facebook: 'MunicipalidadDeArrecifes'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'sabor-aleman-daireaux-arboledas',
@@ -127,9 +386,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@daireauxmunicipio',
       facebook: 'MunicipalidadDeDaireaux'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'san-pedro-country-festival',
@@ -170,9 +429,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@sanpedrocountryfestival',
       facebook: 'SanPedroCountryMusicFestival'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'cine-rural-ayacucho',
@@ -213,9 +472,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@ayacuchocultura',
       facebook: 'CulturaAyacucho'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'asadores-cabalgata-villa-ventana-tornquist',
@@ -258,9 +517,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       facebook: 'TurismoTornquist',
       whatsapp: '+5492914235009'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'pastafrola-la-luisa',
