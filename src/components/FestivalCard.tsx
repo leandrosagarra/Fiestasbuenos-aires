@@ -33,10 +33,17 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({ festival, isLarge = 
 
         {/* Top Badges */}
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-sky-600 text-white shadow-xs">
-            <Tag className="w-3 h-3" />
-            {festival.category}
-          </span>
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-sky-600 text-white shadow-xs">
+              <Tag className="w-3 h-3" />
+              {festival.category}
+            </span>
+            {festival.name.toUpperCase().includes('SUSPENDIDA') && (
+              <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-rose-600 text-white shadow-xs">
+                SUSPENDIDA
+              </span>
+            )}
+          </div>
 
           <span
             className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold backdrop-blur-md shadow-xs ${

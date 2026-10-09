@@ -50,7 +50,7 @@ const MainContent: React.FC = () => {
                     <Calendar className="w-5 h-5" />
                   </div>
                   <p className="text-xs sm:text-sm text-stone-700">
-                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones de septiembre (Inmigrante en Berisso, Mate y Reposera, Sabor Alemán, San Pedro Country, Pastafrola, Galleta de Campo, Salame Quintero, etc.) siguen disponibles en el calendario mensual.
+                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Fiesta Nacional de la Flor, Cosechero, Cerveceros Mercedinos, Música Italiana, Expo Pan, Brótola, Inmigrante, Mate y Reposera, etc.) siguen disponibles en el calendario mensual.
                   </p>
                 </div>
                 <button

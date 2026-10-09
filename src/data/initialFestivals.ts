@@ -2,6 +2,267 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'fiesta-nacional-postre-balcarce',
+    name: '22º Fiesta Nacional del Postre (SUSPENDIDA)',
+    municipality: 'Balcarce',
+    locality: 'Balcarce',
+    region: 'Sierras y Lagunas',
+    address: 'Predio de la Sociedad Rural de Balcarce, Balcarce, Buenos Aires',
+    coordinates: {
+      lat: -37.8475,
+      lng: -58.2553
+    },
+    datesText: '9 al 12 de octubre',
+    startDate: '2026-10-09',
+    endDate: '2026-10-12',
+    schedule: 'Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce',
+    duration: '4 jornadas (9 al 12 de octubre) - SUSPENDIDA',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'EVENTO SUSPENDIDO OFICIALMENTE por la Municipalidad de Balcarce.',
+    mainImage: '/images/postre.jpg',
+    gallery: [
+      '/images/postre.jpg'
+    ],
+    summary: '[AVISO: EDICIÓN SUSPENDIDA] Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce. Con la presencia de chefs reconocidos: Lulo Kazimirczyk de @lulospatisserie, Edgardo Ríos de @mambrunense, Rocío Espinillo @rocioespinillo, y Valentín Galdo River de @chefsale__. Elaboración del postre más largo del mundo, degustaciones, pastelería artesanal, clases y demostraciones, emprendedores y productores, espectáculos en vivo. Organiza la Municipalidad de Balcarce.',
+    highlightParagraph: 'ATENCIÓN: Evento suspendido oficialmente. Contaba con la elaboración del postre más largo del mundo, maestros pasteleros invitados, degustaciones, clases magistrales y feria de productores.',
+    fullDescription: 'IMPORTANTE: La 22º Fiesta Nacional del Postre ha sido suspendida para esta fecha por la organización municipal. Programación prevista: Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce. Con la presencia de chefs reconocidos: Lulo Kazimirczyk de @lulospatisserie, Edgardo Ríos de @mambrunense, Rocío Espinillo @rocioespinillo, y Valentín Galdo River de @chefsale__. Elaboración del postre más largo del mundo, degustaciones, pastelería artesanal, clases y demostraciones, emprendedores y productores, espectáculos en vivo. Organiza la Municipalidad de Balcarce.',
+    activities: [
+      { time: 'Aviso Oficial', title: 'Edición Suspendida Oficialmente', description: 'La edición 2026 ha sido suspendida por la organización municipal de Balcarce.' },
+      { time: '12:30 hs', title: 'Clases Magistrales de Pastelería (Previsto)', description: 'Masterclasses con Lulo Kazimirczyk, Edgardo Ríos, Rocío Espinillo y Valentín Galdo River.' },
+      { time: 'Tarde', title: 'Elaboración del Postre Más Largo del Mundo (Previsto)', description: 'Elaboración comunitaria récord del postre Balcarce con capas de merengue, crema y dulce de leche.' }
+    ],
+    contact: {
+      phone: '+54 2266 422059',
+      email: 'turismo@balcarce.gob.ar',
+      website: 'https://balcarce.gob.ar',
+      instagram: '@fiestanacionaldelpostre',
+      facebook: 'FiestaNacionalDelPostreBalcarce'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-nacional-caballo-bragado',
+    name: '55º Fiesta Nacional del Caballo',
+    municipality: 'Bragado',
+    locality: 'Bragado',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Museo Municipal, Salón Blanco, Campo Don Figuerón y Parque Lacunario, Bragado, Buenos Aires',
+    coordinates: {
+      lat: -35.1189,
+      lng: -60.4897
+    },
+    datesText: '7 al 11 de octubre',
+    startDate: '2026-10-07',
+    endDate: '2026-10-11',
+    schedule: 'Miércoles 7 al domingo 11 de octubre, en distintos horarios y espacios de la ciudad',
+    duration: '5 jornadas tradicionales (7 al 11 de octubre)',
+    month: 10,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita a paseos, desfiles y escenarios principales. Organiza la Comisión de la Fiesta Nacional del Caballo con el apoyo de la Municipalidad de Bragado.',
+    mainImage: '/images/caballo.jpg',
+    gallery: [
+      '/images/caballo.jpg'
+    ],
+    summary: 'Miércoles 7 al domingo 11 de octubre en distintos espacios de Bragado. Miércoles: tributo a Molina Campos en el Museo; jueves: danzas y canto surero; viernes: fogones, paseo comercial y escenario mayor; sábado: destrezas en Don Figuerón, danzas y Campedrinos; domingo: paseo criollo, destrezas en el Parque Lacunario y cierre artístico.',
+    highlightParagraph: 'Tributo a Molina Campos, encendido de fogones, aparte campero en Don Figuerón, desfile criollo tradicional, destrezas ecuestres en el Parque Lacunario y recital estelar de Campedrinos.',
+    fullDescription: 'Miércoles 7 al domingo 11 de octubre en distintos horarios y espacios de la ciudad de Bragado. Miércoles, a las 15:00, tributo a Molina Campos en el Museo Municipal; jueves a las 20:00, danzas y canto surero en el Salón Blanco de la Municipalidad; viernes 9, a partir de las 18:30, encendido de fogones, apertura del paseo comercial y muestras de arte; a las 21:30, apertura del escenario mayor; sábado, a las 10:00 en el campo de destrezas Don Figuerón, aparte campero, danzas tradicionales, y desde las 21:00, espectáculos artísticos en el escenario mayor, con cierre a cargo de Campedrinos. Domingo, a las 10:00, baile tradicional de peñas locales, paseo criollo y almuerzo; a las 14:00, en el Parque Lacunario destrezas ecuestres, y a las 21:00, presentaciones artísticas. Organiza la Comisión de la Fiesta Nacional del Caballo con el apoyo de la Municipalidad de Bragado.',
+    activities: [
+      { time: 'Miércoles 15:00 hs', title: 'Tributo a Molina Campos', description: 'Homenaje artístico en el Museo Municipal de Bragado.' },
+      { time: 'Jueves 20:00 hs', title: 'Danzas y Canto Surero', description: 'Gala tradicionalista en el Salón Blanco de la Municipalidad.' },
+      { time: 'Viernes 18:30 hs', title: 'Fogones Criollos y Escenario Mayor', description: 'Apertura del paseo comercial, muestras de arte y música en vivo a las 21:30 hs.' },
+      { time: 'Sábado 10:00 hs', title: 'Aparte Campero y Recital de Campedrinos', description: 'Destrezas en el campo Don Figuerón, danzas y gran cierre nocturno con Campedrinos en el escenario mayor.' },
+      { time: 'Domingo 10:00 hs', title: 'Gran Paseo Criollo y Destrezas en Parque Lacunario', description: 'Desfile tradicionalista de peñas, almuerzo criollo, destrezas ecuestres a las 14:00 y espectáculos finales a las 21:00 hs.' }
+    ],
+    contact: {
+      phone: '+54 2342 422255',
+      email: 'cultura@bragado.gob.ar',
+      website: 'https://bragado.gob.ar',
+      instagram: '@fiestanacionaldelcaballo',
+      facebook: 'FiestaNacionalDelCaballoBragado'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-nacional-corvina-negra-la-costa',
+    name: '60º Fiesta Nacional Corvina Negra',
+    municipality: 'La Costa',
+    locality: 'San Clemente del Tuyú',
+    region: 'Costa Atlántica',
+    address: 'Plaza Pereyra y Playa Norte, San Clemente del Tuyú, Partido de La Costa, Buenos Aires',
+    coordinates: {
+      lat: -36.3569,
+      lng: -56.7214
+    },
+    datesText: '9 al 12 de octubre',
+    startDate: '2026-10-09',
+    endDate: '2026-10-12',
+    schedule: 'Desde las 14:00 hasta las 00:00 en Plaza Pereyra. Domingo torneo de pesca desde las 9:00 en Playa Norte',
+    duration: '4 jornadas costeras (9 al 12 de octubre)',
+    month: 10,
+    category: 'Cultura Popular',
+    isFree: true,
+    ticketInfo: 'Entrada gratuita en Plaza Pereyra. Inscripciones al torneo de pesca en Club Social de Pesca y Náutica con acompañamiento de la Municipalidad de La Costa.',
+    mainImage: '/images/corvina.jpg',
+    gallery: [
+      '/images/corvina.jpg'
+    ],
+    summary: 'En distintos horarios y espacios de San Clemente del Tuyú. Paseo gastronómico, kermés, feria de artesanías, emprendimientos, desfile institucional y shows musicales desde las 14:00 hasta las 00:00 en la Plaza Pereyra con entrada gratuita. El domingo, emblemático torneo de pesca de la corvina negra a partir de las 9:00 desde Playa Norte.',
+    highlightParagraph: 'Edición aniversario N° 60 en San Clemente del Tuyú: shows musicales y feria en Plaza Pereyra (14 a 00 hs), desfile institucional y el gran torneo de pesca de corvina negra en Playa Norte.',
+    fullDescription: 'En distintos horarios y espacios de San Clemente del Tuyú, Partido de La Costa. Paseo gastronómico, kermes, feria de artesanías, emprendimientos, desfile institucional y shows musicales desde las 14:00 hasta las 00:00 en la plaza Pereyra. Entrada gratuita. El domingo, torneo de pesca a partir de las 9:00 desde la playa norte. Organiza el Club Social de Pesca y Naútica con el acompañamiento de la Municipalidad de La Costa.',
+    activities: [
+      { time: '14:00 a 00:00 hs', title: 'Paseo Gastronómico y Shows en Plaza Pereyra', description: 'Kermés familiar, feria de artesanos, puestos gastronómicos y espectáculos musicales continuos (Entrada gratuita).' },
+      { time: 'Sábado 17:00 hs', title: 'Desfile Institucional por San Clemente', description: 'Paseo de delegaciones, carrozas e instituciones representativas de la comunidad.' },
+      { time: 'Domingo 09:00 hs', title: '60º Torneo Nacional de Pesca Corvina Negra', description: 'Histórico concurso de pesca deportiva de costa en Playa Norte con importantes premios.' }
+    ],
+    contact: {
+      phone: '+54 2246 433096',
+      email: 'turismo@lacosta.gob.ar',
+      website: 'https://lacosta.gob.ar',
+      instagram: '@fiestadelacorvinanegra',
+      facebook: 'FiestaNacionalCorvinaNegra'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'encuentro-nacional-artesanas-artesanos-bahia-blanca',
+    name: '35º Encuentro Nacional de Artesanas y Artesanos',
+    municipality: 'Bahía Blanca',
+    locality: 'Bahía Blanca',
+    region: 'Sierras y Lagunas',
+    address: 'Plaza Rivadavia, Bahía Blanca, Buenos Aires',
+    coordinates: {
+      lat: -38.7196,
+      lng: -62.2724
+    },
+    datesText: '8 al 12 de octubre',
+    startDate: '2026-10-08',
+    endDate: '2026-10-12',
+    schedule: 'A partir de las 10:00, en la Plaza Rivadavia',
+    duration: '5 jornadas (8 al 12 de octubre)',
+    month: 10,
+    category: 'Artesanía',
+    isFree: true,
+    ticketInfo: 'Acceso libre y gratuito. Organizan los artesanos independientes locales con el acompañamiento del Municipio de Bahía Blanca.',
+    mainImage: '/images/artesanos.jpg',
+    gallery: [
+      '/images/artesanos.jpg'
+    ],
+    summary: 'A partir de las 10:00, en la Plaza Rivadavia de Bahía Blanca. Con más de 400 puestos de artesanos y artesanas de todo el país, performances en vivo, concursos, reconocimientos y premiaciones. Organizan los artesanos independientes locales con el acompañamiento del Municipio de Bahía Blanca.',
+    highlightParagraph: 'Más de 400 puestos de maestros artesanos de toda la Argentina en la Plaza Rivadavia, con técnicas ancestrales, performances en vivo, concursos y distinciones.',
+    fullDescription: 'A partir de las 10:00, en la Plaza Rivadavia. Con más de 400 puestos de artesanos y artesanas de todo el país, performances en vivo, concursos, reconocimientos y premiaciones. Organizan los artesanos independientes locales con el acompañamiento del Municipio de Bahía Blanca.',
+    activities: [
+      { time: '10:00 hs', title: 'Apertura de la Gran Feria de Artesanías', description: 'Más de 400 puestos con orfebrería, platería, cerámica, madera, cueros, tejidos y vitrofusión en Plaza Rivadavia.' },
+      { time: 'Tarde', title: 'Performances y Demostraciones en Vivo', description: 'Talleres abiertos al público con maestros artesanos moldeando y forjando en directo.' },
+      { time: 'Lunes 18:00 hs', title: 'Gala de Reconocimientos y Premiaciones', description: 'Premiación oficial a las mejores piezas artesanales del 35° Encuentro Nacional.' }
+    ],
+    contact: {
+      phone: '+54 291 4594000',
+      email: 'cultura@bahiablanca.gob.ar',
+      website: 'https://bahia.gob.ar',
+      instagram: '@artesanosbahiablanca',
+      facebook: 'EncuentroNacionalDeArtesanosBahia'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-cerveza-lujan',
+    name: '6º Fiesta de la Cerveza en Luján',
+    municipality: 'Luján',
+    locality: 'Luján',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Parque San Martín, Luján, Buenos Aires',
+    coordinates: {
+      lat: -34.5703,
+      lng: -59.1050
+    },
+    datesText: '9 al 11 de octubre',
+    startDate: '2026-10-09',
+    endDate: '2026-10-11',
+    schedule: 'Desde las 11:00, en el Parque San Martín. Bandas en vivo y DJs a partir de las 16:00 hs',
+    duration: '3 jornadas (9 al 11 de octubre)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Se reprograma en caso de lluvia. Organiza la Municipalidad de Luján.',
+    mainImage: '/images/cerveza.jpg',
+    gallery: [
+      '/images/cerveza.jpg'
+    ],
+    summary: 'Desde las 11:00, en el Parque San Martín de Luján. Con la presencia de productores lujanenses y la posibilidad de probar más de 30 variedades de cervezas artesanales. Patio gastronómico, bandas en vivo y DJs a partir de las 16:00 horas, y feria de emprendedores. Se reprograma en caso de lluvia. Organiza la Municipalidad de Luján.',
+    highlightParagraph: 'Más de 30 variedades de cerveza artesanal lujanense en el Parque San Martín, patio de comidas, feria de emprendedores, DJs y bandas en vivo desde las 16:00 hs.',
+    fullDescription: 'Desde las 11:00, en el Parque San Martín. Con la presencia de productores lujanenses y la posibilidad de probar más de 30 variedades de cervezas artesanales. Patio gastronómico, bandas en vivo y DJs a partir de las 16 horas y feria de emprendedores. Se reprograma en caso de lluvia. Organiza la Municipalidad de Luján.',
+    activities: [
+      { time: '11:00 hs', title: 'Apertura del Patio Cervecero y Gastronómico', description: 'Más de 30 canillas de cerveza artesanal de productores locales y food trucks en Parque San Martín.' },
+      { time: '14:00 hs', title: 'Paseo de Emprendedores y Diseñadores', description: 'Feria de artesanos y marcas independientes de Luján.' },
+      { time: '16:00 a 00:00 hs', title: 'Escenario de Bandas en Vivo y DJs', description: 'Recitales de rock, pop y sets de DJs al aire libre.' }
+    ],
+    contact: {
+      phone: '+54 2323 420453',
+      email: 'turismo@lujan.gob.ar',
+      website: 'https://lujan.gob.ar',
+      instagram: '@culturayturismolujan',
+      facebook: 'MunicipalidadDeLujan'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'festival-queso-los-toldos',
+    name: 'Festival del Queso 2026',
+    municipality: 'General Viamonte',
+    locality: 'Los Toldos',
+    region: 'Oeste y Producción',
+    address: 'Paseo Sadoc Maidana, Los Toldos, General Viamonte, Buenos Aires',
+    coordinates: {
+      lat: -34.9961,
+      lng: -61.0369
+    },
+    datesText: '10 y 11 de octubre',
+    startDate: '2026-10-10',
+    endDate: '2026-10-11',
+    schedule: 'Sábado 10, a las 10:00; y domingo 11, a las 9:00, en el Paseo Sadoc Maidana',
+    duration: '2 jornadas queseras (Sábado 10 y Domingo 11 de octubre)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza la Municipalidad de General Viamonte.',
+    mainImage: '/images/queso.jpg',
+    gallery: [
+      '/images/queso.jpg'
+    ],
+    summary: 'Sábado 10 a las 10:00 y domingo 11 a las 9:00 en Paseo Sadoc Maidana. Recorridos y experiencias con productores, degustaciones, cocina en vivo, charlas, Ruta del Queso, y la Orquesta Escuela de Música. Espacio rural con maquinarias y artesanos. Sábado: Nelson Manqui. Domingo: Carrera del Queso, Misa Criolla, Lucas Geravi y La Sasasa.',
+    highlightParagraph: 'Ruta del Queso Gouda y artesanal en Los Toldos: cocina en vivo, charlas, Carrera del Queso, Misa Criolla, muestra de dinámica rural y recitales con Nelson Manqui, Lucas Geravi y La Sasasa.',
+    fullDescription: 'Sábado 10, a las 10:00; y domingo 11, a las 9:00, en el Paseo Sadoc Maidana. Durante ambos días habrá: recorridos, experiencias con productores, degustaciones, cocina en vivo, charlas temáticas en la carpa de convenciones, Ruta del Queso, y la presentación de la orquesta Escuela de Música. Espacio rural con muestra de maquinarias agrícolas, exhibiciones de dinámica rural, producciones y saberes de artesanos rurales. Sábado, espectáculo musical con Nelson Manqui. Domingo, Carrera del Queso, Misa Criolla, y shows con Lucas Geravi y La Sasasa. Organiza la Municipalidad de General Viamonte.',
+    activities: [
+      { time: 'Sábado 10:00 hs', title: 'Apertura del Paseo Sadoc Maidana y Ruta del Queso', description: 'Experiencias con maestros queseros, degustaciones de queso Gouda, charlas temáticas y cocina en vivo.' },
+      { time: 'Sábado 18:30 hs', title: 'Orquesta Escuela y Recital de Nelson Manqui', description: 'Presentaciones musicales y peña en el escenario del paseo.' },
+      { time: 'Domingo 09:00 hs', title: 'Espacio Rural, Muestras y Misa Criolla', description: 'Dinámica rural, maquinarias agrícolas, Misa Criolla y tradicionales saberes camperos.' },
+      { time: 'Domingo 15:00 hs', title: 'Divertida Carrera del Queso y Cierre Bailable', description: 'Competencia tradicional de rodar el queso y shows en vivo de Lucas Geravi y La Sasasa.' }
+    ],
+    contact: {
+      phone: '+54 2358 442200',
+      email: 'turismo@generalviamonte.gob.ar',
+      website: 'https://generalviamonte.gob.ar',
+      instagram: '@generalviamonte',
+      facebook: 'FestivalDelQuesoLosToldos'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'fiesta-nacional-de-la-flor-escobar',
     name: '63º Fiesta Nacional de la Flor',
     municipality: 'Escobar',
@@ -40,9 +301,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@fiestadelaflor',
       facebook: 'FiestaNacionalDeLaFlor'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-cosechero-morse-junin',
@@ -85,9 +346,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@fiestanacionaldelcosechero',
       facebook: 'FiestaNacionalDelCosecheroMorse'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'festival-cerveceros-mercedinos',
@@ -128,9 +389,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@turismomercedesoficial',
       facebook: 'TurismoMercedesBA'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'festival-musica-italiana-la-plata',
@@ -170,9 +431,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@festivalmusicaitaliana',
       facebook: 'FestivalDellaMusicaItalianaLaPlata'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'expotan-tandil-54',
@@ -213,9 +474,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@expotanoficial',
       facebook: 'ExpoTanTandil'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-brotola-villa-gesell',
@@ -256,9 +517,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       facebook: 'ClubDePescaVillaGesell',
       whatsapp: '+5492255629258'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'inmigrante-berisso-colectividades',

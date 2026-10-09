@@ -24,7 +24,7 @@ interface FestivalContextType {
   setActiveView: (view: 'home' | 'calendar' | 'map' | 'admin') => void;
 }
 
-const STORAGE_KEY = 'fiestas_buenos_aires_v8';
+const STORAGE_KEY = 'fiestas_buenos_aires_v10';
 
 const defaultFilters: FestivalFilterState = {
   searchQuery: '',
@@ -43,7 +43,12 @@ export const FestivalProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
+        if (
+          Array.isArray(parsed) &&
+          parsed.length > 0 &&
+          parsed[0]?.id === 'fiesta-nacional-postre-balcarce' &&
+          parsed[0]?.mainImage === '/images/postre.jpg'
+        ) {
           return parsed;
         }
       }

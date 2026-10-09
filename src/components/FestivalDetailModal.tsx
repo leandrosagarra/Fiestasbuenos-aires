@@ -195,6 +195,21 @@ export const FestivalDetailModal: React.FC = () => {
 
         {/* Modal Main Body */}
         <div className="p-5 sm:p-8 space-y-8">
+
+          {/* Official suspension banner if applicable */}
+          {selectedFestival.name.toUpperCase().includes('SUSPENDIDA') && (
+            <div className="p-4 rounded-2xl bg-rose-50 border-2 border-rose-300 flex items-start gap-3 text-rose-900">
+              <div className="p-2 rounded-xl bg-rose-100 text-rose-700 font-bold text-xs uppercase tracking-wider shrink-0">
+                Aviso Oficial
+              </div>
+              <div>
+                <h4 className="font-bold text-sm">EDICIÓN SUSPENDIDA OFICIALMENTE</h4>
+                <p className="text-xs text-rose-800 mt-0.5">
+                  Esta celebración ha sido cancelada o suspendida para las fechas previstas por los organizadores municipales.
+                </p>
+              </div>
+            </div>
+          )}
           
           {/* Quick Info Grid (Date, Time, Duration, Address) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-2xl bg-[#faf8f5] border border-[#ded5c5]">
