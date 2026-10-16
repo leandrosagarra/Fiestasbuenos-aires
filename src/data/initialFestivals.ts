@@ -2,6 +2,224 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'oktubre-fest-lucila-del-mar',
+    name: '3º Oktubre Fest',
+    municipality: 'La Costa',
+    locality: 'Lucila del Mar',
+    region: 'Costa Atlántica',
+    address: 'Predio Solar del Pinar, Lucila del Mar, Partido de La Costa, Buenos Aires',
+    coordinates: {
+      lat: -36.6575,
+      lng: -56.6806
+    },
+    datesText: '16 al 18 de octubre',
+    startDate: '2026-10-16',
+    endDate: '2026-10-18',
+    schedule: 'Desde las 18:00, en el Predio Solar del Pinar',
+    duration: '3 jornadas cerveceras y musicales (16 al 18 de octubre)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organizan los Productores Cerveceros y Destiladores Locales con el acompañamiento de la Municipalidad de La Costa.',
+    mainImage: '/images/oktubre-fest.jpg',
+    gallery: [
+      '/images/oktubre-fest.jpg',
+      '/images/cerveza.jpg'
+    ],
+    summary: 'Desde las 18:00, en el Predio Solar del Pinar de Lucila del Mar. Música en vivo, entretenimientos, patio gastronómico, productores locales (Ymir, Wara, Viejo Skill, Mundo Birrita, Mobydick, Mauger, Makara, Jagüel, IP7109 y Drink Lab), y sorteos. Organizan los Productores Cerveceros y Destiladores Locales con el acompañamiento de la Municipalidad de La Costa.',
+    highlightParagraph: 'Música en vivo, entretenimientos, patio gastronómico, productores cerveceros locales (Ymir, Wara, Viejo Skill, Mundo Birrita, Mobydick, Mauger, Makara, Jagüel, IP7109 y Drink Lab) y sorteos.',
+    fullDescription: 'Desde las 18:00, en el Predio Solar del Pinar. Música en vivo, entretenimientos, patio gastronómico, productores locales (Ymir, Wara, Viejo Skill, Mundo Birrita, Mobydick, Mauger, Makara, Jagüel, IP7109 y Drink Lab), y sorteos. Organizan los Productores Cerveceros y Destiladores Locales con el acompañamiento de la Municipalidad de La Costa.',
+    activities: [
+      { time: '18:00 hs', title: 'Apertura del Predio Solar del Pinar y Patio Gastronómico', description: 'Canillas de cerveza artesanal de productores locales, destilados y propuestas gastronómicas.' },
+      { time: '19:30 hs', title: 'Entretenimientos, Juegos y Sorteos Comunitarios', description: 'Actividades para el público, sorteos especiales y camaradería cervecera.' },
+      { time: '21:00 hs', title: 'Música en Vivo sobre el Escenario', description: 'Presentaciones musicales de bandas locales y regionales en vivo en el pinar.' }
+    ],
+    contact: {
+      phone: '+54 2246 433096',
+      email: 'turismo@lacosta.gob.ar',
+      website: 'https://lacosta.gob.ar',
+      instagram: '@turismolacosta',
+      facebook: 'MunicipalidadDeLaCosta'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-tradicional-pastafrola-olivera-lujan',
+    name: '13º Fiesta Tradicional de la Pastafrola',
+    municipality: 'Luján',
+    locality: 'Olivera (Luján)',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Predio de la Estación de Trenes de Olivera, Luján, Buenos Aires',
+    coordinates: {
+      lat: -34.6189,
+      lng: -59.2081
+    },
+    datesText: '17 de octubre',
+    startDate: '2026-10-17',
+    endDate: '2026-10-17',
+    schedule: 'Desde las 11:00, en el predio de la estación de trenes de Olivera',
+    duration: '1 jornada dulce y tradicional (Sábado 17 de octubre)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organizan la Comisión de Fiestas de Olivera y la Municipalidad de Luján.',
+    mainImage: '/images/pastafrola.jpg',
+    gallery: [
+      '/images/pastafrola.jpg'
+    ],
+    summary: 'Desde las 11:00, en el predio de la estación de trenes de Olivera. Exposición y venta de pastafrola, elección de la Mejor Pastafrola, música, food trucks, artesanos y artesanas, actividades para toda la familia. Organizan la Comisión de Fiestas de Olivera y la Municipalidad de Luján.',
+    highlightParagraph: 'Exposición y venta de pastafrola tradicional, concurso gastronómico con elección de la Mejor Pastafrola, música en vivo, food trucks y feria de artesanas y artesanos.',
+    fullDescription: 'Desde las 11:00, en el predio de la estación de trenes de Olivera. Exposición y venta de pastafrola, elección de la Mejor Pastafrola, música, food trucks, artesanos y artesanas, actividades para toda la familia. Organizan la Comisión de Fiestas de Olivera y la Municipalidad de Luján.',
+    activities: [
+      { time: '11:00 hs', title: 'Apertura en la Estación de Olivera y Venta de Pastafrolas', description: 'Exposición y venta de pastafrolas artesanales de membrillo, batata y dulce de leche.' },
+      { time: '14:00 hs', title: 'Música en Vivo, Food Trucks y Paseo Artesanal', description: 'Actividades recreativas para toda la familia, feria artesanal y patio gastronómico.' },
+      { time: '17:00 hs', title: 'Elección y Premiación de la Mejor Pastafrola', description: 'Veredicto del jurado culinario y consagración de la Mejor Pastafrola 2026.' }
+    ],
+    contact: {
+      phone: '+54 2323 420453',
+      email: 'cultura@lujan.gob.ar',
+      website: 'https://lujan.gob.ar',
+      instagram: '@culturayturismolujan',
+      facebook: 'MunicipalidadDeLujan'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-vacio-y-tradicion-presidente-peron',
+    name: '1º Fiesta del Vacío y la Tradición',
+    municipality: 'Presidente Perón',
+    locality: 'Guernica (Presidente Perón)',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Paseo La Trocha, Guernica, Presidente Perón, Buenos Aires',
+    coordinates: {
+      lat: -34.9167,
+      lng: -58.3833
+    },
+    datesText: '17 y 18 de octubre',
+    startDate: '2026-10-17',
+    endDate: '2026-10-18',
+    schedule: 'Desde el mediodía, en el Paseo La Trocha',
+    duration: '2 jornadas tradicionales (17 y 18 de octubre)',
+    month: 10,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada gratuita al predio. La venta de vacío será únicamente anticipada. Organiza Ballet Nahuel con el acompañamiento de la Municipalidad de Presidente Perón.',
+    mainImage: '/images/vacio.jpg',
+    gallery: [
+      '/images/vacio.jpg',
+      '/images/asado.png'
+    ],
+    summary: 'Desde el mediodía, en el Paseo La Trocha. Dos jornadas para disfrutar en familia de las tradiciones, la gastronomía y de las presentaciones de espectáculos artísticos. Exhibición de asadores, feria de emprendedores, food trucks. La venta de vacío será unicamente anticipada. Organiza Ballet Nahuel con el acompañamiento de la Municipalidad de Presidente Perón.',
+    highlightParagraph: 'Dos jornadas criollas para disfrutar en familia: exhibición de asadores a las brasas, venta de vacío únicamente anticipada, feria de emprendedores, food trucks y presentaciones artísticas del Ballet Nahuel.',
+    fullDescription: 'Dos jornadas para disfrutar en familia de las tradiciones, la gastronomía y de las presentaciones de espectáculos artísticos. Exhibición de asadores, feria de emprendedores, food trucks. La venta de vacío será unicamente anticipada. Organiza Ballet Nahuel con el acompañamiento de la Municipalidad de Presidente Perón.',
+    activities: [
+      { time: '12:00 hs', title: 'Encendido de Brasas y Exhibición de Asadores', description: 'Técnicas criollas de asado y cocción lenta al asador en el Paseo La Trocha.' },
+      { time: '14:30 hs', title: 'Feria de Emprendedores y Patio de Food Trucks', description: 'Paseo de compras artesanal y propuestas gastronómicas variadas.' },
+      { time: '17:30 hs', title: 'Presentaciones Artísticas y Ballet Nahuel', description: 'Espectáculos de danza tradicionalista folclórica y música en vivo.' }
+    ],
+    contact: {
+      phone: '+54 2224 471000',
+      email: 'cultura@presidenteperon.gob.ar',
+      website: 'https://presidenteperon.gob.ar',
+      instagram: '@balletnahuel',
+      facebook: 'MunicipalidadDePresidentePeron'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-del-asado-dannehy-9-de-julio',
+    name: '3º Fiesta del Asado',
+    municipality: '9 de Julio',
+    locality: 'Dennehy (9 de Julio)',
+    region: 'Oeste y Producción',
+    address: 'Cancha Dannehy FC, Dennehy, 9 de Julio, Buenos Aires',
+    coordinates: {
+      lat: -35.4444,
+      lng: -60.8833
+    },
+    datesText: '17 de octubre',
+    startDate: '2026-10-17',
+    endDate: '2026-10-17',
+    schedule: 'A las 12:30, en la Cancha Dannehy FC',
+    duration: '1 jornada criolla y festiva (Sábado 17 de octubre)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: false,
+    ticketInfo: 'El almuerzo está previsto con reserva previa y se solicita llevar cubiertos y reposeras (no se permite el ingreso con conservadoras). Organiza la Comisión de Festejos en conjunto con la Municipalidad de Nueve de Julio.',
+    mainImage: '/images/concurso de asadores.jpg',
+    gallery: [
+      '/images/concurso de asadores.jpg',
+      '/images/asado.png'
+    ],
+    summary: 'A las 12:30, en la Cancha Dannehy FC. Esta edición se realiza con la presentación de artistas locales, juegos para niños, paseo de artesanos. Música y baile con Mauro Ismael, La Clave Cumbia. El almuerzo está previsto con reserva previa y se solicita llevar cubiertos y reposeras (no se permite el ingreso con conservadoras). Organiza la Comisión de Festejos en conjunto con la Municipalidad de Nueve de Julio.',
+    highlightParagraph: 'Gran almuerzo campero de asado con reserva previa en la Cancha Dannehy FC: juegos infantiles, paseo de artesanos, música y baile con Mauro Ismael y La Clave Cumbia (llevar cubiertos y reposeras).',
+    fullDescription: 'A las 12.30, en la Cancha Dannehy FC. Esta edición se realiza con la presentación de artistas locales, juegos para niños, paseo de artesanos. Música y baile con Mauro Ismael, La Clave Cumbia. El almuerzo está previsto con reserva previa y se solicita llevar cubiertos y reposeras (no se permite el ingreso con conservadoras). Organiza la Comisión de Festejos en conjunto con la Municipalidad de Nueve de Julio.',
+    activities: [
+      { time: '12:30 hs', title: 'Gran Almuerzo Criollo de Asado', description: 'Servicio de asado tradicional con reserva previa (llevar cubiertos y reposeras).' },
+      { time: '14:30 hs', title: 'Juegos para Niños y Paseo de Artesanos', description: 'Entretenimiento infantil y feria comunitaria en la cancha del club.' },
+      { time: '17:00 hs', title: 'Shows en Vivo: Mauro Ismael y La Clave Cumbia', description: 'Gran cierre musical bailable con artistas locales y cumbia en vivo.' }
+    ],
+    contact: {
+      phone: '+54 2317 610000',
+      email: 'turismo@9dejulio.gob.ar',
+      website: 'https://9dejulio.gob.ar',
+      instagram: '@municipalidad9dejulio',
+      facebook: 'MunicipalidadDe9DeJulio'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'mate-reposera-arrecifes',
+    name: '1º Festival del Mate y la Reposera',
+    municipality: 'Arrecifes',
+    locality: 'Arrecifes',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Plaza Mitre, Arrecifes, Buenos Aires',
+    coordinates: {
+      lat: -34.0667,
+      lng: -60.1000
+    },
+    datesText: '18 de octubre',
+    startDate: '2026-10-18',
+    endDate: '2026-10-18',
+    schedule: 'Desde el mediodía, en la plaza Mitre',
+    duration: '1 jornada completa (Domingo 18 de octubre - Reprogramada)',
+    month: 10,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Evento previsto originalmente para el 27/09 reprogramado para el 18/10 por condiciones climáticas. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
+    mainImage: '/images/fiesta del mate.jpg',
+    gallery: [
+      '/images/fiesta del mate.jpg'
+    ],
+    summary: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes. Evento previsto para el 27/09 que debiera ser reprogramado por condiciones climáticas adversas.',
+    highlightParagraph: 'Gran mateada con reposeras en Plaza Mitre: Ballet Municipal, danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica, artesanos y comidas típicas (Reprogramado para el 18 de octubre).',
+    fullDescription: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes. Evento previsto para el 27/09 que debiera ser reprogramado por condiciones climáticas adversas.',
+    activities: [
+      { time: '12:00 hs', title: 'Apertura de la Plaza Mitre y Mateada Comunitaria', description: 'Encuentro con reposeras y mate, puestos de comidas típicas, artesanos, manualistas y emprendedores.' },
+      { time: '14:00 hs', title: 'Ballet Municipal y Grupo de Danzas Lucas Valenzuela', description: 'Presentaciones coreográficas de danzas folclóricas tradicionales.' },
+      { time: '16:00 hs', title: 'Festival Folclórico y Sorteos en Vivo', description: 'Espectáculo con Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica y sorteos.' }
+    ],
+    contact: {
+      phone: '+54 2478 452200',
+      email: 'cultura@arrecifes.gob.ar',
+      website: 'https://arrecifes.gob.ar',
+      instagram: '@municipalidaddearrecifes',
+      facebook: 'MunicipalidadDeArrecifes'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'fiesta-nacional-postre-balcarce',
     name: '22º Fiesta Nacional del Postre (SUSPENDIDA)',
     municipality: 'Balcarce',
@@ -40,9 +258,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@fiestanacionaldelpostre',
       facebook: 'FiestaNacionalDelPostreBalcarce'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-caballo-bragado',
@@ -85,9 +303,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@fiestanacionaldelcaballo',
       facebook: 'FiestaNacionalDelCaballoBragado'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-corvina-negra-la-costa',
@@ -128,9 +346,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@fiestadelacorvinanegra',
       facebook: 'FiestaNacionalCorvinaNegra'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'encuentro-nacional-artesanas-artesanos-bahia-blanca',
@@ -171,9 +389,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@artesanosbahiablanca',
       facebook: 'EncuentroNacionalDeArtesanosBahia'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-cerveza-lujan',
@@ -214,9 +432,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@culturayturismolujan',
       facebook: 'MunicipalidadDeLujan'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'festival-queso-los-toldos',
@@ -258,9 +476,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@generalviamonte',
       facebook: 'FestivalDelQuesoLosToldos'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-de-la-flor-escobar',
@@ -559,49 +777,6 @@ export const INITIAL_FESTIVALS: Festival[] = [
       website: 'https://berisso.gob.ar',
       instagram: '@fiestadelinmigranteberisso',
       facebook: 'FiestaProvincialDelInmigrante'
-    },
-    isMustSee: false,
-    isUpcoming: false,
-    isFeatured: false
-  },
-  {
-    id: 'mate-reposera-arrecifes',
-    name: '1º Festival del Mate y la Reposera',
-    municipality: 'Arrecifes',
-    locality: 'Arrecifes',
-    region: 'Pampa Húmeda y Tradición',
-    address: 'Plaza Mitre, Arrecifes, Buenos Aires',
-    coordinates: {
-      lat: -34.0667,
-      lng: -60.1000
-    },
-    datesText: '27 de septiembre',
-    startDate: '2026-09-27',
-    endDate: '2026-09-27',
-    schedule: 'Desde el mediodía, en la plaza Mitre',
-    duration: '1 jornada completa (Domingo 27 de septiembre)',
-    month: 9,
-    category: 'Tradición',
-    isFree: true,
-    ticketInfo: 'Entrada libre y gratuita. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
-    mainImage: '/images/fiesta del mate.jpg',
-    gallery: [
-      '/images/fiesta del mate.jpg'
-    ],
-    summary: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
-    highlightParagraph: 'Desde el mediodía en Plaza Mitre: Ballet Municipal, grupo de danzas Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica, artesanos y comidas típicas.',
-    fullDescription: 'Desde el mediodía, en la plaza Mitre. Espectáculo con el Ballet Municipal de Arrecifes, grupo de danzas de Lucas Valenzuela, Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman, La Clave Folclórica. Artesanos, manualistas y emprendedores. Comidas típicas y sorteos. Organiza el grupo de danza Latir Leguero con el auspicio de la Municipalidad de Arrecifes.',
-    activities: [
-      { time: '12:00 hs', title: 'Apertura de la Plaza Mitre y Mateada Popular', description: 'Recepción con reposeras, puestos de comidas típicas, artesanos y manualistas.' },
-      { time: '14:00 hs', title: 'Ballet Municipal y grupos de danza', description: 'Presentaciones del Ballet Municipal de Arrecifes y grupo de danzas de Lucas Valenzuela.' },
-      { time: '16:00 hs', title: 'Gran Festival Folclórico y Sorteos', description: 'Actuación de Cacho Plana, Rezabaile, Nativa, Joaquín Slaiman y La Clave Folclórica.' }
-    ],
-    contact: {
-      phone: '+54 2478 452200',
-      email: 'cultura@arrecifes.gob.ar',
-      website: 'https://arrecifes.gob.ar',
-      instagram: '@municipalidaddearrecifes',
-      facebook: 'MunicipalidadDeArrecifes'
     },
     isMustSee: false,
     isUpcoming: false,

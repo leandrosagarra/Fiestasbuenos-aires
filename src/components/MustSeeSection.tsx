@@ -33,7 +33,7 @@ export const MustSeeSection: React.FC = () => {
 
         {/* Large cards grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-          {mustSeeFestivals.slice(0, 4).map((festival) => (
+          {mustSeeFestivals.map((festival) => (
             <div
               key={festival.id}
               id={`mustsee-card-${festival.id}`}

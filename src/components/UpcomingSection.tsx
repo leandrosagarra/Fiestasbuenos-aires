@@ -31,8 +31,8 @@ export const UpcomingSection: React.FC = () => {
         </div>
 
         {/* Carousel / Responsive Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {upcomingFestivals.slice(0, 3).map((festival) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {upcomingFestivals.map((festival) => (
             <div
               key={festival.id}
               id={`upcoming-card-${festival.id}`}

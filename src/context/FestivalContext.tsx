@@ -24,7 +24,7 @@ interface FestivalContextType {
   setActiveView: (view: 'home' | 'calendar' | 'map' | 'admin') => void;
 }
 
-const STORAGE_KEY = 'fiestas_buenos_aires_v10';
+const STORAGE_KEY = 'fiestas_buenos_aires_v11';
 
 const defaultFilters: FestivalFilterState = {
   searchQuery: '',
@@ -46,8 +46,7 @@ export const FestivalProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         if (
           Array.isArray(parsed) &&
           parsed.length > 0 &&
-          parsed[0]?.id === 'fiesta-nacional-postre-balcarce' &&
-          parsed[0]?.mainImage === '/images/postre.jpg'
+          parsed[0]?.id === 'oktubre-fest-lucila-del-mar'
         ) {
           return parsed;
         }
