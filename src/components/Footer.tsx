@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
               <div className="w-11 h-11 rounded-full overflow-hidden border-2 border-amber-400/80 shadow-xs bg-white shrink-0">
                 <img
                   src="/images/logo.png"
-                  alt="Logo Fiestas Culturales Bonaerenses"
+                  alt="Logo Fiestas de la Provincia de Buenos Aires"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                   Provincia de Buenos Aires
                 </span>
                 <span className="text-lg font-serif font-bold text-stone-900">
-                  Fiestas Culturales Bonaerenses
+                  Fiestas de la Provincia de Buenos Aires
                 </span>
               </div>
             </div>
@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
           <div>
-            © {new Date().getFullYear()} Fiestas Culturales de la Provincia de Buenos Aires. Guía de difusión cultural y turística.
+            © {new Date().getFullYear()} Fiestas de la Provincia de Buenos Aires. Guía de difusión turística y festividades bonaerenses.
           </div>
           <div className="flex items-center gap-1 text-stone-600">
             <span>Orgullo bonaerense y cultura popular</span>

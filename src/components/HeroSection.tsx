@@ -28,7 +28,7 @@ export const HeroSection: React.FC = () => {
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white p-1 shadow-md border-2 border-amber-300/80 hover:scale-105 transition-transform duration-300 cursor-default">
             <img
               src="/images/logo.png"
-              alt="Fiestas Culturales de la Provincia de Buenos Aires"
+              alt="Fiestas de la Provincia de Buenos Aires"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
@@ -42,7 +42,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Main Title - optimized for cellular/mobile & desktop */}
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold font-serif text-stone-900 tracking-tight leading-snug sm:leading-tight">
-          <span className="block text-stone-900">Fiestas Culturales de la</span>
+          <span className="block text-stone-900">Fiestas de la</span>
           <span className="text-sky-700 block sm:inline mt-1 sm:mt-0 underline decoration-sky-300/80 sm:decoration-sky-400/80 decoration-2 underline-offset-4 sm:underline-offset-8">
             Provincia de Buenos Aires
           </span>

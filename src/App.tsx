@@ -32,7 +32,7 @@ const MainContent: React.FC = () => {
                     <span>Celebraciones Bonaerenses</span>
                   </div>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-stone-900 tracking-tight">
-                    Fiestas Culturales Destacadas
+                    Fiestas Destacadas de la Provincia
                   </h2>
                   <p className="text-sm sm:text-base text-stone-600 mt-1.5 max-w-2xl">
                     Guía de celebraciones populares, gastronómicas, tradicionales y musicales de los distintos municipios bonaerenses.

@@ -51,7 +51,7 @@ export const Navbar: React.FC = () => {
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border-2 border-amber-400/80 shadow-2xs group-hover:scale-105 transition-transform flex items-center justify-center bg-white shrink-0">
               <img
                 src="/images/logo.png"
-                alt="Logo Fiestas Culturales"
+                alt="Logo Fiestas de la Provincia de Buenos Aires"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
@@ -62,11 +62,11 @@ export const Navbar: React.FC = () => {
                 </span>
                 <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-sky-400" />
                 <span className="hidden sm:inline-block text-[11px] text-stone-500 font-medium">
-                  Guía Cultural & Turismo
+                  Guía de Fiestas y Turismo
                 </span>
               </div>
               <h1 className="text-base sm:text-xl font-bold font-serif tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight truncate">
-                Fiestas Culturales
+                Fiestas de la Provincia
               </h1>
             </div>
           </div>
