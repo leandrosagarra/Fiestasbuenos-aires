@@ -71,6 +71,7 @@ export const MonthlyCalendar: React.FC = () => {
 
   const sepCount = festivals.filter((f) => f.month === 9).length;
   const octCount = festivals.filter((f) => f.month === 10).length;
+  const novCount = festivals.filter((f) => f.month === 11).length;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -112,6 +113,16 @@ export const MonthlyCalendar: React.FC = () => {
               }`}
             >
               Octubre ({octCount})
+            </button>
+            <button
+              onClick={() => { setSelectedMonth(11); setSelectedDay(null); }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer ${
+                selectedMonth === 11
+                  ? 'bg-sky-700 text-white shadow-2xs'
+                  : 'text-stone-700 hover:bg-white'
+              }`}
+            >
+              Noviembre ({novCount})
             </button>
           </div>
 

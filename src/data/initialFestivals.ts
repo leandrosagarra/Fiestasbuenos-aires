@@ -2,6 +2,181 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'fiesta-nacional-postre-balcarce',
+    name: '22º Fiesta Nacional del Postre',
+    municipality: 'Balcarce',
+    locality: 'Balcarce',
+    region: 'Sierras y Lagunas',
+    address: 'Predio de la Sociedad Rural de Balcarce, Balcarce, Buenos Aires',
+    coordinates: {
+      lat: -37.8475,
+      lng: -58.2553
+    },
+    datesText: '30 y 31 de octubre y 1 de noviembre',
+    startDate: '2026-10-30',
+    endDate: '2026-11-01',
+    schedule: 'Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce',
+    duration: '3 jornadas dulces (30 y 31 de octubre y 1 de noviembre - Reprogramada)',
+    month: 10,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Evento previsto del 10 al 12/10 que debiera ser reprogramado por condiciones climáticas adversas. Organiza la Municipalidad de Balcarce.',
+    mainImage: '/images/postre.jpg',
+    gallery: [
+      '/images/postre.jpg',
+      '/images/postre-balcarce.jpg'
+    ],
+    summary: 'Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce. Con la presencia de chefs reconocidos: Lulo Kazimirczyk de @lulospatisserie, Edgardo Ríos de @mambrunense, Rocío Espinillo @rocioespinillo, y Valentín Galdo River de @chefsale__. Elaboración del postre más largo del mundo, degustaciones, pastelería artesanal, clases y demostraciones, emprendedores y productores, espectáculos en vivo. Organiza la Municipalidad de Balcarce. Evento previsto del 10 al 12/10 que debiera ser reprogramado por condiciones climáticas adversas.',
+    highlightParagraph: 'Elaboración del postre más largo del mundo, masterclasses con reconocidos pasteleros (Lulo Kazimirczyk, Edgardo Ríos, Rocío Espinillo y Valentín Galdo River), degustaciones, feria de emprendedores y espectáculos en vivo en la Sociedad Rural.',
+    fullDescription: 'Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce. Con la presencia de chefs reconocidos: Lulo Kazimirczyk de @lulospatisserie, Edgardo Ríos de @mambrunense, Rocío Espinillo @rocioespinillo, y Valentín Galdo River de @chefsale__. Elaboración del postre más largo del mundo, degustaciones, pastelería artesanal, clases y demostraciones, emprendedores y productores, espectáculos en vivo. Organiza la Municipalidad de Balcarce. Evento previsto del 10 al 12/10 que debiera ser reprogramado por condiciones climáticas adversas.',
+    activities: [
+      { time: '12:30 hs', title: 'Apertura del Predio y Clases Magistrales de Pastelería', description: 'Masterclasses en vivo a cargo de Lulo Kazimirczyk, Edgardo Ríos, Rocío Espinillo y Valentín Galdo River.' },
+      { time: '15:30 hs', title: 'Elaboración del Postre Más Largo del Mundo', description: 'Hazaña culinaria comunitaria con maestros pasteleros balcarceños elaborando el postre gigante.' },
+      { time: '18:00 hs', title: 'Degustaciones, Feria de Emprendedores y Shows en Vivo', description: 'Patio gastronómico dulce, stands de pastelería artesanal balcarceña y espectáculos musicales.' }
+    ],
+    contact: {
+      phone: '+54 2266 422059',
+      email: 'turismo@balcarce.gob.ar',
+      website: 'https://balcarce.gob.ar',
+      instagram: '@fiestanacionaldelpostre',
+      facebook: 'FiestaNacionalDelPostreBalcarce'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-empanada-julio-arditi-magdalena',
+    name: 'Fiesta de la Empanada en Julio Arditi',
+    municipality: 'Magdalena',
+    locality: 'Julio Arditi (Magdalena)',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Estación Julio Arditi, Partido de Magdalena, Buenos Aires',
+    coordinates: {
+      lat: -35.2833,
+      lng: -57.5167
+    },
+    datesText: '1 de noviembre',
+    startDate: '2026-11-01',
+    endDate: '2026-11-01',
+    schedule: 'Desde las 10:30 horas, en la Estación Julio Arditi',
+    duration: '1 jornada tradicional y comunitaria (Domingo 1 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Se invita a las familias de Magdalena y de localidades vecinas a acercarse y ser parte de esta propuesta comunitaria.',
+    mainImage: '/images/empanadas.jpg',
+    gallery: [
+      '/images/empanadas.jpg'
+    ],
+    summary: 'La cita es este domingo 1 de noviembre, desde las 10:30 horas, en la Estación Julio Arditi, partido de Magdalena, provincia de Buenos Aires. Una oportunidad para disfrutar de nuestras tradiciones y compartir una jornada en comunidad. La jornada comenzará a las 10:30 horas y ofrecerá un espacio de encuentro para vecinos y visitantes, con el objetivo de poner en valor las costumbres y la identidad cultural de la región. La celebración busca reunir a la comunidad en torno a una de las comidas más representativas de nuestra tradición, en un ambiente pensado para compartir y disfrutar de las raíces criollas. La entrada será libre y gratuita, por lo que se invita a las familias de Magdalena y de localidades vecinas a acercarse y ser parte de esta propuesta.',
+    highlightParagraph: 'Encuentro criollo y comunitario en el predio histórico de la Estación Julio Arditi: empanadas criollas tradicionales, puesta en valor de las costumbres gauchas y una jornada al aire libre con entrada libre y gratuita.',
+    fullDescription: 'La cita es este domingo 1 de noviembre, desde las 10:30 horas, en la Estación Julio Arditi, partido de Magdalena, provincia de Buenos Aires. Una oportunidad para disfrutar de nuestras tradiciones y compartir una jornada en comunidad. La jornada comenzará a las 10:30 horas y ofrecerá un espacio de encuentro para vecinos y visitantes, con el objetivo de poner en valor las costumbres y la identidad cultural de la región. La celebración busca reunir a la comunidad en torno a una de las comidas más representativas de nuestra tradición, en un ambiente pensado para compartir y disfrutar de las raíces criollas. La entrada será libre y gratuita, por lo que se invita a las familias de Magdalena y de localidades vecinas a acercarse y ser parte de esta propuesta.',
+    activities: [
+      { time: '10:30 hs', title: 'Apertura de la Estación Julio Arditi y Fogones de Empanadas', description: 'Comienzo de la jornada campera con cocción y venta de empanadas artesanales criollas fritas y al horno.' },
+      { time: '13:00 hs', title: 'Almuerzo Criollo y Encuentro Familiar Comunitario', description: 'Espacio de convivencia y degustación popular junto a familias locales y visitantes de la región.' },
+      { time: '15:30 hs', title: 'Música, Raíces Criollas y Tradiciones Bonaerenses', description: 'Encuentro cultural en torno a las costumbres rurales y la identidad bonaerense en el predio ferroviario.' }
+    ],
+    contact: {
+      phone: '+54 2221 452511',
+      email: 'turismo@magdalena.gob.ar',
+      website: 'https://magdalena.gob.ar',
+      instagram: '@magdalenaturismo',
+      facebook: 'MunicipalidadDeMagdalena'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-asado-criollo-bordenave-puan',
+    name: '8º Fiesta del Asado Criollo',
+    municipality: 'Puán',
+    locality: 'Bordenave (Puán)',
+    region: 'Sierras y Lagunas',
+    address: 'Predio de la Sociedad Española, Bordenave, Partido de Puán, Buenos Aires',
+    coordinates: {
+      lat: -37.8000,
+      lng: -63.0333
+    },
+    datesText: '1 de noviembre',
+    startDate: '2026-11-01',
+    endDate: '2026-11-01',
+    schedule: 'Desde las 8:00, en Bordenave',
+    duration: '1 jornada criolla y festiva (Domingo 1 de noviembre)',
+    month: 11,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada gratuita. Concurso de asadores por pareja, paseo de artesanías y gastronomía criolla con venta de asado. Organiza la Sociedad Española con el auspicio del Municipio de Puan.',
+    mainImage: '/images/concurso de asadores.jpg',
+    gallery: [
+      '/images/concurso de asadores.jpg',
+      '/images/asado.png'
+    ],
+    summary: 'Desde las 8:00, en Bordenave. Espectáculos con la presentación del Taller de Danzas Bordenave, Peña Danza y Sentimiento, Alex Freidig, Amparo Sol y Banda 10%. Concurso de asadores por pareja, paseo de artesanías, y gastronomía criolla con venta de asado. Entrada gratuita. Organiza la Sociedad Española con el auspicio del Municipio de Puan.',
+    highlightParagraph: 'Concurso de asadores por pareja a las brasas, venta de asado criollo, paseo de artesanías y gran cartelera de espectáculos: Taller de Danzas Bordenave, Peña Danza y Sentimiento, Alex Freidig, Amparo Sol y Banda 10% con entrada gratuita.',
+    fullDescription: 'Desde las 8:00, en Bordenave. Espectáculos con la presentación del Taller de Danzas Bordenave, Peña Danza y Sentimiento, Alex Freidig, Amparo Sol y Banda 10%. Concurso de asadores por pareja, paseo de artesanías, y gastronomía criolla con venta de asado. Entrada gratuita. Organiza la Sociedad Española con el auspicio del Municipio de Puan.',
+    activities: [
+      { time: '08:00 hs', title: 'Inicio del Concurso de Asadores por Pareja', description: 'Encendido de fogones y preparación de los costillares criollos para la competencia campera.' },
+      { time: '12:30 hs', title: 'Venta de Asado Criollo y Patio Gastronómico', description: 'Almuerzo popular con porciones de asado al corte, empanadas y feria de artesanos.' },
+      { time: '14:30 hs', title: 'Gran Escenario de Danzas y Música en Vivo', description: 'Actuación del Taller de Danzas Bordenave, Peña Danza y Sentimiento, Alex Freidig, Amparo Sol y baile con Banda 10%.' }
+    ],
+    contact: {
+      phone: '+54 2923 488001',
+      email: 'turismo@puan.gob.ar',
+      website: 'https://puan.gob.ar',
+      instagram: '@municipiopuan',
+      facebook: 'MunicipioDePuan'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-nacional-de-las-llanuras-coronel-dorrego',
+    name: '67º Fiesta Provincial y 5º Fiesta Nacional de las Llanuras',
+    municipality: 'Coronel Dorrego',
+    locality: 'Coronel Dorrego',
+    region: 'Oeste y Producción',
+    address: 'Campo de Doma, Plaza Central y Peña Nativista, Coronel Dorrego, Buenos Aires',
+    coordinates: {
+      lat: -38.7186,
+      lng: -60.5500
+    },
+    datesText: '30 de octubre al 8 de noviembre',
+    startDate: '2026-10-30',
+    endDate: '2026-11-08',
+    schedule: 'En distintos horarios y espacios de la ciudad',
+    duration: '10 jornadas de tradición surera (30 de octubre al 8 de noviembre)',
+    month: 10,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre a los desfiles, fogones y paseos públicos. Organiza la Peña Nativista de Coronel Dorrego con el acompañamiento de la Municipalidad de Coronel Dorrego.',
+    mainImage: '/images/caballo.jpg',
+    gallery: [
+      '/images/caballo.jpg',
+      '/images/carruaje.png'
+    ],
+    summary: 'En distintos horarios y espacios de la ciudad. Viernes 30, a las 19:30, inauguración de la fiesta con la actuación de agrupaciones folclóricas locales y de la región; sábado 31, a las 18:00, desfile de carrozas y agrupaciones tradicionalistas; domingo 1, a partir de las 10:00, destrezas criollas, jineteada y espectáculos musicales en el campo de doma. Paseo de artesanos, muestra de pilchas criollas, fogones y puestos gastronómicos tradicionales durante todas las jornadas. Organiza la Peña Nativista de Coronel Dorrego con el acompañamiento de la Municipalidad de Coronel Dorrego.',
+    highlightParagraph: 'Emblemático tributo a la tradición pampeana y surera: inauguración folclórica (viernes 30), imponente desfile de carrozas y agrupaciones tradicionalistas (sábado 31), destrezas criollas y jineteada en el campo de doma (domingo 1), muestra de pilchas criollas y fogones.',
+    fullDescription: 'En distintos horarios y espacios de la ciudad. Viernes 30, a las 19:30, inauguración de la fiesta con la actuación de agrupaciones folclóricas locales y de la región; sábado 31, a las 18:00, desfile de carrozas y agrupaciones tradicionalistas; domingo 1, a partir de las 10:00, destrezas criollas, jineteada y espectáculos musicales en el campo de doma. Paseo de artesanos, muestra de pilchas criollas, fogones y puestos gastronómicos tradicionales durante todas las jornadas. Organiza la Peña Nativista de Coronel Dorrego con el acompañamiento de la Municipalidad de Coronel Dorrego.',
+    activities: [
+      { time: 'Viernes 30 - 19:30 hs', title: 'Inauguración Oficial y Agrupaciones Folclóricas', description: 'Apertura oficial con actuaciones folclóricas de grupos locales y regionales.' },
+      { time: 'Sábado 31 - 18:00 hs', title: 'Gran Desfile de Carrozas y Tradicionalistas', description: 'Desfile cívico tradicionalista con carrozas temáticas, gauchos montados y pilchas criollas.' },
+      { time: 'Domingo 1 - 10:00 hs', title: 'Destrezas Criollas, Jineteada y Fogones en Campo de Doma', description: 'Jineteada, pruebas de rienda, música folclórica en vivo y fogones criollos populares.' }
+    ],
+    contact: {
+      phone: '+54 2921 405555',
+      email: 'turismo@dorrego.gob.ar',
+      website: 'https://dorrego.gob.ar',
+      instagram: '@dorregoturismo',
+      facebook: 'MunicipalidadDeCoronelDorrego'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'oktubre-fest-lucila-del-mar',
     name: '3º Oktubre Fest',
     municipality: 'La Costa',
@@ -41,9 +216,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@turismolacosta',
       facebook: 'MunicipalidadDeLaCosta'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-tradicional-pastafrola-olivera-lujan',
@@ -84,9 +259,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@culturayturismolujan',
       facebook: 'MunicipalidadDeLujan'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-vacio-y-tradicion-presidente-peron',
@@ -128,9 +303,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@balletnahuel',
       facebook: 'MunicipalidadDePresidentePeron'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'fiesta-del-asado-dannehy-9-de-julio',
@@ -172,9 +347,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
       instagram: '@municipalidad9dejulio',
       facebook: 'MunicipalidadDe9DeJulio'
     },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
+    isMustSee: false,
+    isUpcoming: false,
+    isFeatured: false
   },
   {
     id: 'mate-reposera-arrecifes',
@@ -214,49 +389,6 @@ export const INITIAL_FESTIVALS: Festival[] = [
       website: 'https://arrecifes.gob.ar',
       instagram: '@municipalidaddearrecifes',
       facebook: 'MunicipalidadDeArrecifes'
-    },
-    isMustSee: true,
-    isUpcoming: true,
-    isFeatured: true
-  },
-  {
-    id: 'fiesta-nacional-postre-balcarce',
-    name: '22º Fiesta Nacional del Postre (SUSPENDIDA)',
-    municipality: 'Balcarce',
-    locality: 'Balcarce',
-    region: 'Sierras y Lagunas',
-    address: 'Predio de la Sociedad Rural de Balcarce, Balcarce, Buenos Aires',
-    coordinates: {
-      lat: -37.8475,
-      lng: -58.2553
-    },
-    datesText: '9 al 12 de octubre',
-    startDate: '2026-10-09',
-    endDate: '2026-10-12',
-    schedule: 'Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce',
-    duration: '4 jornadas (9 al 12 de octubre) - SUSPENDIDA',
-    month: 10,
-    category: 'Gastronomía',
-    isFree: true,
-    ticketInfo: 'EVENTO SUSPENDIDO OFICIALMENTE por la Municipalidad de Balcarce.',
-    mainImage: '/images/postre.jpg',
-    gallery: [
-      '/images/postre.jpg'
-    ],
-    summary: '[AVISO: EDICIÓN SUSPENDIDA] Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce. Con la presencia de chefs reconocidos: Lulo Kazimirczyk de @lulospatisserie, Edgardo Ríos de @mambrunense, Rocío Espinillo @rocioespinillo, y Valentín Galdo River de @chefsale__. Elaboración del postre más largo del mundo, degustaciones, pastelería artesanal, clases y demostraciones, emprendedores y productores, espectáculos en vivo. Organiza la Municipalidad de Balcarce.',
-    highlightParagraph: 'ATENCIÓN: Evento suspendido oficialmente. Contaba con la elaboración del postre más largo del mundo, maestros pasteleros invitados, degustaciones, clases magistrales y feria de productores.',
-    fullDescription: 'IMPORTANTE: La 22º Fiesta Nacional del Postre ha sido suspendida para esta fecha por la organización municipal. Programación prevista: Desde las 12:30, en el Predio de la Sociedad Rural de Balcarce. Con la presencia de chefs reconocidos: Lulo Kazimirczyk de @lulospatisserie, Edgardo Ríos de @mambrunense, Rocío Espinillo @rocioespinillo, y Valentín Galdo River de @chefsale__. Elaboración del postre más largo del mundo, degustaciones, pastelería artesanal, clases y demostraciones, emprendedores y productores, espectáculos en vivo. Organiza la Municipalidad de Balcarce.',
-    activities: [
-      { time: 'Aviso Oficial', title: 'Edición Suspendida Oficialmente', description: 'La edición 2026 ha sido suspendida por la organización municipal de Balcarce.' },
-      { time: '12:30 hs', title: 'Clases Magistrales de Pastelería (Previsto)', description: 'Masterclasses con Lulo Kazimirczyk, Edgardo Ríos, Rocío Espinillo y Valentín Galdo River.' },
-      { time: 'Tarde', title: 'Elaboración del Postre Más Largo del Mundo (Previsto)', description: 'Elaboración comunitaria récord del postre Balcarce con capas de merengue, crema y dulce de leche.' }
-    ],
-    contact: {
-      phone: '+54 2266 422059',
-      email: 'turismo@balcarce.gob.ar',
-      website: 'https://balcarce.gob.ar',
-      instagram: '@fiestanacionaldelpostre',
-      facebook: 'FiestaNacionalDelPostreBalcarce'
     },
     isMustSee: false,
     isUpcoming: false,
