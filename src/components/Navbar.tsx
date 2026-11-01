@@ -58,15 +58,15 @@ export const Navbar: React.FC = () => {
             <div className="min-w-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-sky-800 truncate">
-                  Provincia de Buenos Aires
+                  Turismo & Tradición
                 </span>
                 <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-sky-400" />
                 <span className="hidden sm:inline-block text-[11px] text-stone-500 font-medium">
-                  Guía de Fiestas y Turismo
+                  Guía de Fiestas Provinciales
                 </span>
               </div>
-              <h1 className="text-base sm:text-xl font-bold font-serif tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight truncate">
-                Fiestas de la Provincia
+              <h1 className="text-xs min-[360px]:text-sm sm:text-base md:text-lg font-bold font-serif tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight whitespace-nowrap truncate max-w-[200px] min-[360px]:max-w-[240px] sm:max-w-none">
+                Fiestas de la Provincia de Buenos Aires
               </h1>
             </div>
           </div>
