@@ -35,8 +35,8 @@ export const Footer: React.FC = () => {
                   Provincia de Buenos Aires
                 </span>
                 <span 
-                  className="text-lg font-black text-stone-900 tracking-tight"
-                  style={{ fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif" }}
+                  className="text-lg font-black text-black tracking-tight"
+                  style={{ fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif", color: '#000000' }}
                 >
                   Fiestas de la provincia de Buenos Aires
                 </span>

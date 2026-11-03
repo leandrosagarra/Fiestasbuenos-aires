@@ -56,8 +56,8 @@ export const Navbar: React.FC = () => {
                 </span>
               </div>
               <h1 
-                className="text-xs min-[360px]:text-sm sm:text-base md:text-lg font-black tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight whitespace-nowrap truncate max-w-[200px] min-[360px]:max-w-[240px] sm:max-w-none"
-                style={{ fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif" }}
+                className="text-xs min-[360px]:text-sm sm:text-base md:text-lg font-black tracking-tight text-black leading-tight whitespace-nowrap truncate max-w-[200px] min-[360px]:max-w-[240px] sm:max-w-none"
+                style={{ fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif", color: '#000000' }}
               >
                 Fiestas de la provincia de Buenos Aires
               </h1>
