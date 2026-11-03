@@ -43,25 +43,6 @@ const MainContent: React.FC = () => {
                 </div>
               </div>
 
-              {/* Banner informativo de fiestas anteriores en el calendario */}
-              <div className="mb-8 p-4 rounded-2xl bg-amber-50/90 border border-amber-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-stone-800 shadow-2xs">
-                <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-xl bg-amber-100 text-amber-800 shrink-0">
-                    <Calendar className="w-5 h-5" />
-                  </div>
-                  <p className="text-xs sm:text-sm text-stone-700">
-                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Oktubre Fest en Lucila del Mar, Pastafrola en Olivera, Fiesta del Vacío en Presidente Perón, Asado en Dennehy, Mate y Reposera en Arrecifes, Fiesta del Caballo, Corvina Negra, Cerveza en Luján, etc.) siguen disponibles en el calendario mensual.
-                  </p>
-                </div>
-                <button
-                  onClick={() => setActiveView('calendar')}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold shrink-0 transition-colors cursor-pointer"
-                >
-                  <span>Ver en Calendario</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </div>
-
               {/* Cards Grid */}
               {filteredFestivals.length === 0 ? (
                 <div className="bg-white rounded-3xl border border-[#ded5c5] p-10 sm:p-12 text-center max-w-xl mx-auto shadow-sm">
@@ -89,6 +70,25 @@ const MainContent: React.FC = () => {
                   ))}
                 </div>
               )}
+
+              {/* Banner informativo de fiestas de semanas anteriores (debajo de las fiestas destacadas) */}
+              <div className="mt-10 p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-amber-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-stone-800 shadow-2xs">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-xl bg-amber-100 text-amber-800 shrink-0">
+                    <Calendar className="w-5 h-5" />
+                  </div>
+                  <p className="text-xs sm:text-sm text-stone-700">
+                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Oktubre Fest en Lucila del Mar, Pastafrola en Olivera, Fiesta del Vacío en Presidente Perón, Asado en Dennehy, Mate y Reposera en Arrecifes, Fiesta del Caballo, Corvina Negra, Cerveza en Luján, etc.) siguen disponibles en el calendario mensual.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setActiveView('calendar')}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold shrink-0 transition-colors cursor-pointer shadow-xs active:scale-95"
+                >
+                  <span>Ver en Calendario</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
             </section>
           </>
         )}

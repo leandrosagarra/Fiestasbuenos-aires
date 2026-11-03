@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   X, 
   Plus, 
@@ -16,7 +16,10 @@ import {
   Globe, 
   Sparkles,
   Info,
-  ListPlus
+  ListPlus,
+  Lock,
+  AlertCircle,
+  Delete
 } from 'lucide-react';
 import { useFestivals } from '../context/FestivalContext';
 import { CATEGORIES, REGIONS, MONTH_NAMES } from '../data/initialFestivals';
@@ -34,6 +37,65 @@ export const AdminPanel: React.FC = () => {
     adminEditingFestival,
     setAdminEditingFestival 
   } = useFestivals();
+
+  // Security PIN states (PIN requerido: 1422)
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    try {
+      return sessionStorage.getItem('admin_pin_verified') === 'true';
+    } catch {
+      return false;
+    }
+  });
+  const [pinInput, setPinInput] = useState('');
+  const [pinError, setPinError] = useState<string | null>(null);
+  const pinInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (isAdminOpen && !isAuthenticated) {
+      const timer = setTimeout(() => {
+        pinInputRef.current?.focus();
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [isAdminOpen, isAuthenticated]);
+
+  const handleKeypadPress = (digit: string) => {
+    if (pinInput.length < 4) {
+      const nextPin = pinInput + digit;
+      setPinInput(nextPin);
+      setPinError(null);
+      if (nextPin.length === 4) {
+        if (nextPin === '1422') {
+          setIsAuthenticated(true);
+          try {
+            sessionStorage.setItem('admin_pin_verified', 'true');
+          } catch {
+            // ignore
+          }
+          setPinInput('');
+          setPinError(null);
+        } else {
+          setPinError('PIN incorrecto. Intentá nuevamente.');
+        }
+      }
+    }
+  };
+
+  const handlePinSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (pinInput === '1422') {
+      setIsAuthenticated(true);
+      try {
+        sessionStorage.setItem('admin_pin_verified', 'true');
+      } catch {
+        // ignore
+      }
+      setPinInput('');
+      setPinError(null);
+    } else {
+      setPinError('PIN incorrecto. Intentá nuevamente.');
+    }
+  };
 
   const [activeTab, setActiveTab] = useState<'form' | 'list'>('form');
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
@@ -245,6 +307,193 @@ export const AdminPanel: React.FC = () => {
 
   if (!isAdminOpen) return null;
 
+  if (!isAuthenticated) {
+    return (
+      <div 
+        className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/85 backdrop-blur-sm flex justify-center items-center p-4"
+        onClick={(e) => {
+          if (e.target === e.currentTarget) {
+            setIsAdminOpen(false);
+            setPinInput('');
+            setPinError(null);
+          }
+        }}
+      >
+        <div 
+          id="admin-pin-dialog"
+          className="relative w-full max-w-sm bg-white rounded-3xl shadow-2xl overflow-hidden border border-stone-200 animate-fadeIn"
+        >
+          {/* Header */}
+          <div className="bg-gradient-to-br from-stone-900 via-stone-850 to-stone-900 text-white px-6 pt-6 pb-5 text-center relative border-b border-stone-800">
+            <button
+              onClick={() => {
+                setIsAdminOpen(false);
+                setPinInput('');
+                setPinError(null);
+              }}
+              className="absolute right-4 top-4 p-2 rounded-xl bg-white/10 hover:bg-white/20 text-stone-300 hover:text-white transition-colors cursor-pointer"
+              title="Cerrar"
+            >
+              <X className="w-4 h-4" />
+            </button>
+            
+            <div className="w-12 h-12 rounded-2xl bg-sky-500/15 border border-sky-400/30 text-sky-400 flex items-center justify-center mx-auto mb-3 shadow-inner">
+              <Lock className="w-6 h-6 text-sky-400" />
+            </div>
+            
+            <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-sky-900/60 text-sky-300 border border-sky-700/50 mb-1.5">
+              Acceso Restringido
+            </span>
+            <h3 className="text-lg font-serif font-bold text-white">
+              Panel de Administración
+            </h3>
+            <p className="text-xs text-stone-300 mt-1">
+              Ingresá el PIN de 4 dígitos para acceder al panel
+            </p>
+          </div>
+
+          {/* Body */}
+          <div className="p-6 bg-[#faf8f5]">
+            <form onSubmit={handlePinSubmit} className="space-y-4">
+              {/* 4 Digit Display Boxes */}
+              <div 
+                className="flex justify-center gap-2.5 my-2 cursor-pointer"
+                onClick={() => pinInputRef.current?.focus()}
+              >
+                {[0, 1, 2, 3].map((idx) => {
+                  const digit = pinInput[idx];
+                  const isActive = idx === pinInput.length;
+                  return (
+                    <div
+                      key={idx}
+                      className={`w-12 h-14 rounded-2xl border-2 flex items-center justify-center text-2xl font-mono font-bold transition-all shadow-2xs ${
+                        pinError
+                          ? 'border-red-400 bg-red-50 text-red-700 animate-pulse'
+                          : digit
+                          ? 'border-sky-600 bg-white text-sky-900 scale-105 shadow-xs'
+                          : isActive
+                          ? 'border-sky-400 bg-white ring-4 ring-sky-100'
+                          : 'border-stone-200 bg-stone-100/80 text-stone-300'
+                      }`}
+                    >
+                      {digit ? '•' : ''}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Direct Keyboard Input */}
+              <input
+                ref={pinInputRef}
+                type="password"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                maxLength={4}
+                value={pinInput}
+                onChange={(e) => {
+                  const val = e.target.value.replace(/\D/g, '').slice(0, 4);
+                  setPinInput(val);
+                  setPinError(null);
+                  if (val.length === 4) {
+                    if (val === '1422') {
+                      setIsAuthenticated(true);
+                      try {
+                        sessionStorage.setItem('admin_pin_verified', 'true');
+                      } catch {
+                        // ignore
+                      }
+                      setPinInput('');
+                      setPinError(null);
+                    } else {
+                      setPinError('PIN incorrecto. Intentá nuevamente.');
+                    }
+                  }
+                }}
+                className="sr-only"
+                autoFocus
+              />
+
+              {pinError && (
+                <div className="flex items-center justify-center gap-1.5 text-xs text-red-700 font-semibold bg-red-100/70 py-2 px-3 rounded-xl border border-red-200 text-center animate-fadeIn">
+                  <AlertCircle className="w-4 h-4 shrink-0 text-red-600" />
+                  <span>{pinError}</span>
+                </div>
+              )}
+
+              {/* Numeric keypad for touchscreen & click */}
+              <div className="grid grid-cols-3 gap-2 pt-1">
+                {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map((digit) => (
+                  <button
+                    key={digit}
+                    type="button"
+                    onClick={() => handleKeypadPress(digit)}
+                    className="h-12 rounded-2xl bg-white hover:bg-stone-100 active:bg-sky-50 active:border-sky-300 border border-stone-200 text-stone-800 font-bold text-lg transition-all shadow-2xs hover:shadow-xs active:scale-95 cursor-pointer select-none"
+                  >
+                    {digit}
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPinInput('');
+                    setPinError(null);
+                  }}
+                  className="h-12 rounded-2xl bg-stone-200/70 hover:bg-stone-200 active:bg-stone-300 border border-stone-200 text-stone-600 font-semibold text-xs transition-all shadow-2xs cursor-pointer select-none"
+                >
+                  C
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleKeypadPress('0')}
+                  className="h-12 rounded-2xl bg-white hover:bg-stone-100 active:bg-sky-50 active:border-sky-300 border border-stone-200 text-stone-800 font-bold text-lg transition-all shadow-2xs hover:shadow-xs active:scale-95 cursor-pointer select-none"
+                >
+                  0
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPinInput((prev) => prev.slice(0, -1));
+                    setPinError(null);
+                  }}
+                  className="h-12 rounded-2xl bg-stone-200/70 hover:bg-stone-200 active:bg-stone-300 border border-stone-200 text-stone-600 font-semibold text-xs transition-all shadow-2xs flex items-center justify-center cursor-pointer select-none"
+                  title="Borrar último número"
+                >
+                  <Delete className="w-5 h-5 text-stone-500" />
+                </button>
+              </div>
+
+              {/* Action buttons */}
+              <div className="pt-2 flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsAdminOpen(false);
+                    setPinInput('');
+                    setPinError(null);
+                  }}
+                  className="flex-1 py-2.5 rounded-xl border border-stone-300 text-stone-700 hover:bg-stone-100 text-xs font-semibold transition-colors cursor-pointer"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="submit"
+                  disabled={pinInput.length < 4}
+                  className={`flex-1 py-2.5 rounded-xl text-white text-xs font-bold transition-all shadow-xs cursor-pointer ${
+                    pinInput.length === 4
+                      ? 'bg-sky-700 hover:bg-sky-800 active:scale-95'
+                      : 'bg-stone-400 cursor-not-allowed opacity-60'
+                  }`}
+                >
+                  Ingresar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div 
       className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/85 backdrop-blur-sm flex justify-center items-start p-2 sm:p-4 md:p-6"
@@ -273,12 +522,29 @@ export const AdminPanel: React.FC = () => {
             </p>
           </div>
 
-          <button
-            onClick={() => setIsAdminOpen(false)}
-            className="p-2 rounded-xl bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                setIsAuthenticated(false);
+                try {
+                  sessionStorage.removeItem('admin_pin_verified');
+                } catch {
+                  // ignore
+                }
+              }}
+              className="px-3 py-1.5 rounded-xl bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white text-xs font-semibold transition-colors flex items-center gap-1.5 border border-stone-700 shadow-2xs cursor-pointer"
+              title="Bloquear panel de administración"
+            >
+              <Lock className="w-3.5 h-3.5 text-amber-400" />
+              <span className="hidden sm:inline">Bloquear</span>
+            </button>
+            <button
+              onClick={() => setIsAdminOpen(false)}
+              className="p-2 rounded-xl bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white transition-colors cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Tab switcher: Formulario vs Listado */}

@@ -5,12 +5,9 @@ import {
   MapPin, 
   Sparkles, 
   Settings, 
-  PlusCircle, 
+  Lock,
   Menu, 
-  X, 
-  Sun,
-  Flame,
-  Search
+  X 
 } from 'lucide-react';
 import { useFestivals } from '../context/FestivalContext';
 
@@ -19,18 +16,11 @@ export const Navbar: React.FC = () => {
     activeView, 
     setActiveView, 
     setIsAdminOpen, 
-    setAdminEditingFestival,
     filters,
     setFilters
   } = useFestivals();
   
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const handleOpenNewFestival = () => {
-    setAdminEditingFestival(null);
-    setIsAdminOpen(true);
-    setMobileMenuOpen(false);
-  };
 
   const handleNavClick = (view: 'home' | 'calendar' | 'map') => {
     setActiveView(view);
@@ -65,8 +55,11 @@ export const Navbar: React.FC = () => {
                   Guía de Fiestas Provinciales
                 </span>
               </div>
-              <h1 className="text-xs min-[360px]:text-sm sm:text-base md:text-lg font-bold font-serif tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight whitespace-nowrap truncate max-w-[200px] min-[360px]:max-w-[240px] sm:max-w-none">
-                Fiestas de la Provincia de Buenos Aires
+              <h1 
+                className="text-xs min-[360px]:text-sm sm:text-base md:text-lg font-black tracking-tight text-stone-900 group-hover:text-sky-700 transition-colors leading-tight whitespace-nowrap truncate max-w-[200px] min-[360px]:max-w-[240px] sm:max-w-none"
+                style={{ fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif" }}
+              >
+                Fiestas de la provincia de Buenos Aires
               </h1>
             </div>
           </div>
@@ -113,25 +106,16 @@ export const Navbar: React.FC = () => {
             </button>
           </nav>
 
-          {/* Actions: Admin Panel & Add Festival */}
+          {/* Actions: Admin Panel */}
           <div className="hidden sm:flex items-center gap-2.5">
             <button
               id="header-admin-button"
               onClick={() => setIsAdminOpen(true)}
-              className="px-3 py-2 rounded-xl text-xs font-semibold text-stone-700 hover:text-stone-900 bg-white hover:bg-stone-100 border border-stone-300 transition-all flex items-center gap-1.5 shadow-2xs"
-              title="Administrar catálogo de fiestas"
+              className="px-3.5 py-2 rounded-xl text-xs font-semibold text-stone-700 hover:text-stone-900 bg-white hover:bg-stone-100 border border-stone-300 transition-all flex items-center gap-1.5 shadow-2xs hover:border-stone-400 active:scale-95"
+              title="Administrar catálogo de fiestas (requiere PIN)"
             >
-              <Settings className="w-3.5 h-3.5 text-stone-500" />
+              <Lock className="w-3.5 h-3.5 text-stone-500" />
               <span>Panel Admin</span>
-            </button>
-
-            <button
-              id="header-add-festival-button"
-              onClick={handleOpenNewFestival}
-              className="px-3.5 py-2 rounded-xl text-xs font-bold bg-sky-600 hover:bg-sky-700 text-white transition-all flex items-center gap-1.5 shadow-xs active:scale-95"
-            >
-              <PlusCircle className="w-4 h-4 text-white" />
-              <span>Cargar Fiesta</span>
             </button>
           </div>
 
@@ -183,23 +167,16 @@ export const Navbar: React.FC = () => {
             <span>Mapa Provincial con Google Maps</span>
           </button>
 
-          <div className="pt-3 border-t border-stone-200 flex flex-col gap-2">
+          <div className="pt-3 border-t border-stone-200">
             <button
               onClick={() => {
                 setIsAdminOpen(true);
                 setMobileMenuOpen(false);
               }}
-              className="w-full py-2.5 px-3 rounded-xl text-xs font-semibold text-stone-700 bg-white border border-stone-300 hover:bg-stone-100 flex items-center justify-center gap-2"
+              className="w-full py-2.5 px-3 rounded-xl text-xs font-semibold text-stone-700 bg-white border border-stone-300 hover:bg-stone-100 flex items-center justify-center gap-2 shadow-2xs"
             >
-              <Settings className="w-4 h-4 text-stone-500" />
-              <span>Panel de Administración</span>
-            </button>
-            <button
-              onClick={handleOpenNewFestival}
-              className="w-full py-2.5 px-3 rounded-xl text-xs font-bold bg-sky-600 hover:bg-sky-700 text-white flex items-center justify-center gap-2 shadow-xs"
-            >
-              <PlusCircle className="w-4 h-4 text-white" />
-              <span>Cargar Nueva Fiesta</span>
+              <Lock className="w-3.5 h-3.5 text-stone-500" />
+              <span>Panel de Administración (PIN)</span>
             </button>
           </div>
         </div>

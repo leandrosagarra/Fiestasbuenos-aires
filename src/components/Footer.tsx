@@ -34,8 +34,11 @@ export const Footer: React.FC = () => {
                 <span className="text-[11px] font-bold uppercase tracking-wider text-sky-800 block">
                   Provincia de Buenos Aires
                 </span>
-                <span className="text-lg font-serif font-bold text-stone-900">
-                  Fiestas de la Provincia de Buenos Aires
+                <span 
+                  className="text-lg font-black text-stone-900 tracking-tight"
+                  style={{ fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif" }}
+                >
+                  Fiestas de la provincia de Buenos Aires
                 </span>
               </div>
             </div>
@@ -119,7 +122,7 @@ export const Footer: React.FC = () => {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
           <div>
-            © {new Date().getFullYear()} Fiestas de la Provincia de Buenos Aires. Guía de difusión turística y festividades bonaerenses.
+            © {new Date().getFullYear()} Fiestas de la provincia de Buenos Aires. Guía de difusión turística y festividades bonaerenses.
           </div>
           <div className="flex items-center gap-1 text-stone-600">
             <span>Orgullo bonaerense y cultura popular</span>

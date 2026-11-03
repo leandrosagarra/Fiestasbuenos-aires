@@ -40,15 +40,18 @@ export const HeroSection: React.FC = () => {
           <span>Guía Cultural & Turismo Bonaerense</span>
         </div>
 
-        {/* Main Title - en una sola línea para web y celular */}
+        {/* Main Title - en una sola línea para web y celular, todo en negrita sin subrayado y con provincia en minúscula */}
         <div className="w-full flex justify-center items-center overflow-x-hidden px-1">
           <h1 
-            className="font-extrabold font-serif tracking-tight whitespace-nowrap leading-tight text-center select-none"
-            style={{ fontSize: 'clamp(0.85rem, 4.15vw, 2.75rem)' }}
+            className="font-black tracking-tight whitespace-nowrap leading-tight text-center select-none"
+            style={{ 
+              fontSize: 'clamp(0.85rem, 4.15vw, 2.75rem)',
+              fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif"
+            }}
           >
-            <span className="text-stone-900">Fiestas de la </span>
-            <span className="text-sky-700 underline decoration-sky-300/80 decoration-2 underline-offset-4 sm:underline-offset-8">
-              Provincia de Buenos Aires
+            <span className="text-stone-900 font-black">Fiestas de la </span>
+            <span className="text-sky-700 font-black">
+              provincia de Buenos Aires
             </span>
           </h1>
         </div>
