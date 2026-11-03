@@ -21,10 +21,9 @@ export const INITIAL_FESTIVALS: Festival[] = [
     category: 'Cultura Popular',
     isFree: false,
     ticketInfo: 'Entrada arancelada. Venta de entradas y programación en salas habilitadas y canales oficiales. Organiza INCAA con el acompañamiento de la Municipalidad de General Pueyrredón.',
-    mainImage: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop',
+    mainImage: '/images/cine-mar-del-plata.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1200&auto=format&fit=crop'
+      '/images/cine-mar-del-plata.jpg'
     ],
     summary: 'En distintos horarios y espacios físicos de la ciudad. Encuentro cinematográfico que reúne películas nacionales e internacionales de distintos géneros. Cuenta con competencias de largometrajes y cortometrajes, homenajes, proyecciones especiales. Organiza INCAA con el acompañamiento de la Municipalidad de General Pueyrredón. Entrada arancelada.',
     highlightParagraph: 'El festival cinematográfico más prestigioso de América Latina: competencias de largometrajes y cortometrajes nacionales e internacionales, homenajes, proyecciones especiales y encuentros con directores en Mar del Plata.',
