@@ -78,7 +78,7 @@ const MainContent: React.FC = () => {
                     <Calendar className="w-5 h-5" />
                   </div>
                   <p className="text-xs sm:text-sm text-stone-700">
-                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Oktubre Fest en Lucila del Mar, Pastafrola en Olivera, Fiesta del Vacío en Presidente Perón, Asado en Dennehy, Mate y Reposera en Arrecifes, Fiesta del Caballo, Corvina Negra, Cerveza en Luján, etc.) siguen disponibles en el calendario mensual.
+                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Fiesta Nacional del Postre en Balcarce, Fiesta de la Empanada en Magdalena, Fiesta del Asado Criollo en Puán, Fiesta de las Llanuras en Coronel Dorrego, Oktubre Fest, Corvina Negra, etc.) siguen disponibles en el calendario mensual.
                   </p>
                 </div>
                 <button

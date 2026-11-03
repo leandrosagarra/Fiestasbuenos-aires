@@ -2,6 +2,312 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'festival-internacional-cine-mar-del-plata',
+    name: '41º Festival Internacional de Cine',
+    municipality: 'General Pueyrredón',
+    locality: 'Mar del Plata (General Pueyrredón)',
+    region: 'Costa Atlántica',
+    address: 'Teatro Auditorium, Paseo Aldrey y salas de la ciudad, Mar del Plata, Buenos Aires',
+    coordinates: {
+      lat: -38.0055,
+      lng: -57.5426
+    },
+    datesText: '5 al 11 de noviembre',
+    startDate: '2026-11-05',
+    endDate: '2026-11-11',
+    schedule: 'En distintos horarios y espacios físicos de la ciudad',
+    duration: '7 días de cine internacional (5 al 11 de noviembre)',
+    month: 11,
+    category: 'Cultura Popular',
+    isFree: false,
+    ticketInfo: 'Entrada arancelada. Venta de entradas y programación en salas habilitadas y canales oficiales. Organiza INCAA con el acompañamiento de la Municipalidad de General Pueyrredón.',
+    mainImage: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop',
+    gallery: [
+      'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1200&auto=format&fit=crop'
+    ],
+    summary: 'En distintos horarios y espacios físicos de la ciudad. Encuentro cinematográfico que reúne películas nacionales e internacionales de distintos géneros. Cuenta con competencias de largometrajes y cortometrajes, homenajes, proyecciones especiales. Organiza INCAA con el acompañamiento de la Municipalidad de General Pueyrredón. Entrada arancelada.',
+    highlightParagraph: 'El festival cinematográfico más prestigioso de América Latina: competencias de largometrajes y cortometrajes nacionales e internacionales, homenajes, proyecciones especiales y encuentros con directores en Mar del Plata.',
+    fullDescription: 'En distintos horarios y espacios físicos de la ciudad de Mar del Plata. Encuentro cinematográfico que reúne películas nacionales e internacionales de distintos géneros. Cuenta con competencias de largometrajes y cortometrajes, homenajes, proyecciones especiales, masterclasses y actividades formativas. Organiza INCAA con el acompañamiento de la Municipalidad de General Pueyrredón.',
+    activities: [
+      { time: 'Jueves 5 - 18:30 hs', title: 'Gala de Apertura Oficial y Alfombra Roja', description: 'Ceremonia de apertura del 41º Festival Internacional en el Teatro Auditorium.' },
+      { time: 'Viernes 6 a Martes 10', title: 'Competencias Oficiales de Largometrajes y Cortos', description: 'Proyecciones de cine nacional e internacional en múltiples salas de Mar del Plata.' },
+      { time: 'Miércoles 11 - 20:00 hs', title: 'Ceremonia de Clausura y Premiación', description: 'Entrega de los premios Astor de Oro y de Plata y función de cierre.' }
+    ],
+    contact: {
+      phone: '+54 223 4997800',
+      email: 'info@mardelplatafilmfest.com',
+      website: 'https://www.mardelplatafilmfest.com',
+      instagram: '@mardelplataff',
+      facebook: 'mardelplatafilmfest'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'chacinar-festival-salame-cerdo-tandil',
+    name: '8º Chacinar Festival del Salame y el Cerdo de Tandil',
+    municipality: 'Tandil',
+    locality: 'Tandil',
+    region: 'Sierras y Lagunas',
+    address: 'Diagonal del Parque Independencia, Tandil, Buenos Aires',
+    coordinates: {
+      lat: -37.3217,
+      lng: -59.1332
+    },
+    datesText: '7 y 8 de noviembre',
+    startDate: '2026-11-07',
+    endDate: '2026-11-08',
+    schedule: 'Desde el mediodía, en Diagonal del Parque Independencia',
+    duration: '2 jornadas gastronómicas y de tradición (7 y 8 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza Clúster Porcino de Tandil junto al Municipio de Tandil y Consejo de la Denominación de Origen del Salame de Tandil.',
+    mainImage: '/images/salame-1.jpg',
+    gallery: [
+      '/images/salame-1.jpg',
+      '/images/salame-2.png'
+    ],
+    summary: 'Desde el mediodía, en Diagonal del Parque Independencia. Festival que reúne sabores, productores, música, amigos y la actividad porcina. Cuenta con carnes, fiambres y productos regionales. Organiza Clúster Porcino de Tandil junto al Municipio de Tandil y Consejo de la Denominación de Origen del Salame de Tandil.',
+    highlightParagraph: 'Fiesta de los sabores tandilenses: presentación del salame con Denominación de Origen, fiambres artesanales, carnes de cerdo al asador, feria productiva y espectáculos musicales en el Parque Independencia.',
+    fullDescription: 'Desde el mediodía, en Diagonal del Parque Independencia, Tandil. Festival que reúne sabores, productores, música, amigos y la actividad porcina. Cuenta con carnes asadas, fiambres y chacinados con Denominación de Origen de Tandil, embutidos y productos regionales. Organiza Clúster Porcino de Tandil junto al Municipio de Tandil y Consejo de la Denominación de Origen del Salame de Tandil.',
+    activities: [
+      { time: '12:00 hs', title: 'Apertura de Fogones de Cerdo y Feria de Productores', description: 'Degustación y venta de chacinados de Tandil, salame con D.O.T. y carnes al asador.' },
+      { time: '16:00 hs', title: 'Medición y Corte del Salame con Denominación de Origen', description: 'Presentación tradicional de los maestros chacinadores de Tandil.' },
+      { time: '19:30 hs', title: 'Música en Vivo, Clases de Cocina y Espectáculos', description: 'Shows folclóricos y musicales en el anfiteatro natural del Parque Independencia.' }
+    ],
+    contact: {
+      phone: '+54 249 4432073',
+      email: 'turismo@tandil.gov.ar',
+      website: 'https://tandil.tur.ar',
+      instagram: '@festivalchacinar',
+      facebook: 'FestivalChacinarTandil'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'festival-cerveza-capital-la-plata',
+    name: 'Festival de la Cerveza Capital',
+    municipality: 'La Plata',
+    locality: 'La Plata',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Camping Municipal de La Plata, av. 122 y 56, La Plata, Buenos Aires',
+    coordinates: {
+      lat: -34.9080,
+      lng: -57.9250
+    },
+    datesText: '6 y 7 de noviembre',
+    startDate: '2026-11-06',
+    endDate: '2026-11-07',
+    schedule: 'Camping Municipal de La Plata, av. 122 y 56',
+    duration: '2 jornadas cerveceras y gastronómicas (6 y 7 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada gratuita. Patios gastronómicos, food trucks y más de 200 variedades de cerveza.',
+    mainImage: '/images/cerveza.jpg',
+    gallery: [
+      '/images/cerveza.jpg',
+      '/images/cerveza-lujan.jpg'
+    ],
+    summary: 'Camping Municipal de La Plata, av 122 y 56. Con una propuesta que combina más de 200 variedades de cerveza artesanal, gastronomía, música y actividades para distintos públicos. Entrada gratuita.',
+    highlightParagraph: 'La fiesta cervecera de la capital provincial: más de 200 estilos de cerveza artesanal de productores platenses y de la provincia, gastronomía gourmet, DJs y bandas en vivo con entrada gratuita.',
+    fullDescription: 'Camping Municipal de La Plata, av 122 y 56. Con una propuesta que combina más de 200 variedades de cerveza artesanal, gastronomía, música y actividades para distintos públicos. Entrada gratuita.',
+    activities: [
+      { time: '17:00 hs', title: 'Apertura de Patios Cerveceros y Food Trucks', description: 'Más de 200 variedades de cerveza artesanal de productores de La Plata y la región.' },
+      { time: '19:30 hs', title: 'Bandas en Vivo y Sets de DJs Platenses', description: 'Música en vivo en el escenario del Camping Municipal.' },
+      { time: '22:00 hs', title: 'Degustaciones Guiadas y Espacio Gastronómico', description: 'Propuestas culinarias, maridajes y tragos de autor.' }
+    ],
+    contact: {
+      phone: '+54 221 4291000',
+      email: 'turismo@laplata.gob.ar',
+      website: 'https://laplata.gob.ar',
+      instagram: '@laplata.ciudad',
+      facebook: 'MuniLaPlata'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-del-pan-carhue-adolfo-alsina',
+    name: '3º Fiesta del Pan',
+    municipality: 'Adolfo Alsina',
+    locality: 'Carhué (Adolfo Alsina)',
+    region: 'Oeste y Producción',
+    address: 'Sociedad Rural de Carhué, Carhué 6430, Adolfo Alsina, Buenos Aires',
+    coordinates: {
+      lat: -37.1770,
+      lng: -62.7594
+    },
+    datesText: '7 y 8 de noviembre',
+    startDate: '2026-11-07',
+    endDate: '2026-11-08',
+    schedule: 'Sábado 7, a las 11:00 y domingo 8 a las 12:00 en la Sociedad Rural, Carhué 6430',
+    duration: '2 jornadas de panificación, pastas y sabores (7 y 8 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: false,
+    ticketInfo: 'Entrada arancelada, menores de 12 años ingreso gratuito. Organizan Carhué El Molino y San Nicolás D.I.S.A con el acompañamiento de la Municipalidad de Adolfo Alsina, la Sociedad Rural de Carhué y empresas privadas y la Subsecretaría de Turismo de la provincia de Buenos Aires.',
+    mainImage: '/images/pan.jpg',
+    gallery: [
+      '/images/pan.jpg',
+      '/images/galleta de campo.jpg'
+    ],
+    summary: 'Sábado 7, a las 11:00 y domingo 8 a las 12:00 en la Sociedad Rural, Carhué 6430. Food trucks, expositores, espectáculos musicales y espacios para las infancias. Talleres de cocina y degustación con Chef Sale, Juan Pascualá, Laura Pedersen Juano Cocina y Antonino elaborará pastas artesanales. Ezequiel Ortigoza, campeón mundial de freestyle Las Vegas 2018, realizará el show de pizza acrobática. Entrada arancelada, menores de 12 años ingreso gratuito. Organizan Carhué El Molino y San Nicolás D.I.S.A con el acompañamiento de la Municipalidad de Adolfo Alsina, la Sociedad Rural de Carhué y empresas privadas y la Subsecretaría de Turismo de la provincia de Buenos Aires.',
+    highlightParagraph: 'Gran fiesta del pan y las pastas en Carhué: talleres de cocina con reconocidos chefs, show de pizza acrobática con el campeón mundial Ezequiel Ortigoza, food trucks y espectáculos musicales.',
+    fullDescription: 'Sábado 7, a las 11:00 y domingo 8 a las 12:00 en la Sociedad Rural, Carhué 6430. Food trucks, expositores, espectáculos musicales y espacios para las infancias. Talleres de cocina y degustación con Chef Sale, Juan Pascualá, Laura Pedersen Juano Cocina y Antonino elaborará pastas artesanales. Ezequiel Ortigoza, campeón mundial de freestyle Las Vegas 2018, realizará el show de pizza acrobática. Entrada arancelada, menores de 12 años ingreso gratuito. Organizan Carhué El Molino y San Nicolás D.I.S.A con el acompañamiento de la Municipalidad de Adolfo Alsina, la Sociedad Rural de Carhué y empresas privadas y la Subsecretaría de Turismo de la provincia de Buenos Aires.',
+    activities: [
+      { time: 'Sábado 7 - 11:00 hs', title: 'Apertura del Predio y Talleres de Cocina en Vivo', description: 'Clases con Chef Sale, Juan Pascualá, Laura Pedersen y Antonino con pastas artesanales.' },
+      { time: 'Sábado 7 - 18:00 hs', title: 'Show de Pizza Acrobática con Ezequiel Ortigoza', description: 'Demostración del campeón mundial de freestyle Las Vegas 2018.' },
+      { time: 'Domingo 8 - 12:00 hs', title: 'Patio de Food Trucks, Música y Espacio Infantil', description: 'Degustaciones de panes y productos harineros, shows musicales para toda la familia.' }
+    ],
+    contact: {
+      phone: '+54 2936 430660',
+      email: 'turismo@adolfoalsina.gov.ar',
+      website: 'https://adolfoalsina.gov.ar',
+      instagram: '@fiestadelpancarhue',
+      facebook: 'FiestaDelPanCarhue'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-comida-al-disco-pehuen-co',
+    name: '9º Fiesta de la Comida al Disco - A Mar y Campo',
+    municipality: 'Coronel Rosales',
+    locality: 'Pehuen-Co (Coronel Rosales)',
+    region: 'Costa Atlántica',
+    address: 'Plaza Carrasco, Pehuen-Co, Partido de Coronel Rosales, Buenos Aires',
+    coordinates: {
+      lat: -38.9950,
+      lng: -61.5450
+    },
+    datesText: '7 y 8 de noviembre',
+    startDate: '2026-11-07',
+    endDate: '2026-11-08',
+    schedule: 'Desde las 12:00, en la Plaza Carrasco',
+    duration: '2 jornadas gastronómicas costeras (7 y 8 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Platos y degustaciones preparadas al disco en vivo por cocineros locales. Organiza la Municipalidad de Coronel Rosales y la Red de Fiestas Gastronómicas.',
+    mainImage: '/images/disco.jpg',
+    gallery: [
+      '/images/disco.jpg'
+    ],
+    summary: 'Desde las 12:00, en la Plaza Carrasco. Más treinta stands gastronómicos con cocina al disco en vivo, expresiones artesanales y productivas, degustaciones, y espectáculos musicales con la presentación de bandas y grupos locales. Organiza la Municipalidad de Coronel Rosales y la Red de Fiestas Gastronómicas.',
+    highlightParagraph: 'La gran fiesta gastronómica de Pehuen-Co: más de 30 discos cocinando recetas de mar y campo en vivo, stands de artesanos, degustaciones populares y shows musicales en Plaza Carrasco.',
+    fullDescription: 'Desde las 12:00, en la Plaza Carrasco, balneario Pehuen-Co, Coronel Rosales. Más treinta stands gastronómicos con cocina al disco en vivo, expresiones artesanales y productivas, degustaciones, y espectáculos musicales con la presentación de bandas y grupos locales. Organiza la Municipalidad de Coronel Rosales y la Red de Fiestas Gastronómicas.',
+    activities: [
+      { time: '12:00 hs', title: 'Encendido de Fogones y Cocina al Disco en Vivo', description: 'Más de 30 discos preparando cazuelas, paellas, carnes y mariscos al disco.' },
+      { time: '15:30 hs', title: 'Feria de Productores y Artesanías de la Región', description: 'Stands con dulces artesanales, alfajores costeros, conservas y creaciones manuales.' },
+      { time: '18:30 hs', title: 'Recitales y Shows Musicales en Plaza Carrasco', description: 'Presentación de solistas y bandas locales de folclore, cumbia y rock.' }
+    ],
+    contact: {
+      phone: '+54 2921 497078',
+      email: 'turismo@pehuenco.tur.ar',
+      website: 'https://pehuenco.tur.ar',
+      instagram: '@amarycampo',
+      facebook: 'FiestaComidaAlDiscoPehuenCo'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-de-la-frutilla-florencio-varela',
+    name: 'Fiesta de la Frutilla 2026',
+    municipality: 'Florencio Varela',
+    locality: 'Florencio Varela',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Parque Recreativo Thevenet, av. Thevenet y Alfonsina Storni, Florencio Varela, Buenos Aires',
+    coordinates: {
+      lat: -34.7933,
+      lng: -58.2785
+    },
+    datesText: '7 de noviembre',
+    startDate: '2026-11-07',
+    endDate: '2026-11-07',
+    schedule: 'De 10:00 a 22:00, en el Parque Recreativo Thevenet, av. Thevenet y Alfonsina Storni',
+    duration: '1 jornada productiva y festiva (Sábado 7 de noviembre de 10:00 a 22:00)',
+    month: 11,
+    category: 'Producción Local',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Se suspende por lluvia. Organiza la Municipalidad de Florencio Varela con el apoyo de la Subsecretaría de Turismo del Ministerio de Producción, Ciencia e Innovación Tecnológica del Gobierno de la Provincia de Buenos Aires.',
+    mainImage: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop',
+    gallery: [
+      'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop'
+    ],
+    summary: 'De 10:00 a 22:00, en el Parque Recreativo Thevenet, av. Thevenet y Alfonsina Storni. Puestos de productores frutilleros, venta de frutillas, gastronomía y degustaciones, talleres y espectáculos musicales. Se suspende por lluvia. Organiza la Municipalidad de Florencio Varela con el apoyo de la Subsecretaría de Turismo del Ministerio de Producción, Ciencia e Innovación Tecnológica del Gobierno de la Provincia de Buenos Aires.',
+    highlightParagraph: 'Homenaje a la producción frutillera varelense: venta directa de cajones de frutillas frescas de primera calidad, repostería artesanal, patio de comidas, talleres culinarios y espectáculos musicales.',
+    fullDescription: 'De 10:00 a 22:00, en el Parque Recreativo Thevenet, av. Thevenet y Alfonsina Storni, Florencio Varela. Puestos de productores frutilleros, venta de frutillas, gastronomía y degustaciones, talleres y espectáculos musicales. Se suspende por lluvia. Organiza la Municipalidad de Florencio Varela con el apoyo de la Subsecretaría de Turismo del Ministerio de Producción, Ciencia e Innovación Tecnológica del Gobierno de la Provincia de Buenos Aires.',
+    activities: [
+      { time: '10:00 hs', title: 'Apertura de Stands de Productores y Venta de Frutillas', description: 'Comercialización directa del productor al consumidor de frutillas recién cosechadas.' },
+      { time: '14:00 hs', title: 'Talleres Culinarios y Demostraciones Gastronómicas', description: 'Elaboración de tartas, mermeladas y postres tradicionales con frutilla.' },
+      { time: '17:30 hs', title: 'Festival Artístico y Bandas en Vivo', description: 'Presentaciones musicales y ballets folclóricos en el Parque Thevenet.' }
+    ],
+    contact: {
+      phone: '+54 11 42371601',
+      email: 'produccion@florenciovarela.gov.ar',
+      website: 'https://varela.gob.ar',
+      instagram: '@varelamunicipio',
+      facebook: 'VarelaMunicipio'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'un-aplauso-para-el-asador-olavarria',
+    name: '41º Un aplauso para el Asador',
+    municipality: 'Olavarría',
+    locality: 'Olavarría',
+    region: 'Sierras y Lagunas',
+    address: 'Parque Helios Eseverri, Olavarría, Buenos Aires',
+    coordinates: {
+      lat: -36.8927,
+      lng: -60.3225
+    },
+    datesText: '8 de noviembre',
+    startDate: '2026-11-08',
+    endDate: '2026-11-08',
+    schedule: 'A partir de las 11:00, en el Parque Helios Eseverri',
+    duration: '1 jornada tradicional criolla y comunitaria (Domingo 8 de noviembre)',
+    month: 11,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita al parque. Cantinas y carnes asadas a beneficio de las instituciones locales participantes. Organiza la Municipalidad de Olavarría.',
+    mainImage: '/images/concurso de asadores.jpg',
+    gallery: [
+      '/images/concurso de asadores.jpg',
+      '/images/asado.png'
+    ],
+    summary: 'A partir de las 11:00, en el Parque Helios Eseverri. Participarán instituciones y organizaciones locales. Además, habrá stands gastronómicos; cantina con carnes asadas; emprendedores y espectáculos musicales. Organiza la Municipalidad de Olavarría.',
+    highlightParagraph: 'La gran fiesta criolla solidaria de Olavarría: más de 30 fogones tradicionales encendidos por instituciones de la comunidad, costillares al asador, paseo de emprendedores y espectáculos folclóricos.',
+    fullDescription: 'A partir de las 11:00, en el Parque Helios Eseverri, Olavarría. Participarán instituciones y organizaciones locales. Además, habrá stands gastronómicos; cantina con carnes asadas; emprendedores y espectáculos musicales. Organiza la Municipalidad de Olavarría.',
+    activities: [
+      { time: '11:00 hs', title: 'Encendido de Fogones por Instituciones Comunitarias', description: 'Asadores locales cocinando costillares, corderos y lechones a la vista del público.' },
+      { time: '13:00 hs', title: 'Gran Almuerzo Criollo y Venta de Carnes Asadas', description: 'Servicio de cantinas a beneficio de cooperadoras escolares, clubes y entidades de bien público.' },
+      { time: '15:30 hs', title: 'Escenario Mayor: Espectáculos Musicales y Danzas', description: 'Shows folclóricos, payadores y ballets tradicionales olavarrienses.' }
+    ],
+    contact: {
+      phone: '+54 2284 480023',
+      email: 'turismo@olavarria.gov.ar',
+      website: 'https://olavarria.gov.ar',
+      instagram: '@olavarria.va',
+      facebook: 'MunicipioOlavarria'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'fiesta-nacional-postre-balcarce',
     name: '22º Fiesta Nacional del Postre',
     municipality: 'Balcarce',
@@ -43,7 +349,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-empanada-julio-arditi-magdalena',
@@ -86,7 +392,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-asado-criollo-bordenave-puan',
@@ -130,7 +436,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-de-las-llanuras-coronel-dorrego',
@@ -174,7 +480,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'oktubre-fest-lucila-del-mar',
