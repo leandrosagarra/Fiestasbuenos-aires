@@ -2,6 +2,309 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'fiesta-del-fiambre-casero-junin',
+    name: '45º Fiesta del Fiambre Casero',
+    municipality: 'Junín',
+    locality: 'Agustín Roca (Junín)',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Ex Estación del Ferrocarril, Agustín Roca, Partido de Junín, Buenos Aires',
+    coordinates: {
+      lat: -34.5133,
+      lng: -60.8358
+    },
+    datesText: '14 y 15 de noviembre',
+    startDate: '2026-11-14',
+    endDate: '2026-11-15',
+    schedule: 'Sábado 14, desde las 18:00; domingo 15, a partir de las 13:00, en la ex Estación del Ferrocarril',
+    duration: '2 jornadas de sabores y tradición (14 y 15 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza la Delegación Municipal de Agustín Roca con el acompañamiento de la Municipalidad de Junín.',
+    mainImage: '/images/salame-1.jpg',
+    gallery: [
+      '/images/salame-1.jpg',
+      '/images/salame-2.png'
+    ],
+    summary: 'Sábado 14, desde las 18:00; domingo 15, a partir de las 13:00, en la ex Estación del Ferrocarril. Productores locales de fiambre, música en vivo, danza y una amplia oferta gastronómica. Domingo, a las 11:00, desfile de caballos, a las 13:00, juego de riendas; y desde las 14:00, espectáculos musicales con Lunáticos, Los Gringos, y Rocío Quiróz en el cierre de la fiesta. Organiza la Delegación Municipal de Agustín Roca con el acompañamiento de la Municipalidad de Junín.',
+    highlightParagraph: 'Tradicional encuentro en Agustín Roca con productores locales de fiambre casero, desfile criollo, juego de riendas y un gran cierre musical junto a Lunáticos, Los Gringos y Rocío Quiróz.',
+    fullDescription: 'Sábado 14, desde las 18:00; domingo 15, a partir de las 13:00, en la ex Estación del Ferrocarril de Agustín Roca. Productores locales de fiambre, música en vivo, danza y una amplia oferta gastronómica. Domingo, a las 11:00, desfile de caballos, a las 13:00, juego de riendas; y desde las 14:00, espectáculos musicales con Lunáticos, Los Gringos, y Rocío Quiróz en el cierre de la fiesta. Organiza la Delegación Municipal de Agustín Roca con el acompañamiento de la Municipalidad de Junín.',
+    activities: [
+      { time: 'Sábado 14 - 18:00 hs', title: 'Apertura, Productores de Fiambre y Patio Gastronómico', description: 'Stands de elaboradores locales de fiambres caseros, danza y música en vivo.' },
+      { time: 'Domingo 15 - 11:00 hs', title: 'Desfile de Caballos y Juego de Riendas', description: 'Tradicional desfile criollo a las 11:00 hs y destrezas de riendas a las 13:00 hs en la ex Estación.' },
+      { time: 'Domingo 15 - 14:00 hs', title: 'Espectáculos Musicales y Gran Cierre', description: 'Presentaciones de Lunáticos, Los Gringos y cierre a puro ritmo con Rocío Quiróz.' }
+    ],
+    contact: {
+      phone: '+54 236 4631622',
+      email: 'turismo@junin.gob.ar',
+      website: 'https://junin.gob.ar',
+      instagram: '@turismojunin',
+      facebook: 'TurismoJuninBA'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-provincial-cordero-costero-mar-chiquita',
+    name: '19º Fiesta Provincial del Cordero Costero',
+    municipality: 'Mar Chiquita',
+    locality: 'Mar Chiquita',
+    region: 'Costa Atlántica',
+    address: 'Plaza Central y alrededores, Mar Chiquita, Buenos Aires',
+    coordinates: {
+      lat: -37.6589,
+      lng: -57.4239
+    },
+    datesText: '13 al 15 de noviembre',
+    startDate: '2026-11-13',
+    endDate: '2026-11-15',
+    schedule: 'Viernes 13, a las 18:00; sábado 14 y domingo 15, desde las 14:00, en la plaza central y sus alrededores',
+    duration: '3 jornadas de fogones y música (13 al 15 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organizan la Comisión de la fiesta e instituciones locales con el acompañamiento de la Municipalidad de Mar Chiquita.',
+    mainImage: '/images/cordero.jpg',
+    gallery: [
+      '/images/cordero.jpg'
+    ],
+    summary: 'Viernes 13, a las 18:00; sábado 14 y domingo 15, desde las 14:00, en la plaza central y sus alrededores. Degustación de cordero costero elaborado por asadores locales, fogones, puestos gastronómicos, cerveceros, artesanos y emprendedores. Espectáculos con la presentación, el viernes, del grupo Los del Fuego; sábado, Rocío Quiroz; y domingo el Musiquero Entrerriano. Elección de la soberana. Organizan la Comisión de la fiesta, instituciones locales con el acompañamiento de la Municipalidad de Mar Chiquita.',
+    highlightParagraph: 'Fogones encendidos con cordero costero al asador, cerveceros y emprendedores en la plaza central, elección de la soberana y shows en vivo de Los del Fuego, Rocío Quiroz y El Musiquero Entrerriano.',
+    fullDescription: 'Viernes 13, a las 18:00; sábado 14 y domingo 15, desde las 14:00, en la plaza central y sus alrededores. Degustación de cordero costero elaborado por asadores locales, fogones, puestos gastronómicos, cerveceros, artesanos y emprendedores. Espectáculos con la presentación, el viernes, del grupo Los del Fuego; sábado, Rocío Quiroz; y domingo el Musiquero Entrerriano. Elección de la soberana. Organizan la Comisión de la fiesta, instituciones locales con el acompañamiento de la Municipalidad de Mar Chiquita.',
+    activities: [
+      { time: 'Viernes 13 - 18:00 hs', title: 'Apertura de Fogones y Show de Los del Fuego', description: 'Inicio de los puestos gastronómicos, cerveceros y recital de apertura.' },
+      { time: 'Sábado 14 - 14:00 hs', title: 'Degustación de Cordero Costero, Elección y Rocío Quiroz', description: 'Asadores locales en acción, elección de la soberana y show central de Rocío Quiroz.' },
+      { time: 'Domingo 15 - 14:00 hs', title: 'Paseo de Artesanos y Cierre con El Musiquero Entrerriano', description: 'Almuerzo criollo, feria de emprendedores y espectáculos musicales de cierre.' }
+    ],
+    contact: {
+      phone: '+54 2265 432201',
+      email: 'turismo@marchiquita.gob.ar',
+      website: 'https://marchiquita.gob.ar',
+      instagram: '@turismomarchiquita',
+      facebook: 'TurismoMarChiquita'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-nacional-corvina-rubia-mar-de-ajo',
+    name: '57º Fiesta Nacional de la Corvina Rubia',
+    municipality: 'La Costa',
+    locality: 'Mar de Ajó (La Costa)',
+    region: 'Costa Atlántica',
+    address: 'Camping General Lavalle, av. Irigoyen y av. Carreras, Mar de Ajó, Partido de La Costa, Buenos Aires',
+    coordinates: {
+      lat: -36.7219,
+      lng: -56.6789
+    },
+    datesText: '13 al 15 de noviembre',
+    startDate: '2026-11-13',
+    endDate: '2026-11-15',
+    schedule: 'Desde el mediodía, en el Camping General Lavalle, av. Irigoyen y av. Carreras',
+    duration: '3 jornadas costeras de pesca y música (13 al 15 de noviembre)',
+    month: 11,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre al predio de festejos. Organiza la Comisión de Festejos de Mar de Ajó con el acompañamiento de la Municipalidad de La Costa.',
+    mainImage: '/images/corvina.jpg',
+    gallery: [
+      '/images/corvina.jpg',
+      '/images/corvina-negra.jpg'
+    ],
+    summary: 'Desde el mediodía, en el Camping General Lavalle, av. Irigoyen y av. Carreras. Espectáculos musicales con Siete Lunas, Miguel Ángel, la agrupación El Baile del Gato, tributo a Leo Mattioli, La Juntada Cumbia, y artistas locales. Elección de las Soberanas de la Corvina Rubia y el clásico concurso de pesca con importantes premios. También, habrá food trucks, gastronomía y feria artesanal. Comisión de Festejos de Mar de Ajó con el acompañamiento de la Municipalidad de La Costa.',
+    highlightParagraph: 'Clásico de Mar de Ajó con concurso de pesca y grandes premios, elección de las Soberanas, feria artesanal, food trucks y shows de Siete Lunas, Miguel Ángel, tributo a Leo Mattioli y La Juntada Cumbia.',
+    fullDescription: 'Desde el mediodía, en el Camping General Lavalle, av. Irigoyen y av. Carreras, Mar de Ajó. Espectáculos musicales con Siete Lunas, Miguel Ángel, la agrupación El Baile del Gato, tributo a Leo Mattioli, La Juntada Cumbia, y artistas locales. Elección de las Soberanas de la Corvina Rubia y el clásico concurso de pesca con importantes premios. También, habrá food trucks, gastronomía y feria artesanal. Organiza la Comisión de Festejos de Mar de Ajó con el acompañamiento de la Municipalidad de La Costa.',
+    activities: [
+      { time: '12:00 hs', title: 'Apertura del Camping General Lavalle, Food Trucks y Feria', description: 'Patio gastronómico, puestos de artesanías regionales y actividades recreativas.' },
+      { time: 'Concurso de Pesca', title: 'Clásico Torneo de Pesca de la Corvina Rubia', description: 'Certamen pesquero tradicional en la costa de Mar de Ajó con importantes premios.' },
+      { time: 'Escenario Mayor', title: 'Elección de Soberanas y Shows Musicales', description: 'Recitales de Siete Lunas, Miguel Ángel, El Baile del Gato, tributo a Leo Mattioli, La Juntada Cumbia y artistas locales.' }
+    ],
+    contact: {
+      phone: '+54 2257 420312',
+      email: 'turismo@lacosta.gob.ar',
+      website: 'https://lacosta.gob.ar',
+      instagram: '@turismolacosta',
+      facebook: 'TurismoLaCosta'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'tandilia-2026-tandil',
+    name: '53º Tandilia 2026',
+    municipality: 'Tandil',
+    locality: 'Tandil',
+    region: 'Sierras y Lagunas',
+    address: 'Largada desde el Cerro La Movediza rumbo al Polideportivo Municipal, Tandil, Buenos Aires',
+    coordinates: {
+      lat: -37.3095,
+      lng: -59.1764
+    },
+    datesText: '14 de noviembre',
+    startDate: '2026-11-14',
+    endDate: '2026-11-14',
+    schedule: 'A las 18:00, desde el Cerro La Movediza',
+    duration: '1 jornada deportiva tradicional (Sábado 14 de noviembre)',
+    month: 11,
+    category: 'Deporte',
+    isFree: false,
+    ticketInfo: 'Inscripción arancelada para corredores. Público espectador con acceso libre en todo el recorrido y llegada. Organiza la Asociación de Atletismo de Tandil con el acompañamiento de la Municipalidad de Tandil.',
+    mainImage: '/images/tandilia.jpg',
+    gallery: [
+      '/images/tandilia.jpg'
+    ],
+    summary: 'A las 18:00, desde el Cerro La Movediza. Recorrido de 11,1 kilómetros con un circuito de pendientes pronunciadas y calles empedradas rumbo al Polideportivo Municipal. Inscripción arancelada. Organiza la Asociación de Atletismo de Tandil con el acompañamiento de la Municipalidad de Tandil.',
+    highlightParagraph: 'Histórica prueba atlética de 11,1 kilómetros que une el Cerro La Movediza con el Polideportivo Municipal a través de exigentes pendientes y emblemáticas calles empedradas tandilenses.',
+    fullDescription: 'A las 18:00, desde el Cerro La Movediza, Tandil. Recorrido de 11,1 kilómetros con un circuito de pendientes pronunciadas y calles empedradas rumbo al Polideportivo Municipal. Inscripción arancelada. Organiza la Asociación de Atletismo de Tandil con el acompañamiento de la Municipalidad de Tandil.',
+    activities: [
+      { time: '16:30 hs', title: 'Concentración de Atletas en el Cerro La Movediza', description: 'Entrada en calor y preparación previa al pie del emblemático cerro tandilense.' },
+      { time: '18:00 hs', title: 'Largada Oficial de los 11,1 Km', description: 'Circuito tradicional por pendientes pronunciadas y calles empedradas de la ciudad.' },
+      { time: '19:30 hs', title: 'Llegada al Polideportivo Municipal y Premiación', description: 'Recepción de corredores y entrega de premios por categorías.' }
+    ],
+    contact: {
+      phone: '+54 249 4432073',
+      email: 'turismo@tandil.gov.ar',
+      website: 'https://tandil.tur.ar',
+      instagram: '@tandilia.oficial',
+      facebook: 'AsociacionAtletismoTandil'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'expo-canuelas-fiesta-dulce-de-leche',
+    name: 'Expo Cañuelas 2026 y Fiesta Provincial del Dulce de Leche',
+    municipality: 'Cañuelas',
+    locality: 'Cañuelas',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Predio Ferial en la Ruta Nacional 205, Cañuelas, Buenos Aires',
+    coordinates: {
+      lat: -35.0528,
+      lng: -58.7606
+    },
+    datesText: '13 al 15 de noviembre',
+    startDate: '2026-11-13',
+    endDate: '2026-11-15',
+    schedule: 'Desde el mediodía, en el Predio Ferial en la Ruta Nacional 205',
+    duration: '3 jornadas productivas y dulces (13 al 15 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada accesible / consultar pases en acceso al Predio Ferial. Organiza la Municipalidad de Cañuelas.',
+    mainImage: '/images/dulce.jpg',
+    gallery: [
+      '/images/dulce.jpg'
+    ],
+    summary: 'Desde el mediodía, en el Predio Ferial en la Ruta Nacional 205. Durante tres jornadas la expo reúne artesanos y productores locales en una propuesta para disfrutar en familia. En el pabellón principal se ubican los productores de dulce de leche quienes ofrecen sus productos con degustación y venta, además del tradicional concurso. Cuenta con patio de comidas y espectáculos en vivo. Organiza la Municipalidad de Cañuelas.',
+    highlightParagraph: 'Gran encuentro productivo y familiar en Cañuelas: pabellón principal con degustación y venta de dulce de leche artesanal, tradicional certamen de productores, feria de artesanos, patio de comidas y shows en vivo.',
+    fullDescription: 'Desde el mediodía, en el Predio Ferial en la Ruta Nacional 205, Cañuelas. Durante tres jornadas la expo reúne artesanos y productores locales en una propuesta para disfrutar en familia. En el pabellón principal se ubican los productores de dulce de leche quienes ofrecen sus productos con degustación y venta, además del tradicional concurso al mejor dulce de leche. Cuenta con patio de comidas y espectáculos en vivo. Organiza la Municipalidad de Cañuelas.',
+    activities: [
+      { time: '12:00 hs', title: 'Apertura del Pabellón del Dulce de Leche y Feria', description: 'Degustación y venta directa de productores artesanales y stands de artesanos locales.' },
+      { time: '16:00 hs', title: 'Tradicional Concurso del Mejor Dulce de Leche', description: 'Evaluación técnica y voto popular de las variedades clásico y repostero.' },
+      { time: '19:00 hs', title: 'Patio de Comidas y Espectáculos en Vivo', description: 'Propuestas gastronómicas regionales y recitales en el escenario mayor del Predio Ferial.' }
+    ],
+    contact: {
+      phone: '+54 2226 421555',
+      email: 'turismo@canuelas.gob.ar',
+      website: 'https://canuelas.gob.ar',
+      instagram: '@municanuelas',
+      facebook: 'MunicipalidadDeCanuelas'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-de-la-masa-villa-maza-adolfo-alsina',
+    name: '4º Fiesta de la Masa',
+    municipality: 'Adolfo Alsina',
+    locality: 'Villa Maza (Adolfo Alsina)',
+    region: 'Oeste y Producción',
+    address: 'Parque Municipal de Villa Maza, Villa Maza, Partido de Adolfo Alsina, Buenos Aires',
+    coordinates: {
+      lat: -36.8039,
+      lng: -63.3622
+    },
+    datesText: '15 de noviembre',
+    startDate: '2026-11-15',
+    endDate: '2026-11-15',
+    schedule: 'A las 11:00, en el Parque Municipal de Villa Maza',
+    duration: '1 jornada comunitaria y gastronómica (Domingo 15 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza Comisión de Festejos de Villa Maza y la Delegación Municipal con el acompañamiento de la Municipalidad de Adolfo Alsina.',
+    mainImage: '/images/masa.jpg',
+    gallery: [
+      '/images/masa.jpg'
+    ],
+    summary: 'A las 11:00, en el Parque Municipal de Villa Maza (Villa Maza). Se lleva adelante con distintas propuestas como concurso de masas dulces y saladas, shows en vivo, presentaciones de artistas, baile popular. También, feria de artesanos y emprendedores, patio de comidas. Organiza Comisión de Festejos de Villa Maza y la Delegación Municipal con el acompañamiento de la Municipalidad de Adolfo Alsina.',
+    highlightParagraph: 'Celebración popular en el Parque Municipal de Villa Maza con concurso de masas dulces y saladas, feria de artesanos y emprendedores, patio de comidas, shows en vivo y gran baile popular.',
+    fullDescription: 'A las 11:00, en el Parque Municipal de Villa Maza, partido de Adolfo Alsina (Carhué). Se lleva adelante con distintas propuestas como concurso de masas dulces y saladas, shows en vivo, presentaciones de artistas y baile popular. También cuenta con feria de artesanos y emprendedores y patio de comidas. Organiza Comisión de Festejos de Villa Maza y la Delegación Municipal con el acompañamiento de la Municipalidad de Adolfo Alsina.',
+    activities: [
+      { time: '11:00 hs', title: 'Apertura del Parque Municipal, Artesanos y Patio de Comidas', description: 'Inicio de la jornada con stands de emprendedores locales y gastronomía regional.' },
+      { time: '14:30 hs', title: 'Concurso de Masas Dulces y Saladas', description: 'Certamen tradicional con degustación y premiación a las mejores elaboraciones artesanales.' },
+      { time: '17:00 hs', title: 'Shows en Vivo, Artistas y Baile Popular', description: 'Espectáculos musicales sobre el escenario del parque y cierre bailable comunitario.' }
+    ],
+    contact: {
+      phone: '+54 2936 430660',
+      email: 'turismo@adolfoalsina.gov.ar',
+      website: 'https://adolfoalsina.gov.ar',
+      instagram: '@turismo_adolfoalsina',
+      facebook: 'MunicipalidadAdolfoAlsina'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'expo-alfajor-2026-ranchos',
+    name: 'Expo Alfajor 2026',
+    municipality: 'General Paz',
+    locality: 'Ranchos (General Paz)',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Predio de la Laguna / Centro de Ranchos, Partido de General Paz, Buenos Aires',
+    coordinates: {
+      lat: -35.5167,
+      lng: -58.3167
+    },
+    datesText: '14 y 15 de noviembre',
+    startDate: '2026-11-14',
+    endDate: '2026-11-15',
+    schedule: 'Sábado 14 y domingo 15 de noviembre en Ranchos',
+    duration: '2 jornadas dulces y familiares (14 y 15 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita.',
+    mainImage: '/images/alfajor.jpg',
+    gallery: [
+      '/images/alfajor.jpg'
+    ],
+    summary: 'Artesanos alfajoreros, música en vivo, juegos para niños, parque gastronómico y cervecero. Competencia de alfajores con cuatro categorías: sin gluten, de maicena, de chocolate y de sabor no convencional.',
+    highlightParagraph: 'Encuentro de artesanos alfajoreros en Ranchos con música en vivo, juegos para niños, parque gastronómico y cervecero, y la gran competencia de alfajores en cuatro categorías: sin gluten, maicena, chocolate y sabor no convencional.',
+    fullDescription: 'Dos jornadas para disfrutar en Ranchos (Partido de General Paz) junto a artesanos alfajoreros de toda la región, música en vivo, juegos para niños, parque gastronómico y patio cervecero. El evento cuenta además con la tradicional competencia de alfajores dividida en cuatro categorías: sin gluten, de maicena, de chocolate y de sabor no convencional.',
+    activities: [
+      { time: 'Durante ambas jornadas', title: 'Feria de Artesanos Alfajoreros, Parque Gastronómico y Cervecero', description: 'Stands de elaboradores artesanales, propuestas culinarias, cervezas y juegos para niños.' },
+      { time: 'Competencia Oficial', title: 'Certamen de Alfajores en 4 Categorías', description: 'Jurado y premiación en las categorías sin gluten, de maicena, de chocolate y de sabor no convencional.' },
+      { time: 'Escenario Mayor', title: 'Música en Vivo y Espectáculos Familiares', description: 'Presentaciones musicales para acompañar la tarde en Ranchos.' }
+    ],
+    contact: {
+      phone: '+54 2241 481041',
+      email: 'turismo@generalpaz.gob.ar',
+      website: 'https://generalpaz.gob.ar',
+      instagram: '@munigralpaz',
+      facebook: 'MunicipalidadDeGeneralPaz'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'festival-internacional-cine-mar-del-plata',
     name: '41º Festival Internacional de Cine',
     municipality: 'General Pueyrredón',
@@ -42,7 +345,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'chacinar-festival-salame-cerdo-tandil',
@@ -86,7 +389,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'festival-cerveza-capital-la-plata',
@@ -130,7 +433,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-del-pan-carhue-adolfo-alsina',
@@ -174,7 +477,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-comida-al-disco-pehuen-co',
@@ -217,7 +520,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-de-la-frutilla-florencio-varela',
@@ -260,7 +563,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'un-aplauso-para-el-asador-olavarria',
@@ -304,7 +607,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-postre-balcarce',
