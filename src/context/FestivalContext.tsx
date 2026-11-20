@@ -24,7 +24,7 @@ interface FestivalContextType {
   setActiveView: (view: 'home' | 'calendar' | 'map' | 'admin') => void;
 }
 
-const STORAGE_KEY = 'fiestas_buenos_aires_v19';
+const STORAGE_KEY = 'fiestas_buenos_aires_v20';
 
 const defaultFilters: FestivalFilterState = {
   searchQuery: '',
@@ -46,7 +46,7 @@ export const FestivalProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         if (
           Array.isArray(parsed) &&
           parsed.length > 0 &&
-          parsed[0]?.id === 'fiesta-del-fiambre-casero-junin'
+          parsed[0]?.id === 'aniversario-la-plata-festival-jazz'
         ) {
           return parsed;
         }

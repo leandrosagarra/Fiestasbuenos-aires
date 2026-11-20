@@ -78,7 +78,7 @@ const MainContent: React.FC = () => {
                     <Calendar className="w-5 h-5" />
                   </div>
                   <p className="text-xs sm:text-sm text-stone-700">
-                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Festival Internacional de Cine en Mar del Plata, Chacinar en Tandil, Cerveza Capital en La Plata, Fiesta del Pan en Carhué, Comida al Disco en Pehuen-Co, Fiesta de la Frutilla, Un aplauso para el Asador, Fiesta del Postre, etc.) siguen disponibles en el calendario mensual.
+                    <strong className="font-semibold text-stone-900">¿Buscás las fiestas de semanas anteriores?</strong> Las celebraciones previas (Fiesta del Fiambre Casero en Junín, Cordero Costero en Mar Chiquita, Corvina Rubia en Mar de Ajó, Tandilia, Expo Cañuelas y Fiesta del Dulce de Leche, Fiesta de la Masa en Villa Maza, Expo Alfajor en Ranchos, Festival de Cine en Mar del Plata, etc.) siguen disponibles en el calendario mensual.
                   </p>
                 </div>
                 <button

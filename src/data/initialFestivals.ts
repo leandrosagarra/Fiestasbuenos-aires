@@ -2,6 +2,395 @@ import { Festival } from '../types';
 
 export const INITIAL_FESTIVALS: Festival[] = [
   {
+    id: 'aniversario-la-plata-festival-jazz',
+    name: '144º Aniversario de La Plata y Festival del Jazz La Plata Capital',
+    municipality: 'La Plata',
+    locality: 'La Plata',
+    region: 'Gran Buenos Aires y Capital',
+    address: 'Plaza Moreno, Teatro Municipal Coliseo Podestá, Palacio Municipal y Pasaje Dardo Rocha, La Plata, Buenos Aires',
+    coordinates: {
+      lat: -34.9214,
+      lng: -57.9545
+    },
+    datesText: '19 al 22 de noviembre',
+    startDate: '2026-11-19',
+    endDate: '2026-11-22',
+    schedule: 'En diferentes horarios y espacios físicos de La Plata',
+    duration: '4 jornadas de aniversario y jazz (19 al 22 de noviembre)',
+    month: 11,
+    category: 'Música',
+    isFree: true,
+    ticketInfo: 'Espectáculos y programación cultural organizados por la Municipalidad de La Plata en distintos espacios de la ciudad.',
+    mainImage: '/images/la-plata-jazz.jpg',
+    gallery: [
+      '/images/la-plata-jazz.jpg'
+    ],
+    summary: 'Jueves 19, festejos por el 144º aniversario desde las 15:30 en Plaza Moreno con Los Palmeras, Dillom, Etiqueta Negra, la Orquesta Sinfónica Juvenil de PBA, La Cumparsita, Islas Mujeres y ganadores de La Plata Rock. Del viernes 20 al domingo 22, Festival del Jazz La Plata Capital en el Teatro Coliseo Podestá, Salón Dorado del Palacio Municipal y Pasaje Dardo Rocha. Organiza la Municipalidad de La Plata.',
+    highlightParagraph: 'Festejos por el 144º Aniversario en Plaza Moreno con Los Palmeras, Dillom, La Cumparsita y la Orquesta Sinfónica Juvenil de PBA, junto al Festival del Jazz La Plata Capital con Javier Malosetti, Franco Luciani Trío y Piazzola Octeto Electrónico.',
+    fullDescription: 'En diferentes horarios y espacios físicos de La Plata. Jueves 19, festejos por el 144 aniversario, desde las 15:30, en la Plaza Moreno. Espectáculos musicales con la presentación de Los Palmeras, Dillom, Etiqueta Negra y la Orquesta Sinfónica Juvenil de PBA, La Cumparsita, Islas Mujeres y la presentación de los grupos ganadores del certamen local La Plata Rock. Además, del viernes 20 al domingo 22, Festival del Jazz La Plata Capital en el marco de la Semana de la Música. Viernes, a las 20:00, en el Teatro Municipal Coliseo Podestá se presentan Javier Malosetti, Jacinto de Piazzola Maza Trío y Kiki Victoria; sábado, a las 18:00, en el Salón Dorado del Palacio Municipal se presentan Sebastián Peyceré Cuarteto, Lara Fichera - Néstor Gómez y Franco Luciani Trío; domingo 22, a las 19:00, en el Pasaje Dardo Rocha se presenta Piazzola Octeto Electrónico dirigido por Nico Sorín. Organiza la Municipalidad de La Plata.',
+    activities: [
+      { time: 'Jueves 19 - 15:30 hs', title: 'Festejos 144º Aniversario en Plaza Moreno', description: 'Recitales de Los Palmeras, Dillom, Etiqueta Negra, Orquesta Sinfónica Juvenil de PBA, La Cumparsita, Islas Mujeres y ganadores de La Plata Rock.' },
+      { time: 'Viernes 20 - 20:00 hs', title: 'Festival del Jazz en Teatro Coliseo Podestá', description: 'Presentaciones de Javier Malosetti, Jacinto de Piazzola Maza Trío y Kiki Victoria.' },
+      { time: 'Sábado 21 - 18:00 hs', title: 'Festival del Jazz en Salón Dorado del Palacio Municipal', description: 'Shows de Sebastián Peyceré Cuarteto, Lara Fichera - Néstor Gómez y Franco Luciani Trío.' },
+      { time: 'Domingo 22 - 19:00 hs', title: 'Cierre en el Pasaje Dardo Rocha', description: 'Presentación de Piazzola Octeto Electrónico dirigido por Nico Sorín.' }
+    ],
+    contact: {
+      phone: '+54 221 4271535',
+      email: 'turismo@laplata.gob.ar',
+      website: 'https://laplata.gob.ar',
+      instagram: '@laplataciudad',
+      facebook: 'MunicipalidadDeLaPlata'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-de-la-milanesa-azul',
+    name: '1º Fiesta de la Milanesa',
+    municipality: 'Azul',
+    locality: 'Azul',
+    region: 'Sierras y Lagunas',
+    address: 'Av. Cacique Catriel, sector de la Plaza El Quijote, Azul, Buenos Aires',
+    coordinates: {
+      lat: -36.7770,
+      lng: -59.8585
+    },
+    datesText: '21 de noviembre',
+    startDate: '2026-11-21',
+    endDate: '2026-11-21',
+    schedule: 'Desde las 18:00, sobre av. Cacique Catriel, en el sector de la plaza El Quijote',
+    duration: '1 jornada gastronómica y familiar (Sábado 21 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza la Municipalidad de Azul.',
+    mainImage: '/images/milanesa.jpg',
+    gallery: [
+      '/images/milanesa.jpg'
+    ],
+    summary: 'Desde las 18:00, sobre av. Cacique Catriel, en el sector de la plaza El Quijote. Diferentes variedades de milanesa, propuestas gastronómicas, artesanías, juegos infantiles, espectáculos musicales. Además, más de 25 restaurantes y casas de comidas locales se suman con variantes especiales en sus menús. Organiza la Municipalidad de Azul.',
+    highlightParagraph: 'Primera edición en Azul con múltiples variedades de milanesas, feria de artesanías, juegos infantiles, espectáculos musicales y más de 25 restaurantes y casas de comidas locales con menús especiales.',
+    fullDescription: 'Desde las 18:00, sobre av. Cacique Catriel, en el sector de la plaza El Quijote en Azul. Diferentes variedades de milanesa, propuestas gastronómicas, artesanías, juegos infantiles y espectáculos musicales. Además, más de 25 restaurantes y casas de comidas locales se suman a la propuesta con variantes especiales en sus menús. Organiza la Municipalidad de Azul.',
+    activities: [
+      { time: '18:00 hs', title: 'Apertura del Paseo Gastronómico en Plaza El Quijote', description: 'Stands con diferentes variedades de milanesa, patio de comidas y feria de artesanías.' },
+      { time: 'Durante la jornada', title: 'Circuito de +25 Restaurantes Locales y Juegos Infantiles', description: 'Propuestas especiales en más de 25 locales gastronómicos de Azul y espacios recreativos para las infancias.' },
+      { time: 'Noche', title: 'Espectáculos Musicales en Vivo', description: 'Shows musicales al aire libre sobre av. Cacique Catriel.' }
+    ],
+    contact: {
+      phone: '+54 2281 422748',
+      email: 'turismo@azul.gob.ar',
+      website: 'https://azul.gob.ar',
+      instagram: '@turismoazul',
+      facebook: 'TurismoAzul'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'aniversario-250-magdalena',
+    name: '250º Aniversario de Magdalena',
+    municipality: 'Magdalena',
+    locality: 'Magdalena',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Teatro Español, Plaza San Martín y Parque de la Memoria, Magdalena, Buenos Aires',
+    coordinates: {
+      lat: -35.0830,
+      lng: -57.5170
+    },
+    datesText: '19 al 22 de noviembre',
+    startDate: '2026-11-19',
+    endDate: '2026-11-23',
+    schedule: 'En diferentes horarios y espacios físicos de Magdalena (incluye cierre el lunes 23)',
+    duration: '5 días de festejos históricos (19 al 23 de noviembre)',
+    month: 11,
+    category: 'Cultura Popular',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza la Municipalidad de Magdalena.',
+    mainImage: '/images/magdalena-250.jpg',
+    gallery: [
+      '/images/magdalena-250.jpg'
+    ],
+    summary: 'Jueves 19, a las 18:00 en el Teatro Español, velada de gala con la Orquesta Municipal y corte de torta aniversario. Viernes 20, acto protocolar, desfile y F. Etchemendy en Plaza San Martín. Sábado 21, Rodrigo Tapari; domingo 22, artistas locales y La Konga; y lunes 23, La Delio Valdéz en el Parque de la Memoria. Organiza la Municipalidad de Magdalena.',
+    highlightParagraph: 'Histórica celebración por los 250 años de Magdalena con gala en el Teatro Español, desfile institucional en Plaza San Martín y grandes shows en el Parque de la Memoria junto a Rodrigo Tapari, La Konga y La Delio Valdéz.',
+    fullDescription: 'En diferentes horarios y espacios físicos de Magdalena. Jueves 19, a las 18:00 en el Teatro Español, velada de gala con la Orquesta Municipal; la noche finaliza con el corte de la torta de cumpleaños aniversario. Viernes 20, acto protocolar, desfile de instituciones, y espectáculos musicales con artistas locales y la F. Etchemendy en la Plaza San Martín. Sábado 21, presentación de Rodrigo Tapari; domingo 22, música con artistas locales y show de La Konga; y lunes 23, se presenta La Delio Valdéz. Los espectáculos se realizan en el Parque de la Memoria. Organiza la Municipalidad de Magdalena.',
+    activities: [
+      { time: 'Jueves 19 - 18:00 hs', title: 'Velada de Gala en el Teatro Español', description: 'Concierto de la Orquesta Municipal y tradicional corte de la torta aniversario.' },
+      { time: 'Viernes 20', title: 'Acto Protocolar, Desfile y Plaza San Martín', description: 'Desfile de instituciones, artistas locales y show de F. Etchemendy.' },
+      { time: 'Sábado 21 y Domingo 22', title: 'Parque de la Memoria: Rodrigo Tapari y La Konga', description: 'Sábado con Rodrigo Tapari y domingo con artistas locales y el gran recital de La Konga.' },
+      { time: 'Lunes 23', title: 'Gran Cierre con La Delio Valdéz', description: 'Cierre musical de los festejos en el Parque de la Memoria.' }
+    ],
+    contact: {
+      phone: '+54 2221 452105',
+      email: 'turismo@magdalena.gob.ar',
+      website: 'https://magdalena.gob.ar',
+      instagram: '@munimagdalena',
+      facebook: 'MunicipalidadDeMagdalena'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-provincial-avicultura-mar-chiquita',
+    name: 'Fiesta Provincial de la Avicultura',
+    municipality: 'Mar Chiquita',
+    locality: 'General Pirán (Mar Chiquita)',
+    region: 'Costa Atlántica',
+    address: 'Plaza Libertad, General Pirán, Partido de Mar Chiquita, Buenos Aires',
+    coordinates: {
+      lat: -37.3928,
+      lng: -57.7675
+    },
+    datesText: '20 al 22 de noviembre',
+    startDate: '2026-11-20',
+    endDate: '2026-11-22',
+    schedule: 'A las 21:00, en la Plaza Libertad de General Pirán',
+    duration: '3 jornadas productivas y culturales (20 al 22 de noviembre)',
+    month: 11,
+    category: 'Producción Local',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Organiza la Comisión de la Fiesta con el apoyo de la Municipalidad de Mar Chiquita.',
+    mainImage: '/images/avicultura.jpg',
+    gallery: [
+      '/images/avicultura.jpg'
+    ],
+    summary: 'A las 21:00, en la Plaza Libertad de General Pirán. Productores, emprendedores y artesanos locales, desfile, patio gastronómico, espectáculos en vivo, y actividades para todas las edades. Organiza la Comisión de la Fiesta con el apoyo de la Municipalidad de Mar Chiquita.',
+    highlightParagraph: 'Tradicional celebración en la Plaza Libertad de General Pirán con productores avícolas, emprendedores y artesanos locales, desfile tradicional, patio gastronómico y espectáculos en vivo para toda la familia.',
+    fullDescription: 'A las 21:00, en la Plaza Libertad de General Pirán, Partido de Mar Chiquita. Productores, emprendedores y artesanos locales, desfile, patio gastronómico, espectáculos en vivo y actividades para todas las edades. Organiza la Comisión de la Fiesta con el apoyo de la Municipalidad de Mar Chiquita.',
+    activities: [
+      { time: '21:00 hs', title: 'Apertura en Plaza Libertad, Emprendedores y Artesanos', description: 'Stands de productores locales, artesanos y patio gastronómico.' },
+      { time: 'Durante el fin de semana', title: 'Desfile Tradicional y Actividades Familiares', description: 'Desfile institucional y propuestas recreativas para todas las edades.' },
+      { time: 'Noche', title: 'Espectáculos Musicales en Vivo', description: 'Presentaciones artísticas sobre el escenario mayor en General Pirán.' }
+    ],
+    contact: {
+      phone: '+54 2265 432201',
+      email: 'turismo@marchiquita.gob.ar',
+      website: 'https://marchiquita.gob.ar',
+      instagram: '@turismomarchiquita',
+      facebook: 'TurismoMarChiquita'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-provincial-asado-con-cuero-bolivar',
+    name: '4º Fiesta Provincial del Asado con Cuero y Concurso de Asadores',
+    municipality: 'Bolívar',
+    locality: 'San Carlos de Bolívar',
+    region: 'Oeste y Producción',
+    address: 'Parque Las Acollaradas, San Carlos de Bolívar, Buenos Aires',
+    coordinates: {
+      lat: -36.2356,
+      lng: -61.1128
+    },
+    datesText: '21 y 22 de noviembre',
+    startDate: '2026-11-21',
+    endDate: '2026-11-22',
+    schedule: 'Sábado 21, a las 21:00; y domingo 22, desde la mañana, en el Parque Las Acollaradas',
+    duration: '2 jornadas criollas y gastronómicas (21 y 22 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre al Parque Las Acollaradas. Organiza la Municipalidad de Bolívar junto a instituciones locales.',
+    mainImage: '/images/concurso de asadores.jpg',
+    gallery: [
+      '/images/concurso de asadores.jpg',
+      '/images/asado.png'
+    ],
+    summary: 'Sábado 21, a las 21:00; y domingo 22, desde la mañana, en el Parque Las Acollaradas. Sábado, peña folklórica con artistas y ballets locales; por la noche se enciende el fuego para el tradicional asado con cuero. Domingo, concurso de asadores, almuerzo criollo, feria de artesanos y espectáculos en vivo.',
+    highlightParagraph: 'En el Parque Las Acollaradas de San Carlos de Bolívar: peña folklórica el sábado con encendido nocturno de fuegos, y gran domingo con el Concurso de Asadores, tradicional asado con cuero, artesanos y shows.',
+    fullDescription: 'Sábado 21, a las 21:00; y domingo 22, desde la mañana, en el Parque Las Acollaradas de San Carlos de Bolívar. El sábado comienza con una gran peña folklórica junto a artistas y ballets locales; por la noche se encenderá el fuego y comenzará la preparación del tradicional asado con cuero a fuego lento. El domingo continúa desde la mañana con el Concurso de Asadores, venta y degustación de porciones, paseo de artesanos y emprendedores, patio gastronómico y espectáculos musicales en vivo.',
+    activities: [
+      { time: 'Sábado 21 - 21:00 hs', title: 'Peña Folklórica y Encendido de Fuegos', description: 'Actuación de artistas y ballets locales e inicio de la cocción nocturna del tradicional asado con cuero.' },
+      { time: 'Domingo 22 - Desde la mañana', title: 'Concurso de Asadores y Almuerzo Criollo', description: 'Certamen de asadores regionales, degustación de asado con cuero y patio gastronómico.' },
+      { time: 'Domingo 22 - Tarde', title: 'Feria de Artesanos y Espectáculos en Vivo', description: 'Paseo de artesanos y emprendedores y cierre musical en el Parque Las Acollaradas.' }
+    ],
+    contact: {
+      phone: '+54 2314 427204',
+      email: 'turismo@bolivar.gob.ar',
+      website: 'https://bolivar.gob.ar',
+      instagram: '@bolivarturismo',
+      facebook: 'MunicipalidadDeBolivar'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-provincial-galleta-rafael-obligado-rojas',
+    name: '55º Fiesta Provincial de la Galleta',
+    municipality: 'Rojas',
+    locality: 'Rafael Obligado (Rojas)',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Plaza Manuel Belgrano, Rafael Obligado, Partido de Rojas, Buenos Aires',
+    coordinates: {
+      lat: -34.3317,
+      lng: -60.8172
+    },
+    datesText: '21 y 22 de noviembre',
+    startDate: '2026-11-21',
+    endDate: '2026-11-22',
+    schedule: 'Sábado 21 y domingo 22 de noviembre en Plaza Manuel Belgrano, Rafael Obligado',
+    duration: '2 jornadas de Pueblos Turísticos (21 y 22 de noviembre)',
+    month: 11,
+    category: 'Tradición',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Integra el programa Pueblos Turísticos de la Provincia de Buenos Aires.',
+    mainImage: '/images/galleta de campo.jpg',
+    gallery: [
+      '/images/galleta de campo.jpg',
+      '/images/galleta-brandsen.jpg'
+    ],
+    summary: 'Celebración tradicional en la Plaza Manuel Belgrano de Rafael Obligado (Pueblos Turísticos). Feria de artesanos y emprendedores, venta de galleta de campo artesanal, patio gastronómico, desfile criollo y espectáculos musicales en vivo para toda la familia.',
+    highlightParagraph: '55ª edición de una de las fiestas más emblemáticas del norte bonaerense en el Pueblo Turístico de Rafael Obligado: galleta de campo recién horneada, desfile tradicionalista, artesanos y espectáculos en Plaza Manuel Belgrano.',
+    fullDescription: 'Sábado 21 y domingo 22 de noviembre en la Plaza Manuel Belgrano de Rafael Obligado, partido de Rojas, localidad integrante del programa Pueblos Turísticos. Dos jornadas de encuentro comunitario con elaboración y venta de la tradicional galleta de campo, feria de artesanos y emprendedores, patio de comidas, desfile criollo, danzas tradicionales y música en vivo.',
+    activities: [
+      { time: 'Sábado 21', title: 'Apertura de Feria y Escenario Artístico', description: 'Stands de artesanos, patio gastronómico, venta de galleta tradicional y espectáculos musicales en Plaza Manuel Belgrano.' },
+      { time: 'Domingo 22 - Mañana', title: 'Acto Central y Desfile Tradicionalista', description: 'Recorrido de instituciones locales, centros tradicionalistas y agrupaciones gauchas.' },
+      { time: 'Domingo 22 - Tarde', title: 'Degustación de Galleta de Campo y Cierre Musical', description: 'Ballets folklóricos, elección tradicional y música en vivo.' }
+    ],
+    contact: {
+      phone: '+54 2475 462001',
+      email: 'turismo@rojas.gob.ar',
+      website: 'https://rojas.gob.ar',
+      instagram: '@munirojas',
+      facebook: 'MunicipalidadDeRojas'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-de-la-bondiola-y-la-tradicion-general-belgrano',
+    name: 'Fiesta de la Bondiola y la Tradición',
+    municipality: 'General Belgrano',
+    locality: 'General Belgrano',
+    region: 'Pampa Húmeda y Tradición',
+    address: 'Predio Mateo Bruzzo, General Belgrano, Buenos Aires',
+    coordinates: {
+      lat: -35.7667,
+      lng: -58.4975
+    },
+    datesText: '21 y 22 de noviembre',
+    startDate: '2026-11-21',
+    endDate: '2026-11-22',
+    schedule: 'Sábado 21 y domingo 22 de noviembre en el Predio Mateo Bruzzo',
+    duration: '2 jornadas gastronómicas y criollas (21 y 22 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita en el Predio Mateo Bruzzo. Organiza la Municipalidad de General Belgrano junto a instituciones locales.',
+    mainImage: '/images/bondiola.jpg',
+    gallery: [
+      '/images/bondiola.jpg'
+    ],
+    summary: 'Dos jornadas en el Predio Mateo Bruzzo de General Belgrano dedicadas a la bondiola asada en sus distintas variantes, acompañada por destrezas criollas, folklore, música en vivo, paseo de artesanos y propuestas familiares.',
+    highlightParagraph: 'Aroma a brasas y raíces criollas en el Predio Mateo Bruzzo de General Belgrano: bondiola a la parrilla y al disco, peña folklórica, feria de artesanos y actividades tradicionalistas durante todo el fin de semana.',
+    fullDescription: 'Sábado 21 y domingo 22 de noviembre en el Predio Mateo Bruzzo de General Belgrano. Celebración popular que reúne a asadores y puestos gastronómicos especializados en bondiola, junto a emprendedores locales, feria artesanal, espectáculos de música y danza folklórica y actividades tradicionalistas para compartir en familia.',
+    activities: [
+      { time: 'Mediodía y Tarde', title: 'Patio de Fuegos y Bondiola Criolla', description: 'Puestos gastronómicos con bondiola a la parrilla, al disco y sándwiches artesanales en el Predio Mateo Bruzzo.' },
+      { time: 'Tarde', title: 'Feria de Artesanos y Tradición', description: 'Stands de productos regionales, emprendedores y demostraciones tradicionalistas.' },
+      { time: 'Noche', title: 'Escenario Folklórico y Música en Vivo', description: 'Presentaciones de peñas locales, ballets y grupos musicales.' }
+    ],
+    contact: {
+      phone: '+54 2243 452212',
+      email: 'turismo@generalbelgrano.gob.ar',
+      website: 'https://generalbelgrano.gob.ar',
+      instagram: '@turismogbelgrano',
+      facebook: 'TurismoGeneralBelgrano'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-regional-del-cordero-arboledas-daireaux',
+    name: '16º Fiesta Regional del Cordero',
+    municipality: 'Daireaux',
+    locality: 'Arboledas (Daireaux)',
+    region: 'Oeste y Producción',
+    address: 'Predio de la Fiesta en Arboledas, Partido de Daireaux, Buenos Aires',
+    coordinates: {
+      lat: -36.5789,
+      lng: -61.8056
+    },
+    datesText: '22 de noviembre',
+    startDate: '2026-11-22',
+    endDate: '2026-11-22',
+    schedule: 'A las 12:00, en Arboledas',
+    duration: '1 jornada de almuerzo tradicional y espectáculos (Domingo 22 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: false,
+    ticketInfo: 'Entrada arancelada: $25.000 mayores / $15.000 menores.',
+    mainImage: '/images/cordero.jpg',
+    gallery: [
+      '/images/cordero.jpg'
+    ],
+    summary: 'Domingo 22 a las 12:00 en Arboledas, partido de Daireaux. Tradicional almuerzo regional con cordero al asador, espectáculos musicales, encuentro comunitario y propuestas criollas. Entrada arancelada: $25.000 mayores / $15.000 menores.',
+    highlightParagraph: 'Clásico encuentro gastronómico en la localidad de Arboledas desde el mediodía con cordero asado a la estaca, almuerzo comunitario, música en vivo y hospitalidad rural bonaerense.',
+    fullDescription: 'A las 12:00, en Arboledas, partido de Daireaux. 16ª edición de la Fiesta Regional del Cordero, con tradicional almuerzo de cordero preparado por asadores locales, espectáculos artísticos en vivo y actividades comunitarias para disfrutar en familia. Entrada arancelada: $25.000 mayores / $15.000 menores.',
+    activities: [
+      { time: '12:00 hs', title: 'Almuerzo Tradicional de Cordero al Asador', description: 'Recepción en Arboledas y degustación del tradicional cordero regional preparado a la estaca.' },
+      { time: '15:00 hs', title: 'Sobremesa Criolla y Espectáculos en Vivo', description: 'Música popular, danzas folklóricas y baile familiar durante la tarde.' }
+    ],
+    contact: {
+      phone: '+54 2316 452201',
+      email: 'turismo@daireaux.gob.ar',
+      website: 'https://daireaux.gob.ar',
+      instagram: '@munidaireaux',
+      facebook: 'MunicipalidadDeDaireaux'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
+    id: 'fiesta-de-la-empanada-gardey-tandil',
+    name: '9º Fiesta de la Empanada en Gardey',
+    municipality: 'Tandil',
+    locality: 'Gardey (Tandil)',
+    region: 'Sierras y Lagunas',
+    address: 'Localidad de Gardey, Partido de Tandil, Buenos Aires',
+    coordinates: {
+      lat: -37.2797,
+      lng: -59.3578
+    },
+    datesText: '22 de noviembre',
+    startDate: '2026-11-22',
+    endDate: '2026-11-22',
+    schedule: 'A las 11:00 en Gardey (Pueblos Turísticos)',
+    duration: '1 jornada serrana y gastronómica (Domingo 22 de noviembre)',
+    month: 11,
+    category: 'Gastronomía',
+    isFree: true,
+    ticketInfo: 'Entrada libre y gratuita. Integra el programa Pueblos Turísticos de la Provincia de Buenos Aires.',
+    mainImage: '/images/empanadas.jpg',
+    gallery: [
+      '/images/empanadas.jpg'
+    ],
+    summary: 'Domingo 22 a las 11:00 en Gardey (Pueblos Turísticos, partido de Tandil). Elaboración y venta de empanadas artesanales en sus distintas variedades, feria de artesanos y emprendedores rurales, música en vivo y danzas folklóricas en el paisaje serrano.',
+    highlightParagraph: 'En el Pueblo Turístico de Gardey, a minutos de Tandil: empanadas artesanales al horno de barro y fritas, feria de emprendedores rurales, música y folklore al pie de las sierras.',
+    fullDescription: 'A las 11:00 en Gardey, partido de Tandil (programa Pueblos Turísticos). Novena edición de la Fiesta de la Empanada en Gardey, una jornada al aire libre para disfrutar de empanadas caseras elaboradas por vecinos e instituciones locales, patio gastronómico, feria de artesanos y emprendedores, peña folklórica y espectáculos musicales en vivo.',
+    activities: [
+      { time: '11:00 hs', title: 'Apertura de Puestos de Empanadas y Feria Rural', description: 'Venta de empanadas artesanales de distintos sabores y recorrida por stands de artesanos en Gardey.' },
+      { time: '14:00 hs', title: 'Peña Folklórica y Espectáculos en Vivo', description: 'Presentación de agrupaciones de danza y músicos locales durante toda la tarde serrana.' }
+    ],
+    contact: {
+      phone: '+54 249 4432073',
+      email: 'turismo@tandil.gov.ar',
+      website: 'https://tandil.tur.ar',
+      instagram: '@turismotandil',
+      facebook: 'TurismoTandil'
+    },
+    isMustSee: true,
+    isUpcoming: true,
+    isFeatured: true
+  },
+  {
     id: 'fiesta-del-fiambre-casero-junin',
     name: '45º Fiesta del Fiambre Casero',
     municipality: 'Junín',
@@ -43,7 +432,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-provincial-cordero-costero-mar-chiquita',
@@ -86,7 +475,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-nacional-corvina-rubia-mar-de-ajo',
@@ -130,7 +519,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'tandilia-2026-tandil',
@@ -173,7 +562,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'expo-canuelas-fiesta-dulce-de-leche',
@@ -216,7 +605,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'fiesta-de-la-masa-villa-maza-adolfo-alsina',
@@ -259,7 +648,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'expo-alfajor-2026-ranchos',
@@ -302,7 +691,7 @@ export const INITIAL_FESTIVALS: Festival[] = [
     },
     isMustSee: true,
     isUpcoming: true,
-    isFeatured: true
+    isFeatured: false
   },
   {
     id: 'festival-internacional-cine-mar-del-plata',
